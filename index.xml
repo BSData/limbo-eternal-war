@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<dataIndex battleScribeVersion="2.03" name="Limbo: Eternal War 2020" indexUrl="https://github.com/OfficerBrush/Limbo-Eternal-War/blob/master/index.bsi" xmlns="http://www.battlescribe.net/schema/dataIndexSchema">
+  <dataIndexEntries>
+    <dataIndexEntry filePath="Limbo Eternal War v1.0.gstz" dataType="gamesystem" dataId="9eae-0060-d2cb-2349" dataName="Limbo: Eternal War v1.0" dataBattleScribeVersion="2.03" dataRevision="3"/>
+    <dataIndexEntry filePath="Forces of Light.catz" dataType="catalogue" dataId="f4b9-eebe-b016-7298" dataName="Forces of Light" dataBattleScribeVersion="2.03" dataRevision="1"/>
+  </dataIndexEntries>
+</dataIndex>

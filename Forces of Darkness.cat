@@ -1,0 +1,780 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue id="b05a-0bc7-f400-b047" name="Forces of Darkness" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="9eae-0060-d2cb-2349" gameSystemRevision="3" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <selectionEntries>
+    <selectionEntry id="eb54-39da-87cf-e6df" name="Lords" hidden="false" collective="false" import="true" type="unit">
+      <constraints>
+        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="aa58-03cc-b581-81bf" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="c0ff-1127-0e27-e7c2" name="Lord" hidden="false" targetId="03b7-6aa9-a03b-8071" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="89b4-b6e5-77a3-eb48" name="Lords" hidden="false" collective="false" import="true" targetId="caf5-de40-d0f8-1572" type="selectionEntry">
+          <categoryLinks>
+            <categoryLink id="c9df-904c-34b9-8e42" name="Lord" hidden="false" targetId="03b7-6aa9-a03b-8071" primary="false"/>
+          </categoryLinks>
+        </entryLink>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry id="0a4f-a7f5-e8d1-b9ae" name="Heroes" hidden="false" collective="false" import="true" type="unit">
+      <categoryLinks>
+        <categoryLink id="7b1b-e855-f5ee-9c04" name="Hero" hidden="false" targetId="92b2-75fa-5ad7-dc75" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="e400-1051-4ca0-cd74" name="Heroes" hidden="false" collective="false" import="true" targetId="c8d7-bb67-79fb-da76" type="selectionEntry">
+          <categoryLinks>
+            <categoryLink id="27a8-3677-7472-fb7e" name="Hero" hidden="false" targetId="92b2-75fa-5ad7-dc75" primary="false"/>
+          </categoryLinks>
+        </entryLink>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry id="d948-4128-45cb-87ef" name="Troops" hidden="false" collective="false" import="true" type="unit">
+      <categoryLinks>
+        <categoryLink id="85aa-8a6b-0bda-aad0" name="Troop" hidden="false" targetId="9d34-3652-fcc5-0fa3" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="0dc7-d723-f075-5c88" name="Troops" hidden="false" collective="false" import="true" targetId="ef5d-71b6-f264-6226" type="selectionEntry">
+          <categoryLinks>
+            <categoryLink id="4d8c-e779-0f29-4166" name="Troop" hidden="false" targetId="9d34-3652-fcc5-0fa3" primary="false"/>
+          </categoryLinks>
+        </entryLink>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry id="e2ca-fcb8-2942-e63c" name="Divinities" hidden="false" collective="false" import="true" type="unit">
+      <constraints>
+        <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cf24-6bb6-ef6b-08a6" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="3607-a12a-11d4-dd4a" name="Divinity" hidden="false" targetId="6c59-7bcd-44f8-3c71" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="b1dd-dc5f-46fa-7518" name="Dark Divinites" hidden="false" collective="false" import="true" targetId="5780-8d48-fd92-4529" type="selectionEntry"/>
+      </entryLinks>
+    </selectionEntry>
+  </selectionEntries>
+  <sharedSelectionEntries>
+    <selectionEntry id="caf5-de40-d0f8-1572" name="Lords" hidden="false" collective="false" import="true" type="unit">
+      <categoryLinks>
+        <categoryLink id="a434-c16f-d07a-db33" name="Lord" hidden="false" targetId="03b7-6aa9-a03b-8071" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="ca78-6f09-8c13-a007" name="Wrath" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9a05-73ea-b705-08c4" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="244b-45df-bea2-139e" name="Wrath" hidden="false" typeId="b0b7-02f8-2474-26f5" typeName="Lord">
+              <characteristics>
+                <characteristic name="Health" typeId="e6d2-e7ef-38c9-dd30">18</characteristic>
+                <characteristic name="Attack" typeId="914f-b956-277c-033e">4</characteristic>
+                <characteristic name="Range" typeId="0a3b-eed5-5248-6151">2</characteristic>
+                <characteristic name="Defense" typeId="8926-1576-44d8-b258">4</characteristic>
+                <characteristic name="Armour" typeId="0721-716e-2c6e-6ff5">2</characteristic>
+                <characteristic name="Speed" typeId="a34d-8e5f-d950-64f2">4</characteristic>
+                <characteristic name="Skill 1" typeId="1b0e-4759-ab75-9856">Aura of Infinite Rage (Constant)</characteristic>
+                <characteristic name="Skill 2" typeId="66d2-fc17-f518-ed0d">Inspire Fenzy {2} (Swift)</characteristic>
+                <characteristic name="Skill 3" typeId="2e69-5be8-ce5e-d7a4">Reslish the Slaughter (Reaction)</characteristic>
+                <characteristic name="Traits" typeId="ff57-cc56-85da-15f8">Brute, Demon, Hunter, Leader, Sin</characteristic>
+                <characteristic name="Criticals" typeId="4f32-eb95-3813-58b4">Explode, Wound</characteristic>
+                <characteristic name="Token Skills" typeId="0b95-f7de-c5f1-7a10">Focus, Command</characteristic>
+                <characteristic name="Keywords" typeId="d773-cf12-6468-01e2">Deadly 2. Flight, Huge, Pierce 1, Reach</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule id="109d-0046-0ac7-3833" name="Aura of Infinite Rage " hidden="false">
+              <description>Wrath and adjacent friendly characters get +1 Attack while bloodied.</description>
+            </rule>
+            <rule id="05ef-e332-f01b-8799" name="Inspire Frenzy" hidden="false">
+              <description>A friendly character within 2 and sight takes 2 damage. Boost All that character. </description>
+            </rule>
+            <rule id="7a1c-52e7-4245-9791" name="Relish The Slaughter" hidden="false">
+              <description>When Wrath fells an enemy gain 3 VP and draw a Fate card. </description>
+            </rule>
+          </rules>
+          <categoryLinks>
+            <categoryLink id="726c-31a0-9f4f-93f4" name="Lord" hidden="false" targetId="03b7-6aa9-a03b-8071" primary="false"/>
+          </categoryLinks>
+          <entryLinks>
+            <entryLink id="6db4-77a7-8e97-3987" name="Keywords" hidden="false" collective="false" import="true" targetId="b904-7b2a-a21a-643e" type="selectionEntryGroup">
+              <constraints>
+                <constraint field="selections" scope="parent" value="-1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="87d1-8376-f38c-7ecd" type="max"/>
+              </constraints>
+              <categoryLinks>
+                <categoryLink id="62b9-d98d-38b5-f9b0" name="Keywords" hidden="false" targetId="e900-5d11-8941-29a8" primary="false"/>
+              </categoryLinks>
+            </entryLink>
+            <entryLink id="1182-c7d9-2966-2dcb" name="Upgrades" hidden="false" collective="false" import="true" targetId="ba3b-6f79-e920-db59" type="selectionEntryGroup">
+              <constraints>
+                <constraint field="selections" scope="parent" value="-1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3d7b-ee79-d6e9-0f41" type="max"/>
+              </constraints>
+              <categoryLinks>
+                <categoryLink id="f82d-ca48-d9b1-ad7d" name="Upgrades" hidden="false" targetId="6173-1a99-a86b-6e28" primary="false"/>
+              </categoryLinks>
+            </entryLink>
+          </entryLinks>
+          <costs>
+            <cost name="Cost" typeId="c494-d0ff-a958-c070" value="12.0"/>
+            <cost name="Fate" typeId="7540-583a-760c-a57d" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="1086-906b-9e66-24e6" name="Gluttony" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0398-0555-ac05-6e3b" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="cd72-b15d-06aa-ecbc" name="Gluttony" hidden="false" typeId="b0b7-02f8-2474-26f5" typeName="Lord">
+              <characteristics>
+                <characteristic name="Health" typeId="e6d2-e7ef-38c9-dd30">30</characteristic>
+                <characteristic name="Attack" typeId="914f-b956-277c-033e">6</characteristic>
+                <characteristic name="Range" typeId="0a3b-eed5-5248-6151">2</characteristic>
+                <characteristic name="Defense" typeId="8926-1576-44d8-b258">4</characteristic>
+                <characteristic name="Armour" typeId="0721-716e-2c6e-6ff5">0</characteristic>
+                <characteristic name="Speed" typeId="a34d-8e5f-d950-64f2">4</characteristic>
+                <characteristic name="Skill 1" typeId="1b0e-4759-ab75-9856">Aura of Endless Hunger (Constant)</characteristic>
+                <characteristic name="Skill 2" typeId="66d2-fc17-f518-ed0d">Greusome Feast {3} (Swift)</characteristic>
+                <characteristic name="Skill 3" typeId="2e69-5be8-ce5e-d7a4">Predator (Constant)</characteristic>
+                <characteristic name="Traits" typeId="ff57-cc56-85da-15f8">Brute, Demon, Hunter, Beast, Sin</characteristic>
+                <characteristic name="Criticals" typeId="4f32-eb95-3813-58b4">Explode, Daze</characteristic>
+                <characteristic name="Token Skills" typeId="0b95-f7de-c5f1-7a10">Focus</characteristic>
+                <characteristic name="Keywords" typeId="d773-cf12-6468-01e2">Huge, Reach</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule id="398f-75f8-f275-eb0d" name="Aura of Endless Hunger" hidden="false">
+              <description>Nonimmune enemy characters adjacent to Gluttony cannot spend Move points</description>
+            </rule>
+            <rule id="467f-9681-83e0-2f4a" name="Gruesome Feast" hidden="false">
+              <description>Attack 3, Deadly 2, Pierce 1. After this attack resolves Recover X (X= amount of damage the defender received +1)</description>
+            </rule>
+            <rule id="0ddd-8e83-1d9a-e2a2" name="Predator" hidden="false">
+              <description>While attacking a Bloodied character, Gluttony may re-roll up to two attack dice. </description>
+            </rule>
+          </rules>
+          <categoryLinks>
+            <categoryLink id="19a6-f4c8-6c01-0c8d" name="Lord" hidden="false" targetId="03b7-6aa9-a03b-8071" primary="false"/>
+          </categoryLinks>
+          <entryLinks>
+            <entryLink id="3030-51c1-924a-a7c5" name="Upgrades" hidden="false" collective="false" import="true" targetId="ba3b-6f79-e920-db59" type="selectionEntryGroup">
+              <constraints>
+                <constraint field="selections" scope="parent" value="-1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1f77-b1f0-a082-c6e2" type="max"/>
+              </constraints>
+              <categoryLinks>
+                <categoryLink id="57c6-abee-a57c-8cf3" name="Upgrades" hidden="false" targetId="6173-1a99-a86b-6e28" primary="false"/>
+              </categoryLinks>
+            </entryLink>
+            <entryLink id="7ecf-934a-b71b-cfbf" name="Keywords" hidden="false" collective="false" import="true" targetId="b904-7b2a-a21a-643e" type="selectionEntryGroup">
+              <constraints>
+                <constraint field="selections" scope="parent" value="-1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="994b-5bd7-d48b-a14f" type="max"/>
+              </constraints>
+              <categoryLinks>
+                <categoryLink id="94da-4835-6aac-d855" name="Keywords" hidden="false" targetId="e900-5d11-8941-29a8" primary="false"/>
+              </categoryLinks>
+            </entryLink>
+          </entryLinks>
+          <costs>
+            <cost name="Cost" typeId="c494-d0ff-a958-c070" value="13.0"/>
+            <cost name="Fate" typeId="7540-583a-760c-a57d" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="Fate" typeId="7540-583a-760c-a57d" value="0.0"/>
+        <cost name="Cost" typeId="c494-d0ff-a958-c070" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="c8d7-bb67-79fb-da76" name="Heroes" hidden="false" collective="false" import="true" type="unit">
+      <categoryLinks>
+        <categoryLink id="9109-06f6-f8b4-3989" name="New CategoryLink" hidden="false" targetId="92b2-75fa-5ad7-dc75" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="33ca-ff64-6c92-1b38" name="Gouge" hidden="false" collective="false" import="true" type="model">
+          <profiles>
+            <profile id="de5c-f675-1296-fa1c" name="Gouge" hidden="false" typeId="3ae3-9405-766b-6417" typeName="Hero">
+              <characteristics>
+                <characteristic name="Health" typeId="a13c-10b7-2896-bb31">14</characteristic>
+                <characteristic name="Attack" typeId="6c2e-f536-b3a6-1fa9">4</characteristic>
+                <characteristic name="Range" typeId="49d0-0a04-6cbc-f286">2</characteristic>
+                <characteristic name="Defense" typeId="3a86-11ca-f002-eeb7">3</characteristic>
+                <characteristic name="Armour" typeId="462e-16c7-c53f-a16b">3</characteristic>
+                <characteristic name="Speed" typeId="028d-f362-815c-38f0">4</characteristic>
+                <characteristic name="Skill 1" typeId="4b76-bce7-94ec-53ff"/>
+                <characteristic name="Skill 2" typeId="403a-8e7a-a3b3-57db"/>
+                <characteristic name="Skill 3" typeId="cf14-caf6-b618-436c"/>
+                <characteristic name="Traits" typeId="4ccc-8757-1b3b-3c31">Brute, Demon, Hunter</characteristic>
+                <characteristic name="Criticals" typeId="ef0e-8242-f583-664e"/>
+                <characteristic name="Token Skills" typeId="80f8-014e-3c19-66d6"/>
+                <characteristic name="Keywords" typeId="c0b7-ff64-68c6-0bcc"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <categoryLinks>
+            <categoryLink id="59bd-8d8a-f6c4-218d" name="Hero" hidden="false" targetId="92b2-75fa-5ad7-dc75" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="Cost" typeId="c494-d0ff-a958-c070" value="10.0"/>
+            <cost name="Fate" typeId="7540-583a-760c-a57d" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="5977-5583-1d12-9256" name="Azrat" hidden="false" collective="false" import="true" type="model">
+          <profiles>
+            <profile id="3b1a-ff4a-cfb4-bf10" name="Azrat" hidden="false" typeId="3ae3-9405-766b-6417" typeName="Hero">
+              <characteristics>
+                <characteristic name="Health" typeId="a13c-10b7-2896-bb31">11</characteristic>
+                <characteristic name="Attack" typeId="6c2e-f536-b3a6-1fa9">5</characteristic>
+                <characteristic name="Range" typeId="49d0-0a04-6cbc-f286">1</characteristic>
+                <characteristic name="Defense" typeId="3a86-11ca-f002-eeb7">4</characteristic>
+                <characteristic name="Armour" typeId="462e-16c7-c53f-a16b">0</characteristic>
+                <characteristic name="Speed" typeId="028d-f362-815c-38f0">5</characteristic>
+                <characteristic name="Skill 1" typeId="4b76-bce7-94ec-53ff"/>
+                <characteristic name="Skill 2" typeId="403a-8e7a-a3b3-57db"/>
+                <characteristic name="Skill 3" typeId="cf14-caf6-b618-436c"/>
+                <characteristic name="Traits" typeId="4ccc-8757-1b3b-3c31">Brute, Demon, Arcane</characteristic>
+                <characteristic name="Criticals" typeId="ef0e-8242-f583-664e"/>
+                <characteristic name="Token Skills" typeId="80f8-014e-3c19-66d6"/>
+                <characteristic name="Keywords" typeId="c0b7-ff64-68c6-0bcc"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <categoryLinks>
+            <categoryLink id="783b-fd81-5a90-356c" name="Hero" hidden="false" targetId="92b2-75fa-5ad7-dc75" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="Cost" typeId="c494-d0ff-a958-c070" value="10.0"/>
+            <cost name="Fate" typeId="7540-583a-760c-a57d" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="5618-f56d-54ae-7765" name="Lillith" hidden="false" collective="false" import="true" type="model">
+          <profiles>
+            <profile id="3ce4-4259-9795-e0cf" name="Lillith" hidden="false" typeId="3ae3-9405-766b-6417" typeName="Hero">
+              <characteristics>
+                <characteristic name="Health" typeId="a13c-10b7-2896-bb31">10</characteristic>
+                <characteristic name="Attack" typeId="6c2e-f536-b3a6-1fa9">5</characteristic>
+                <characteristic name="Range" typeId="49d0-0a04-6cbc-f286">2</characteristic>
+                <characteristic name="Defense" typeId="3a86-11ca-f002-eeb7">4</characteristic>
+                <characteristic name="Armour" typeId="462e-16c7-c53f-a16b">0</characteristic>
+                <characteristic name="Speed" typeId="028d-f362-815c-38f0">4</characteristic>
+                <characteristic name="Skill 1" typeId="4b76-bce7-94ec-53ff"/>
+                <characteristic name="Skill 2" typeId="403a-8e7a-a3b3-57db"/>
+                <characteristic name="Skill 3" typeId="cf14-caf6-b618-436c"/>
+                <characteristic name="Traits" typeId="4ccc-8757-1b3b-3c31">Arcane, Beast, Demon, Leader, Lillin</characteristic>
+                <characteristic name="Criticals" typeId="ef0e-8242-f583-664e"/>
+                <characteristic name="Token Skills" typeId="80f8-014e-3c19-66d6"/>
+                <characteristic name="Keywords" typeId="c0b7-ff64-68c6-0bcc"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <categoryLinks>
+            <categoryLink id="d905-3343-a828-68f7" name="Hero" hidden="false" targetId="92b2-75fa-5ad7-dc75" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="Cost" typeId="c494-d0ff-a958-c070" value="9.0"/>
+            <cost name="Fate" typeId="7540-583a-760c-a57d" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="d63a-4d68-4c65-739d" name="Moucrum" hidden="false" collective="false" import="true" type="model">
+          <profiles>
+            <profile id="c99f-4f91-5865-95ca" name="Moucrum" hidden="false" typeId="3ae3-9405-766b-6417" typeName="Hero">
+              <characteristics>
+                <characteristic name="Health" typeId="a13c-10b7-2896-bb31">10</characteristic>
+                <characteristic name="Attack" typeId="6c2e-f536-b3a6-1fa9">5</characteristic>
+                <characteristic name="Range" typeId="49d0-0a04-6cbc-f286">2</characteristic>
+                <characteristic name="Defense" typeId="3a86-11ca-f002-eeb7">4</characteristic>
+                <characteristic name="Armour" typeId="462e-16c7-c53f-a16b">1</characteristic>
+                <characteristic name="Speed" typeId="028d-f362-815c-38f0">4</characteristic>
+                <characteristic name="Skill 1" typeId="4b76-bce7-94ec-53ff"/>
+                <characteristic name="Skill 2" typeId="403a-8e7a-a3b3-57db"/>
+                <characteristic name="Skill 3" typeId="cf14-caf6-b618-436c"/>
+                <characteristic name="Traits" typeId="4ccc-8757-1b3b-3c31">Brute, Leader, Ossilyte, Undead</characteristic>
+                <characteristic name="Criticals" typeId="ef0e-8242-f583-664e"/>
+                <characteristic name="Token Skills" typeId="80f8-014e-3c19-66d6"/>
+                <characteristic name="Keywords" typeId="c0b7-ff64-68c6-0bcc"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <categoryLinks>
+            <categoryLink id="3309-3fa5-48db-c205" name="Hero" hidden="false" targetId="92b2-75fa-5ad7-dc75" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="Cost" typeId="c494-d0ff-a958-c070" value="9.0"/>
+            <cost name="Fate" typeId="7540-583a-760c-a57d" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="bba2-3f7f-ad60-1a54" name="Vahlrose" hidden="false" collective="false" import="true" type="model">
+          <profiles>
+            <profile id="a466-102d-9acf-0b07" name="Vahlrose" hidden="false" typeId="3ae3-9405-766b-6417" typeName="Hero">
+              <characteristics>
+                <characteristic name="Health" typeId="a13c-10b7-2896-bb31">8</characteristic>
+                <characteristic name="Attack" typeId="6c2e-f536-b3a6-1fa9">3</characteristic>
+                <characteristic name="Range" typeId="49d0-0a04-6cbc-f286">1</characteristic>
+                <characteristic name="Defense" typeId="3a86-11ca-f002-eeb7">3</characteristic>
+                <characteristic name="Armour" typeId="462e-16c7-c53f-a16b">1</characteristic>
+                <characteristic name="Speed" typeId="028d-f362-815c-38f0">4</characteristic>
+                <characteristic name="Skill 1" typeId="4b76-bce7-94ec-53ff"/>
+                <characteristic name="Skill 2" typeId="403a-8e7a-a3b3-57db"/>
+                <characteristic name="Skill 3" typeId="cf14-caf6-b618-436c"/>
+                <characteristic name="Traits" typeId="4ccc-8757-1b3b-3c31">Arcane, Demon, Leader</characteristic>
+                <characteristic name="Criticals" typeId="ef0e-8242-f583-664e"/>
+                <characteristic name="Token Skills" typeId="80f8-014e-3c19-66d6"/>
+                <characteristic name="Keywords" typeId="c0b7-ff64-68c6-0bcc"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <categoryLinks>
+            <categoryLink id="af72-146c-d971-2450" name="Hero" hidden="false" targetId="92b2-75fa-5ad7-dc75" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="Cost" typeId="c494-d0ff-a958-c070" value="8.0"/>
+            <cost name="Fate" typeId="7540-583a-760c-a57d" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="ac62-8997-be34-a85f" name="Ektalok" hidden="false" collective="false" import="true" type="model">
+          <profiles>
+            <profile id="693d-aa40-c6da-d2ba" name="Ektalok" hidden="false" typeId="3ae3-9405-766b-6417" typeName="Hero">
+              <characteristics>
+                <characteristic name="Health" typeId="a13c-10b7-2896-bb31">8</characteristic>
+                <characteristic name="Attack" typeId="6c2e-f536-b3a6-1fa9">4</characteristic>
+                <characteristic name="Range" typeId="49d0-0a04-6cbc-f286">1</characteristic>
+                <characteristic name="Defense" typeId="3a86-11ca-f002-eeb7">3</characteristic>
+                <characteristic name="Armour" typeId="462e-16c7-c53f-a16b">0</characteristic>
+                <characteristic name="Speed" typeId="028d-f362-815c-38f0">5</characteristic>
+                <characteristic name="Skill 1" typeId="4b76-bce7-94ec-53ff"/>
+                <characteristic name="Skill 2" typeId="403a-8e7a-a3b3-57db"/>
+                <characteristic name="Skill 3" typeId="cf14-caf6-b618-436c"/>
+                <characteristic name="Traits" typeId="4ccc-8757-1b3b-3c31">Arcane, Demon, Rouge</characteristic>
+                <characteristic name="Criticals" typeId="ef0e-8242-f583-664e"/>
+                <characteristic name="Token Skills" typeId="80f8-014e-3c19-66d6"/>
+                <characteristic name="Keywords" typeId="c0b7-ff64-68c6-0bcc"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <categoryLinks>
+            <categoryLink id="3d28-52a8-abe7-48eb" name="Hero" hidden="false" targetId="92b2-75fa-5ad7-dc75" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="Cost" typeId="c494-d0ff-a958-c070" value="7.0"/>
+            <cost name="Fate" typeId="7540-583a-760c-a57d" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="719a-54cc-565f-55bf" name="Maara" hidden="false" collective="false" import="true" type="model">
+          <profiles>
+            <profile id="9486-59a6-a831-900f" name="Maara" hidden="false" typeId="3ae3-9405-766b-6417" typeName="Hero">
+              <characteristics>
+                <characteristic name="Health" typeId="a13c-10b7-2896-bb31">8</characteristic>
+                <characteristic name="Attack" typeId="6c2e-f536-b3a6-1fa9">4</characteristic>
+                <characteristic name="Range" typeId="49d0-0a04-6cbc-f286">1</characteristic>
+                <characteristic name="Defense" typeId="3a86-11ca-f002-eeb7">3</characteristic>
+                <characteristic name="Armour" typeId="462e-16c7-c53f-a16b">1</characteristic>
+                <characteristic name="Speed" typeId="028d-f362-815c-38f0">4</characteristic>
+                <characteristic name="Skill 1" typeId="4b76-bce7-94ec-53ff"/>
+                <characteristic name="Skill 2" typeId="403a-8e7a-a3b3-57db"/>
+                <characteristic name="Skill 3" typeId="cf14-caf6-b618-436c"/>
+                <characteristic name="Traits" typeId="4ccc-8757-1b3b-3c31">Arcane, Undead</characteristic>
+                <characteristic name="Criticals" typeId="ef0e-8242-f583-664e"/>
+                <characteristic name="Token Skills" typeId="80f8-014e-3c19-66d6"/>
+                <characteristic name="Keywords" typeId="c0b7-ff64-68c6-0bcc"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <categoryLinks>
+            <categoryLink id="704e-921d-f75c-43fb" name="Hero" hidden="false" targetId="92b2-75fa-5ad7-dc75" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="Cost" typeId="c494-d0ff-a958-c070" value="7.0"/>
+            <cost name="Fate" typeId="7540-583a-760c-a57d" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="06b1-b1f8-8a23-34b2" name="Mrawl" hidden="false" collective="false" import="true" type="model">
+          <profiles>
+            <profile id="bc18-df12-f5cd-f03e" name="Mrawl" hidden="false" typeId="3ae3-9405-766b-6417" typeName="Hero">
+              <characteristics>
+                <characteristic name="Health" typeId="a13c-10b7-2896-bb31">16</characteristic>
+                <characteristic name="Attack" typeId="6c2e-f536-b3a6-1fa9">5</characteristic>
+                <characteristic name="Range" typeId="49d0-0a04-6cbc-f286">1</characteristic>
+                <characteristic name="Defense" typeId="3a86-11ca-f002-eeb7">3</characteristic>
+                <characteristic name="Armour" typeId="462e-16c7-c53f-a16b">1</characteristic>
+                <characteristic name="Speed" typeId="028d-f362-815c-38f0">4</characteristic>
+                <characteristic name="Skill 1" typeId="4b76-bce7-94ec-53ff"/>
+                <characteristic name="Skill 2" typeId="403a-8e7a-a3b3-57db"/>
+                <characteristic name="Skill 3" typeId="cf14-caf6-b618-436c"/>
+                <characteristic name="Traits" typeId="4ccc-8757-1b3b-3c31">Brute, Demon, Beast</characteristic>
+                <characteristic name="Criticals" typeId="ef0e-8242-f583-664e"/>
+                <characteristic name="Token Skills" typeId="80f8-014e-3c19-66d6"/>
+                <characteristic name="Keywords" typeId="c0b7-ff64-68c6-0bcc"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <categoryLinks>
+            <categoryLink id="fe8c-3d79-254f-bd53" name="Hero" hidden="false" targetId="92b2-75fa-5ad7-dc75" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="Cost" typeId="c494-d0ff-a958-c070" value="7.0"/>
+            <cost name="Fate" typeId="7540-583a-760c-a57d" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="2dc0-4c9c-1d95-5d6d" name="Akturis" hidden="false" collective="false" import="true" type="model">
+          <profiles>
+            <profile id="1fd9-928f-2668-79b8" name="Akturis" hidden="false" typeId="3ae3-9405-766b-6417" typeName="Hero">
+              <characteristics>
+                <characteristic name="Health" typeId="a13c-10b7-2896-bb31">7</characteristic>
+                <characteristic name="Attack" typeId="6c2e-f536-b3a6-1fa9">4</characteristic>
+                <characteristic name="Range" typeId="49d0-0a04-6cbc-f286">1</characteristic>
+                <characteristic name="Defense" typeId="3a86-11ca-f002-eeb7">3</characteristic>
+                <characteristic name="Armour" typeId="462e-16c7-c53f-a16b">1</characteristic>
+                <characteristic name="Speed" typeId="028d-f362-815c-38f0">4</characteristic>
+                <characteristic name="Skill 1" typeId="4b76-bce7-94ec-53ff"/>
+                <characteristic name="Skill 2" typeId="403a-8e7a-a3b3-57db"/>
+                <characteristic name="Skill 3" typeId="cf14-caf6-b618-436c"/>
+                <characteristic name="Traits" typeId="4ccc-8757-1b3b-3c31">Ossi;lyte, Rouge, Undead</characteristic>
+                <characteristic name="Criticals" typeId="ef0e-8242-f583-664e"/>
+                <characteristic name="Token Skills" typeId="80f8-014e-3c19-66d6"/>
+                <characteristic name="Keywords" typeId="c0b7-ff64-68c6-0bcc"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <categoryLinks>
+            <categoryLink id="f593-7037-9f16-084c" name="Hero" hidden="false" targetId="92b2-75fa-5ad7-dc75" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="Cost" typeId="c494-d0ff-a958-c070" value="7.0"/>
+            <cost name="Fate" typeId="7540-583a-760c-a57d" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="c01f-2bbc-cc6c-f009" name="Triel" hidden="false" collective="false" import="true" type="model">
+          <profiles>
+            <profile id="5aa1-93da-6598-84b3" name="Triel" hidden="false" typeId="3ae3-9405-766b-6417" typeName="Hero">
+              <characteristics>
+                <characteristic name="Health" typeId="a13c-10b7-2896-bb31">7</characteristic>
+                <characteristic name="Attack" typeId="6c2e-f536-b3a6-1fa9">4</characteristic>
+                <characteristic name="Range" typeId="49d0-0a04-6cbc-f286">2</characteristic>
+                <characteristic name="Defense" typeId="3a86-11ca-f002-eeb7">3</characteristic>
+                <characteristic name="Armour" typeId="462e-16c7-c53f-a16b">0</characteristic>
+                <characteristic name="Speed" typeId="028d-f362-815c-38f0">5</characteristic>
+                <characteristic name="Skill 1" typeId="4b76-bce7-94ec-53ff"/>
+                <characteristic name="Skill 2" typeId="403a-8e7a-a3b3-57db"/>
+                <characteristic name="Skill 3" typeId="cf14-caf6-b618-436c"/>
+                <characteristic name="Traits" typeId="4ccc-8757-1b3b-3c31">Arcane, Demon, Lillin, Rouge</characteristic>
+                <characteristic name="Criticals" typeId="ef0e-8242-f583-664e"/>
+                <characteristic name="Token Skills" typeId="80f8-014e-3c19-66d6"/>
+                <characteristic name="Keywords" typeId="c0b7-ff64-68c6-0bcc"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <categoryLinks>
+            <categoryLink id="ee5c-9e83-519b-5fe9" name="Hero" hidden="false" targetId="92b2-75fa-5ad7-dc75" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="Cost" typeId="c494-d0ff-a958-c070" value="7.0"/>
+            <cost name="Fate" typeId="7540-583a-760c-a57d" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="e299-2cc1-0ed3-13f0" name="Aeteranius" hidden="false" collective="false" import="true" type="model">
+          <profiles>
+            <profile id="ee62-d837-32a8-960c" name="Aeteranius" hidden="false" typeId="3ae3-9405-766b-6417" typeName="Hero">
+              <characteristics>
+                <characteristic name="Health" typeId="a13c-10b7-2896-bb31">8</characteristic>
+                <characteristic name="Attack" typeId="6c2e-f536-b3a6-1fa9">3</characteristic>
+                <characteristic name="Range" typeId="49d0-0a04-6cbc-f286">1</characteristic>
+                <characteristic name="Defense" typeId="3a86-11ca-f002-eeb7">3</characteristic>
+                <characteristic name="Armour" typeId="462e-16c7-c53f-a16b">1</characteristic>
+                <characteristic name="Speed" typeId="028d-f362-815c-38f0">4</characteristic>
+                <characteristic name="Skill 1" typeId="4b76-bce7-94ec-53ff"/>
+                <characteristic name="Skill 2" typeId="403a-8e7a-a3b3-57db"/>
+                <characteristic name="Skill 3" typeId="cf14-caf6-b618-436c"/>
+                <characteristic name="Traits" typeId="4ccc-8757-1b3b-3c31">Arcane, Demon</characteristic>
+                <characteristic name="Criticals" typeId="ef0e-8242-f583-664e"/>
+                <characteristic name="Token Skills" typeId="80f8-014e-3c19-66d6"/>
+                <characteristic name="Keywords" typeId="c0b7-ff64-68c6-0bcc"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <categoryLinks>
+            <categoryLink id="a3f8-f1a4-2469-0147" name="Hero" hidden="false" targetId="92b2-75fa-5ad7-dc75" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="Cost" typeId="c494-d0ff-a958-c070" value="6.0"/>
+            <cost name="Fate" typeId="7540-583a-760c-a57d" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="a870-ae87-58c6-ee08" name="B&apos;kta" hidden="false" collective="false" import="true" type="model">
+          <profiles>
+            <profile id="d876-fdbf-5c87-733f" name="B&apos;kta" hidden="false" typeId="3ae3-9405-766b-6417" typeName="Hero">
+              <characteristics>
+                <characteristic name="Health" typeId="a13c-10b7-2896-bb31">4</characteristic>
+                <characteristic name="Attack" typeId="6c2e-f536-b3a6-1fa9">2</characteristic>
+                <characteristic name="Range" typeId="49d0-0a04-6cbc-f286">1</characteristic>
+                <characteristic name="Defense" typeId="3a86-11ca-f002-eeb7">3</characteristic>
+                <characteristic name="Armour" typeId="462e-16c7-c53f-a16b">0</characteristic>
+                <characteristic name="Speed" typeId="028d-f362-815c-38f0">5</characteristic>
+                <characteristic name="Skill 1" typeId="4b76-bce7-94ec-53ff"/>
+                <characteristic name="Skill 2" typeId="403a-8e7a-a3b3-57db"/>
+                <characteristic name="Skill 3" typeId="cf14-caf6-b618-436c"/>
+                <characteristic name="Traits" typeId="4ccc-8757-1b3b-3c31">Demon, Rouge</characteristic>
+                <characteristic name="Criticals" typeId="ef0e-8242-f583-664e"/>
+                <characteristic name="Token Skills" typeId="80f8-014e-3c19-66d6"/>
+                <characteristic name="Keywords" typeId="c0b7-ff64-68c6-0bcc"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <categoryLinks>
+            <categoryLink id="843a-6ad8-e37c-17bf" name="Hero" hidden="false" targetId="92b2-75fa-5ad7-dc75" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="Cost" typeId="c494-d0ff-a958-c070" value="4.0"/>
+            <cost name="Fate" typeId="7540-583a-760c-a57d" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="Fate" typeId="7540-583a-760c-a57d" value="0.0"/>
+        <cost name="Cost" typeId="c494-d0ff-a958-c070" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="ef5d-71b6-f264-6226" name="Troops" hidden="false" collective="false" import="true" type="unit">
+      <categoryLinks>
+        <categoryLink id="4046-56e0-5bf5-4de0" name="Troop" hidden="false" targetId="9d34-3652-fcc5-0fa3" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="6e95-0558-a330-c31c" name="Messor Gheist" hidden="false" collective="false" import="true" type="model">
+          <profiles>
+            <profile id="dd24-11b8-4dd5-847f" name="Messor Gheist" hidden="false" typeId="67ed-66d0-e4ae-8ccc" typeName="Troop">
+              <characteristics>
+                <characteristic name="Health" typeId="0aff-3d11-f241-82a0">4</characteristic>
+                <characteristic name="Attack" typeId="67da-6694-0f94-47c5">2</characteristic>
+                <characteristic name="Range" typeId="b4f1-ad98-8eb1-e25d">1</characteristic>
+                <characteristic name="Defense" typeId="5dba-13c9-182c-c04c">3</characteristic>
+                <characteristic name="Armour" typeId="11f5-dd18-2756-6e91">0</characteristic>
+                <characteristic name="Speed" typeId="5fba-4ecc-4581-be8e">4</characteristic>
+                <characteristic name="Skill 1" typeId="89e2-1316-b1f4-737b"/>
+                <characteristic name="Skill 2" typeId="6008-87fa-4c1a-6cee"/>
+                <characteristic name="Traits" typeId="a185-ee4a-642e-37d2">Arcane, Demon, Undead</characteristic>
+                <characteristic name="Criticals" typeId="9ef8-76bb-c4cc-3a78"/>
+                <characteristic name="VP Track" typeId="a0b2-ad1b-7f1e-f32c">Fallen: 
+1 = 3
+2 = 6
+3 = 8</characteristic>
+                <characteristic name="Keywords" typeId="c4f7-494f-7643-7638"/>
+                <characteristic name="Token Skills" typeId="9cac-1866-e02e-1d1d"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <categoryLinks>
+            <categoryLink id="9719-1035-7f88-f265" name="Troop" hidden="false" targetId="9d34-3652-fcc5-0fa3" primary="false"/>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry id="9eb8-cb26-92b2-f904" name="1 Gheist" hidden="false" collective="false" import="true" type="model">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3eae-6e9b-f0e6-32da" type="max"/>
+              </constraints>
+              <categoryLinks>
+                <categoryLink id="0920-f875-456d-048b" name="Troop" hidden="false" targetId="9d34-3652-fcc5-0fa3" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name="Cost" typeId="c494-d0ff-a958-c070" value="3.0"/>
+                <cost name="Fate" typeId="7540-583a-760c-a57d" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="eb44-7a36-53cd-fac6" name="2 Gheist " hidden="false" collective="false" import="true" type="model">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8b17-268e-cc85-a502" type="max"/>
+              </constraints>
+              <categoryLinks>
+                <categoryLink id="2f79-00e8-c04c-1c0f" name="Troop" hidden="false" targetId="9d34-3652-fcc5-0fa3" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name="Cost" typeId="c494-d0ff-a958-c070" value="6.0"/>
+                <cost name="Fate" typeId="7540-583a-760c-a57d" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="69b8-02eb-fce5-8f53" name="3 Gheist" hidden="false" collective="false" import="true" type="model">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7a52-189c-18d8-6781" type="max"/>
+              </constraints>
+              <categoryLinks>
+                <categoryLink id="6497-6b58-3dd4-5108" name="Troop" hidden="false" targetId="9d34-3652-fcc5-0fa3" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name="Cost" typeId="c494-d0ff-a958-c070" value="8.0"/>
+                <cost name="Fate" typeId="7540-583a-760c-a57d" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <costs>
+            <cost name="Fate" typeId="7540-583a-760c-a57d" value="0.0"/>
+            <cost name="Cost" typeId="c494-d0ff-a958-c070" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="7e69-235c-02f4-6afd" name="Ossilyte Guard" hidden="false" collective="false" import="true" type="model">
+          <profiles>
+            <profile id="ca97-8b0b-a972-7a44" name="Ossilyte Guard" hidden="false" typeId="67ed-66d0-e4ae-8ccc" typeName="Troop">
+              <characteristics>
+                <characteristic name="Health" typeId="0aff-3d11-f241-82a0">3</characteristic>
+                <characteristic name="Attack" typeId="67da-6694-0f94-47c5">2</characteristic>
+                <characteristic name="Range" typeId="b4f1-ad98-8eb1-e25d">1</characteristic>
+                <characteristic name="Defense" typeId="5dba-13c9-182c-c04c">3</characteristic>
+                <characteristic name="Armour" typeId="11f5-dd18-2756-6e91">1</characteristic>
+                <characteristic name="Speed" typeId="5fba-4ecc-4581-be8e">4</characteristic>
+                <characteristic name="Skill 1" typeId="89e2-1316-b1f4-737b"/>
+                <characteristic name="Skill 2" typeId="6008-87fa-4c1a-6cee"/>
+                <characteristic name="Traits" typeId="a185-ee4a-642e-37d2">Guardian, Knight, Ossilyte, Undead</characteristic>
+                <characteristic name="Criticals" typeId="9ef8-76bb-c4cc-3a78"/>
+                <characteristic name="VP Track" typeId="a0b2-ad1b-7f1e-f32c">Fallen: 
+1 = 2
+2 = 4
+3 = 6
+4 = 7
+5 = 8
+</characteristic>
+                <characteristic name="Keywords" typeId="c4f7-494f-7643-7638"/>
+                <characteristic name="Token Skills" typeId="9cac-1866-e02e-1d1d"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <categoryLinks>
+            <categoryLink id="dc02-b8e9-c280-3383" name="Troop" hidden="false" targetId="9d34-3652-fcc5-0fa3" primary="false"/>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry id="44e7-ea8e-fbf0-df3f" name="1 Guard" hidden="false" collective="false" import="true" type="model">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="02a1-9975-90ef-3ae2" type="max"/>
+              </constraints>
+              <categoryLinks>
+                <categoryLink id="6b4c-048f-f6b9-da5c" name="Troop" hidden="false" targetId="9d34-3652-fcc5-0fa3" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name="Cost" typeId="c494-d0ff-a958-c070" value="2.0"/>
+                <cost name="Fate" typeId="7540-583a-760c-a57d" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="3ad3-c89f-b105-38b9" name="2 Guards" hidden="false" collective="false" import="true" type="model">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cfa6-5961-f8ee-dc71" type="max"/>
+              </constraints>
+              <categoryLinks>
+                <categoryLink id="2cbe-3939-318b-12f6" name="Troop" hidden="false" targetId="9d34-3652-fcc5-0fa3" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name="Cost" typeId="c494-d0ff-a958-c070" value="4.0"/>
+                <cost name="Fate" typeId="7540-583a-760c-a57d" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="7f14-6499-f450-f94a" name="3 Guards" hidden="false" collective="false" import="true" type="model">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3b9d-8e37-8007-7018" type="max"/>
+              </constraints>
+              <categoryLinks>
+                <categoryLink id="dc86-7780-059e-46e2" name="Troop" hidden="false" targetId="9d34-3652-fcc5-0fa3" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name="Cost" typeId="c494-d0ff-a958-c070" value="6.0"/>
+                <cost name="Fate" typeId="7540-583a-760c-a57d" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="ddcb-0b12-94c1-6825" name="4 Guards" hidden="false" collective="false" import="true" type="model">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="519e-5840-737e-2578" type="max"/>
+              </constraints>
+              <categoryLinks>
+                <categoryLink id="5fc3-33ec-29dd-a121" name="Troop" hidden="false" targetId="9d34-3652-fcc5-0fa3" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name="Cost" typeId="c494-d0ff-a958-c070" value="7.0"/>
+                <cost name="Fate" typeId="7540-583a-760c-a57d" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="25e1-a36c-d9a2-2d91" name="5 Guards" hidden="false" collective="false" import="true" type="model">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="269f-2da3-c37a-0b32" type="max"/>
+              </constraints>
+              <categoryLinks>
+                <categoryLink id="b5d5-5ea6-20af-cb75" name="Troop" hidden="false" targetId="9d34-3652-fcc5-0fa3" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name="Cost" typeId="c494-d0ff-a958-c070" value="8.0"/>
+                <cost name="Fate" typeId="7540-583a-760c-a57d" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <costs>
+            <cost name="Fate" typeId="7540-583a-760c-a57d" value="0.0"/>
+            <cost name="Cost" typeId="c494-d0ff-a958-c070" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="0485-eeb4-f394-783e" name="Berserker of Blood" hidden="false" collective="false" import="true" type="model">
+          <profiles>
+            <profile id="e25d-b9f4-53ef-ab04" name="Berserker of Blood" hidden="false" typeId="67ed-66d0-e4ae-8ccc" typeName="Troop">
+              <characteristics>
+                <characteristic name="Health" typeId="0aff-3d11-f241-82a0">6</characteristic>
+                <characteristic name="Attack" typeId="67da-6694-0f94-47c5">2</characteristic>
+                <characteristic name="Range" typeId="b4f1-ad98-8eb1-e25d">1</characteristic>
+                <characteristic name="Defense" typeId="5dba-13c9-182c-c04c">3</characteristic>
+                <characteristic name="Armour" typeId="11f5-dd18-2756-6e91">0</characteristic>
+                <characteristic name="Speed" typeId="5fba-4ecc-4581-be8e">5</characteristic>
+                <characteristic name="Skill 1" typeId="89e2-1316-b1f4-737b"/>
+                <characteristic name="Skill 2" typeId="6008-87fa-4c1a-6cee"/>
+                <characteristic name="Traits" typeId="a185-ee4a-642e-37d2">Brute, Demon, Hunter</characteristic>
+                <characteristic name="Criticals" typeId="9ef8-76bb-c4cc-3a78"/>
+                <characteristic name="VP Track" typeId="a0b2-ad1b-7f1e-f32c">Fallen: 
+1= 4
+2= 7
+3=10</characteristic>
+                <characteristic name="Keywords" typeId="c4f7-494f-7643-7638"/>
+                <characteristic name="Token Skills" typeId="9cac-1866-e02e-1d1d"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <categoryLinks>
+            <categoryLink id="1371-3bea-94d6-6f36" name="Troop" hidden="false" targetId="9d34-3652-fcc5-0fa3" primary="false"/>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry id="01c1-e72d-b240-1ceb" name="1 Berserker" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b3bf-36aa-90a5-0884" type="max"/>
+              </constraints>
+              <categoryLinks>
+                <categoryLink id="b991-efe6-80eb-3b87" name="Troop" hidden="false" targetId="9d34-3652-fcc5-0fa3" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name="Cost" typeId="c494-d0ff-a958-c070" value="4.0"/>
+                <cost name="Fate" typeId="7540-583a-760c-a57d" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="1e65-1b08-2770-1e82" name="2 Berserkers" hidden="false" collective="false" import="true" type="model">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6bcc-c496-14ff-ddb0" type="max"/>
+              </constraints>
+              <categoryLinks>
+                <categoryLink id="dc4d-2096-1f22-6188" name="Troop" hidden="false" targetId="9d34-3652-fcc5-0fa3" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name="Cost" typeId="c494-d0ff-a958-c070" value="7.0"/>
+                <cost name="Fate" typeId="7540-583a-760c-a57d" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="ea7f-16c5-3bc2-9719" name="3 Berserkers" hidden="false" collective="false" import="true" type="model">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f2ed-e788-b27a-89a1" type="max"/>
+              </constraints>
+              <categoryLinks>
+                <categoryLink id="e84a-b8e4-88ea-d872" name="Troop" hidden="false" targetId="9d34-3652-fcc5-0fa3" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name="Cost" typeId="c494-d0ff-a958-c070" value="10.0"/>
+                <cost name="Fate" typeId="7540-583a-760c-a57d" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <costs>
+            <cost name="Fate" typeId="7540-583a-760c-a57d" value="0.0"/>
+            <cost name="Cost" typeId="c494-d0ff-a958-c070" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="Fate" typeId="7540-583a-760c-a57d" value="0.0"/>
+        <cost name="Cost" typeId="c494-d0ff-a958-c070" value="0.0"/>
+      </costs>
+    </selectionEntry>
+  </sharedSelectionEntries>
+</catalogue>
