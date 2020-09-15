@@ -1,0 +1,1821 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue id="f4b9-eebe-b016-7298" name="Forces of Light" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="9eae-0060-d2cb-2349" gameSystemRevision="3" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <entryLinks>
+    <entryLink id="d4bf-7f70-99de-20eb" name="Lord" hidden="false" collective="false" import="true" targetId="ff3e-c13b-133e-1ca0" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="4cdc-f454-e344-71ff" name="Lord" hidden="false" targetId="03b7-6aa9-a03b-8071" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="dc25-0d61-d1b6-3d5e" name="Divinities" hidden="false" collective="false" import="true" targetId="0543-a81f-d571-796f" type="selectionEntry"/>
+    <entryLink id="ec65-c09c-cacc-62af" name="Heroes" hidden="false" collective="false" import="true" targetId="773d-3eae-0869-b0e4" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="ae66-624e-6b8a-6fae" name="Hero" hidden="false" targetId="92b2-75fa-5ad7-dc75" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="b502-d7e4-8748-8789" name="Troops" hidden="false" collective="false" import="true" targetId="d192-2d5d-7257-ca6d" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="8cb3-5cfc-3ec5-ed44" name="Troop" hidden="false" targetId="9d34-3652-fcc5-0fa3" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="3a3b-5bdb-216e-6419" name="Neutral Heroes" hidden="false" collective="false" import="true" targetId="5bad-46fc-530d-14dc" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="9970-fd4f-c039-fefb" name="Hero" hidden="false" targetId="92b2-75fa-5ad7-dc75" primary="true"/>
+        <categoryLink id="8d4d-cb30-83b0-c549" name="New CategoryLink" hidden="false" targetId="92b2-75fa-5ad7-dc75" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+  </entryLinks>
+  <sharedSelectionEntries>
+    <selectionEntry id="ff3e-c13b-133e-1ca0" name="Lord" hidden="false" collective="false" import="true" type="unit">
+      <categoryLinks>
+        <categoryLink id="3949-3f30-af39-a49e" name="New CategoryLink" hidden="false" targetId="03b7-6aa9-a03b-8071" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="528a-68dd-5cf3-a2b8" name="Lords" hidden="false" collective="false" import="true">
+          <categoryLinks>
+            <categoryLink id="9a39-409b-b435-a8ad" name="Lord" hidden="false" targetId="03b7-6aa9-a03b-8071" primary="false"/>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry id="cf38-94d7-5d8f-feda" name="Raphael" hidden="false" collective="false" import="true" type="model">
+              <profiles>
+                <profile id="40d5-d9bc-cc6c-d6d0" name="Raphael" hidden="false" typeId="b0b7-02f8-2474-26f5" typeName="Lord">
+                  <characteristics>
+                    <characteristic name="Health" typeId="e6d2-e7ef-38c9-dd30">21</characteristic>
+                    <characteristic name="Attack" typeId="914f-b956-277c-033e">4</characteristic>
+                    <characteristic name="Range" typeId="0a3b-eed5-5248-6151">2</characteristic>
+                    <characteristic name="Defense" typeId="8926-1576-44d8-b258">3</characteristic>
+                    <characteristic name="Armour" typeId="0721-716e-2c6e-6ff5">2</characteristic>
+                    <characteristic name="Speed" typeId="a34d-8e5f-d950-64f2">4</characteristic>
+                    <characteristic name="Skill 1" typeId="1b0e-4759-ab75-9856">Blade Cyclone (3)
+
+Active Ability</characteristic>
+                    <characteristic name="Skill 2" typeId="66d2-fc17-f518-ed0d">Brilliant Radiance
+
+Constant </characteristic>
+                    <characteristic name="Skill 3" typeId="2e69-5be8-ce5e-d7a4">Holy Rage
+
+Constant</characteristic>
+                    <characteristic name="Traits" typeId="ff57-cc56-85da-15f8">Guardian, Holy, Human, Technomancer</characteristic>
+                    <characteristic name="Criticals" typeId="4f32-eb95-3813-58b4">Explode, Wound</characteristic>
+                    <characteristic name="Token Skills" typeId="0b95-f7de-c5f1-7a10">Focus, Guard, Channel</characteristic>
+                    <characteristic name="Keywords" typeId="d773-cf12-6468-01e2">Deadly 2, Huge, Fly, Immune, Pierce 1, Reach</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <rules>
+                <rule id="43ed-e731-9ab1-332d" name="Blade Cyclone" hidden="false">
+                  <description>Each Character Raphael Threatens takes X Dice of Damage (X= Raphael&apos;s Attack +1) Reduce each Character&apos;s Armor value by Raphael&apos;s Pierce value while resolving this ability. 
+
+FAQ: For those using this ability you will not use Deadly with this as it is an Active Ability. It does not have the Attack text in front of it so it does not use Keywords other than those mentioned in the actions text. </description>
+                </rule>
+                <rule id="80dd-c376-4bcf-2b19" name="Brilliant Radiance" hidden="false">
+                  <description>Characters threatened by Raphael lose -1 Accuracy or -2 while attacking her.</description>
+                </rule>
+                <rule id="4dda-d5ef-2758-7616" name="Holy Rage" hidden="false">
+                  <description>While Bloodied, Raphael gets +1 Attack, +1 Speed and Advantage while Attacking
+
+FAQ: This ability can combine with Blade Cyclone (BC). If this is activated before BC you will use the +1 of this ability as well as +1 of BC</description>
+                </rule>
+              </rules>
+              <categoryLinks>
+                <categoryLink id="cc00-69cb-479a-be5e" name="Lord" hidden="false" targetId="03b7-6aa9-a03b-8071" primary="false"/>
+              </categoryLinks>
+              <selectionEntryGroups>
+                <selectionEntryGroup id="0871-ec59-1a5a-ac32" name="Upgrades" hidden="false" collective="false" import="true">
+                  <categoryLinks>
+                    <categoryLink id="48e4-6782-3b7d-95f2" name="Upgrades" hidden="false" targetId="6173-1a99-a86b-6e28" primary="false"/>
+                  </categoryLinks>
+                  <entryLinks>
+                    <entryLink id="d72b-a325-eba6-3069" name="Upgrades" hidden="false" collective="false" import="true" targetId="ba3b-6f79-e920-db59" type="selectionEntryGroup"/>
+                  </entryLinks>
+                </selectionEntryGroup>
+                <selectionEntryGroup id="9326-a54a-da9e-c979" name="Keywords" hidden="false" collective="false" import="true">
+                  <entryLinks>
+                    <entryLink id="c002-c8ad-be34-a6bd" name="Keywords" hidden="false" collective="false" import="true" targetId="b904-7b2a-a21a-643e" type="selectionEntryGroup"/>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <costs>
+                <cost name="Cost" typeId="c494-d0ff-a958-c070" value="14.0"/>
+                <cost name="Fate" typeId="7540-583a-760c-a57d" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="0ba9-3479-79d6-ed7f" name="Veronique" hidden="false" collective="false" import="true" type="model">
+              <profiles>
+                <profile id="025a-7c26-e14e-5109" name="Veronique" hidden="false" typeId="b0b7-02f8-2474-26f5" typeName="Lord">
+                  <characteristics>
+                    <characteristic name="Health" typeId="e6d2-e7ef-38c9-dd30">16</characteristic>
+                    <characteristic name="Attack" typeId="914f-b956-277c-033e">6</characteristic>
+                    <characteristic name="Range" typeId="0a3b-eed5-5248-6151">2</characteristic>
+                    <characteristic name="Defense" typeId="8926-1576-44d8-b258">4</characteristic>
+                    <characteristic name="Armour" typeId="0721-716e-2c6e-6ff5">3</characteristic>
+                    <characteristic name="Speed" typeId="a34d-8e5f-d950-64f2">4</characteristic>
+                    <characteristic name="Skill 1" typeId="1b0e-4759-ab75-9856">Hyperkinetic Perforation [Active Ability]</characteristic>
+                    <characteristic name="Skill 2" typeId="66d2-fc17-f518-ed0d">Telekinetic Shield (2) 
+[Reaction]</characteristic>
+                    <characteristic name="Skill 3" typeId="2e69-5be8-ce5e-d7a4">Unlimited Power [Swift]</characteristic>
+                    <characteristic name="Traits" typeId="ff57-cc56-85da-15f8">Guardian, Human, Leader, Technomancer</characteristic>
+                    <characteristic name="Criticals" typeId="4f32-eb95-3813-58b4">Explode or Daze</characteristic>
+                    <characteristic name="Token Skills" typeId="0b95-f7de-c5f1-7a10">Focus, Command, Shieldm Channel, Guard</characteristic>
+                    <characteristic name="Keywords" typeId="d773-cf12-6468-01e2">Huge, Immune, Pierce 2, Reach</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <rules>
+                <rule id="1daa-c3bc-3e60-0239" name="Hyperkinetic Perforation" hidden="false">
+                  <description>Attack. Veronique gains Advantage for this attack. ignore all tokens, keywords, abilities on enemy characters for this attack. Your opponent cannot play Fate. 
+
+FAQ: Since this Ability has the Attack in front you will use all your keywords as if this were a regular attack. This attack is the only way to bypass the Immune Keyword on many opponents. If a status is applied to a character with immune due to this attack it will resolve once then </description>
+                </rule>
+                <rule id="51c8-69ee-f46d-a71a" name="Telekinetic Shield" hidden="false">
+                  <description>When a friendly character within 3 and sight is attacked, the attacker gains Disadvantage. After the attack resolves, Daze the attacker</description>
+                </rule>
+                <rule id="562e-5ec4-f7cd-24ad" name="Unlimited Power" hidden="false">
+                  <description>Channel
+
+
+Note: This is a great way to get one free fate each time you activate this character. Remember Swifts can be used once per round and only when the character has been activated. </description>
+                </rule>
+              </rules>
+              <categoryLinks>
+                <categoryLink id="99c8-9ce5-31e3-3fa4" name="Lord" hidden="false" targetId="03b7-6aa9-a03b-8071" primary="false"/>
+              </categoryLinks>
+              <selectionEntryGroups>
+                <selectionEntryGroup id="8626-3a68-0ba7-626c" name="Keywords" hidden="false" collective="false" import="true">
+                  <entryLinks>
+                    <entryLink id="44a4-39dc-68f3-59cc" name="Keywords" hidden="false" collective="false" import="true" targetId="b904-7b2a-a21a-643e" type="selectionEntryGroup"/>
+                  </entryLinks>
+                </selectionEntryGroup>
+                <selectionEntryGroup id="26ed-f972-44b7-0c83" name="Upgrades" hidden="false" collective="false" import="true">
+                  <entryLinks>
+                    <entryLink id="6721-6b09-b787-3401" name="Upgrades" hidden="false" collective="false" import="true" targetId="ba3b-6f79-e920-db59" type="selectionEntryGroup"/>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <costs>
+                <cost name="Cost" typeId="c494-d0ff-a958-c070" value="12.0"/>
+                <cost name="Fate" typeId="7540-583a-760c-a57d" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="Fate" typeId="7540-583a-760c-a57d" value="0.0"/>
+        <cost name="Cost" typeId="c494-d0ff-a958-c070" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="0543-a81f-d571-796f" name="Divinities" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="eb8c-1a02-cf0e-8ee6" name="Divinity" hidden="false" targetId="6c59-7bcd-44f8-3c71" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="01f8-d47d-9173-e445" name="Dark Divinites" hidden="false" collective="false" import="true" targetId="5780-8d48-fd92-4529" type="selectionEntry"/>
+        <entryLink id="5aae-1c85-f82b-0476" name="Light Divinities" hidden="false" collective="false" import="true" targetId="3e33-12c2-00c8-3c48" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="Fate" typeId="7540-583a-760c-a57d" value="0.0"/>
+        <cost name="Cost" typeId="c494-d0ff-a958-c070" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="773d-3eae-0869-b0e4" name="Heroes" hidden="false" collective="false" import="true" type="unit">
+      <categoryLinks>
+        <categoryLink id="3e53-7714-e41b-eed6" name="Hero" hidden="false" targetId="92b2-75fa-5ad7-dc75" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="16f5-acc1-6e03-d540" name="Heroes" hidden="false" collective="false" import="true">
+          <categoryLinks>
+            <categoryLink id="2d0c-fb86-25d5-7bf6" name="Hero" hidden="false" targetId="92b2-75fa-5ad7-dc75" primary="false"/>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry id="efce-0b68-7e45-40a4" name="Rodrigo" hidden="false" collective="false" import="true" type="model">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="b17c-cf30-4708-4bf7" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="4265-5164-6573-8001" name="Rodrigo" hidden="false" typeId="3ae3-9405-766b-6417" typeName="Hero">
+                  <characteristics>
+                    <characteristic name="Health" typeId="a13c-10b7-2896-bb31">9</characteristic>
+                    <characteristic name="Attack" typeId="6c2e-f536-b3a6-1fa9">4</characteristic>
+                    <characteristic name="Range" typeId="49d0-0a04-6cbc-f286">2</characteristic>
+                    <characteristic name="Defense" typeId="3a86-11ca-f002-eeb7">4</characteristic>
+                    <characteristic name="Armour" typeId="462e-16c7-c53f-a16b">2</characteristic>
+                    <characteristic name="Speed" typeId="028d-f362-815c-38f0">6</characteristic>
+                    <characteristic name="Skill 1" typeId="4b76-bce7-94ec-53ff">Brilliant Charge {2} (Reaction)</characteristic>
+                    <characteristic name="Skill 2" typeId="403a-8e7a-a3b3-57db">Peerless Champion (Constant)</characteristic>
+                    <characteristic name="Skill 3" typeId="cf14-caf6-b618-436c">Stampede {1} (Active Ability)</characteristic>
+                    <characteristic name="Traits" typeId="4ccc-8757-1b3b-3c31">Guardian, Human, Knight</characteristic>
+                    <characteristic name="Criticals" typeId="ef0e-8242-f583-664e">Explode</characteristic>
+                    <characteristic name="Token Skills" typeId="80f8-014e-3c19-66d6">Focus, Shield, Guard</characteristic>
+                    <characteristic name="Keywords" typeId="c0b7-ff64-68c6-0bcc">Pierce 1, Reach</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <rules>
+                <rule id="f383-dd59-3378-cac3" name="Brilliant Charge" hidden="false">
+                  <description>When Rodrigo declares an attack after Charging, he gains +1 Attack for every 2 spaces moved this activation.</description>
+                </rule>
+                <rule id="8213-24dd-cd5a-0d96" name="Peerless Champion" hidden="false">
+                  <description>While attacking or defending, Rodrigo may increase or decrease the result on any die by 1 (before resolving re-rolls or critical effects.)
+
+Note: Doing this can assist you when trying to get rolls of 5 or defending against rolls of 5. This is in addition to any Advantage or Disadvantage in the attack. </description>
+                </rule>
+                <rule id="2ff0-23f3-ea20-c796" name="Stampede" hidden="false">
+                  <description>Move. Rodrigo does not provoke Attack of Opportunity during this activation and he can move through smaller characters. When you move through a smaller character, that character takes 1 damage. 
+
+Note: This is for any model with a small base (Heroes included). Huge enemies can not be affected by this and will stop any movement. </description>
+                </rule>
+              </rules>
+              <categoryLinks>
+                <categoryLink id="c6ab-0da8-204f-095d" name="Hero" hidden="false" targetId="92b2-75fa-5ad7-dc75" primary="false"/>
+              </categoryLinks>
+              <entryLinks>
+                <entryLink id="f859-e96a-0ae1-6223" name="Upgrades" hidden="false" collective="false" import="true" targetId="ba3b-6f79-e920-db59" type="selectionEntryGroup">
+                  <categoryLinks>
+                    <categoryLink id="c494-0bac-121f-0009" name="Upgrades" hidden="false" targetId="6173-1a99-a86b-6e28" primary="false"/>
+                  </categoryLinks>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="Cost" typeId="c494-d0ff-a958-c070" value="10.0"/>
+                <cost name="Fate" typeId="7540-583a-760c-a57d" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="6744-687d-d36b-18a4" name="Sephiria" hidden="false" collective="false" import="true" type="model">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="4aa6-8980-e8f7-1e95" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="e267-ed4f-39e3-2348" name="Sephiria" hidden="false" typeId="3ae3-9405-766b-6417" typeName="Hero">
+                  <characteristics>
+                    <characteristic name="Health" typeId="a13c-10b7-2896-bb31">8</characteristic>
+                    <characteristic name="Attack" typeId="6c2e-f536-b3a6-1fa9">4</characteristic>
+                    <characteristic name="Range" typeId="49d0-0a04-6cbc-f286">1</characteristic>
+                    <characteristic name="Defense" typeId="3a86-11ca-f002-eeb7">4</characteristic>
+                    <characteristic name="Armour" typeId="462e-16c7-c53f-a16b">1</characteristic>
+                    <characteristic name="Speed" typeId="028d-f362-815c-38f0">5</characteristic>
+                    <characteristic name="Skill 1" typeId="4b76-bce7-94ec-53ff">Blessed by the Heavens {1} (Reaction)</characteristic>
+                    <characteristic name="Skill 2" typeId="403a-8e7a-a3b3-57db">Divine Decree (Swift)</characteristic>
+                    <characteristic name="Skill 3" typeId="cf14-caf6-b618-436c">Radiant Strike (Reaction)</characteristic>
+                    <characteristic name="Traits" typeId="4ccc-8757-1b3b-3c31">Angel, Guardian, Holy, Knight, Leader</characteristic>
+                    <characteristic name="Criticals" typeId="ef0e-8242-f583-664e">Explode</characteristic>
+                    <characteristic name="Token Skills" typeId="80f8-014e-3c19-66d6">Focus, Evade, Common, Guard</characteristic>
+                    <characteristic name="Keywords" typeId="c0b7-ff64-68c6-0bcc">Accuracy 2, Evasive 2, Flight</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <rules>
+                <rule id="4c04-b02b-775c-186c" name="Blessed by the Heavens" hidden="false">
+                  <description>When Sephiria is attacked, the attacking character cannot use keywords during this attack. 
+
+This attack can help against armies with many Deadly keywords. As it is a reaction it can be activated as many times as you have Fate to spare. </description>
+                </rule>
+                <rule id="97d5-e7de-78c2-a211" name="Divine Decree" hidden="false">
+                  <description>Command an Angel or Holy character, regardless of Rank. you may spend {2} to assign that character a Shield Token.</description>
+                </rule>
+                <rule id="f227-4ed0-938e-6385" name="Radiant Strike" hidden="false">
+                  <description>After Sephiria&apos;s attack resolves, Daze the defender</description>
+                </rule>
+              </rules>
+              <categoryLinks>
+                <categoryLink id="fba7-a4c4-09b7-65ed" name="Hero" hidden="false" targetId="92b2-75fa-5ad7-dc75" primary="false"/>
+              </categoryLinks>
+              <entryLinks>
+                <entryLink id="0fc5-2bf2-167e-e6ee" name="Upgrades" hidden="false" collective="false" import="true" targetId="ba3b-6f79-e920-db59" type="selectionEntryGroup">
+                  <categoryLinks>
+                    <categoryLink id="9336-da25-817a-8270" name="Upgrades" hidden="false" targetId="6173-1a99-a86b-6e28" primary="false"/>
+                  </categoryLinks>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="Cost" typeId="c494-d0ff-a958-c070" value="9.0"/>
+                <cost name="Fate" typeId="7540-583a-760c-a57d" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="b8be-b9d5-3f8f-4959" name="Ellandarieth" hidden="false" collective="false" import="true" type="model">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="17af-d81e-a40f-9e19" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="f784-0dde-fb3a-cbd0" name="Ellandarieth" hidden="false" typeId="3ae3-9405-766b-6417" typeName="Hero">
+                  <characteristics>
+                    <characteristic name="Health" typeId="a13c-10b7-2896-bb31">12</characteristic>
+                    <characteristic name="Attack" typeId="6c2e-f536-b3a6-1fa9">4</characteristic>
+                    <characteristic name="Range" typeId="49d0-0a04-6cbc-f286">1 Melee/ 5 Range</characteristic>
+                    <characteristic name="Defense" typeId="3a86-11ca-f002-eeb7">3</characteristic>
+                    <characteristic name="Armour" typeId="462e-16c7-c53f-a16b">0</characteristic>
+                    <characteristic name="Speed" typeId="028d-f362-815c-38f0">5</characteristic>
+                    <characteristic name="Skill 1" typeId="4b76-bce7-94ec-53ff">Lioness&apos; Roar {3} (Swift)</characteristic>
+                    <characteristic name="Skill 2" typeId="403a-8e7a-a3b3-57db">Savage Pounce {2} (Active Ability)</characteristic>
+                    <characteristic name="Skill 3" typeId="cf14-caf6-b618-436c">Unstoppable (Constant)</characteristic>
+                    <characteristic name="Traits" typeId="4ccc-8757-1b3b-3c31">Angel, Beast, Brute, Marksman</characteristic>
+                    <characteristic name="Criticals" typeId="ef0e-8242-f583-664e">Explode</characteristic>
+                    <characteristic name="Token Skills" typeId="80f8-014e-3c19-66d6">Focus</characteristic>
+                    <characteristic name="Keywords" typeId="c0b7-ff64-68c6-0bcc">Accuracy 2, Pierce 1, Flight</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <rules>
+                <rule id="f668-c665-d589-a64b" name="Lioness&apos; Roar" hidden="false">
+                  <description>Boost All herself. Break Attack all enemy characters of lower rank within 3. (Troops)</description>
+                </rule>
+                <rule id="285a-8865-cef2-f936" name="Unstoppable" hidden="false">
+                  <description>Elladarieth ignores all effects which reduce or prevent her movement and cannot be moved by opposing effects. </description>
+                </rule>
+                <rule id="13a2-c9c9-394a-ddd9" name="Savage Pounce" hidden="false">
+                  <description>Melee Attack. If Elladarieth has charged this turn, -1 Attack and Deadly 2 for this attack. </description>
+                </rule>
+              </rules>
+              <categoryLinks>
+                <categoryLink id="3647-56ed-1fb6-4201" name="Hero" hidden="false" targetId="92b2-75fa-5ad7-dc75" primary="false"/>
+              </categoryLinks>
+              <entryLinks>
+                <entryLink id="0ccc-ed4d-ecb2-2680" name="Upgrades" hidden="false" collective="false" import="true" targetId="ba3b-6f79-e920-db59" type="selectionEntryGroup">
+                  <categoryLinks>
+                    <categoryLink id="4da8-b659-f47c-4f57" name="Upgrades" hidden="false" targetId="6173-1a99-a86b-6e28" primary="false"/>
+                  </categoryLinks>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="Cost" typeId="c494-d0ff-a958-c070" value="9.0"/>
+                <cost name="Fate" typeId="7540-583a-760c-a57d" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="9cb2-e04f-1034-02c3" name="Godfrey" hidden="false" collective="false" import="true" type="model">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="13df-f3c9-547d-192f" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="b978-960f-8649-6184" name="Godfrey" hidden="false" typeId="3ae3-9405-766b-6417" typeName="Hero">
+                  <characteristics>
+                    <characteristic name="Health" typeId="a13c-10b7-2896-bb31">9</characteristic>
+                    <characteristic name="Attack" typeId="6c2e-f536-b3a6-1fa9">4</characteristic>
+                    <characteristic name="Range" typeId="49d0-0a04-6cbc-f286">2</characteristic>
+                    <characteristic name="Defense" typeId="3a86-11ca-f002-eeb7">3</characteristic>
+                    <characteristic name="Armour" typeId="462e-16c7-c53f-a16b">2</characteristic>
+                    <characteristic name="Speed" typeId="028d-f362-815c-38f0">4</characteristic>
+                    <characteristic name="Skill 1" typeId="4b76-bce7-94ec-53ff">Born Leader {2} (Swift)</characteristic>
+                    <characteristic name="Skill 2" typeId="403a-8e7a-a3b3-57db">Follow My Example (Constant)</characteristic>
+                    <characteristic name="Skill 3" typeId="cf14-caf6-b618-436c">Great Cleave {2} (Reaction)</characteristic>
+                    <characteristic name="Traits" typeId="4ccc-8757-1b3b-3c31">Brute, Human, Knight, Leader</characteristic>
+                    <characteristic name="Criticals" typeId="ef0e-8242-f583-664e">Explode</characteristic>
+                    <characteristic name="Token Skills" typeId="80f8-014e-3c19-66d6">Focus, Command</characteristic>
+                    <characteristic name="Keywords" typeId="c0b7-ff64-68c6-0bcc">Accuracy 2, Deadly 2, Reach</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <rules>
+                <rule id="8570-3db6-3191-5930" name="Born Leader" hidden="false">
+                  <description>Command. The commanded character may then perform any action. </description>
+                </rule>
+                <rule id="025e-99c9-8fd8-bfb0" name="Follow My Example" hidden="false">
+                  <description>While another friendly character is melee attacking a character Godfrey threatens, that character gains Accuracy 1 (Accuracy 2 if friendly unit is adjacent to Godfrey)</description>
+                </rule>
+                <rule id="8e25-68d7-c741-e126" name="Great Cleave" hidden="false">
+                  <description>After Godfrey&apos;s attack resolves, choose a character adjacent to the defender that you threaten. Attack that character. Godfrey gains disadvantage during this attack. </description>
+                </rule>
+              </rules>
+              <categoryLinks>
+                <categoryLink id="3460-17d6-788a-f07c" name="Hero" hidden="false" targetId="92b2-75fa-5ad7-dc75" primary="false"/>
+              </categoryLinks>
+              <entryLinks>
+                <entryLink id="659b-f2ee-fbb0-423e" name="Upgrades" hidden="false" collective="false" import="true" targetId="ba3b-6f79-e920-db59" type="selectionEntryGroup">
+                  <categoryLinks>
+                    <categoryLink id="63ea-a2e1-d7f3-7215" name="Upgrades" hidden="false" targetId="6173-1a99-a86b-6e28" primary="false"/>
+                  </categoryLinks>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="Cost" typeId="c494-d0ff-a958-c070" value="9.0"/>
+                <cost name="Fate" typeId="7540-583a-760c-a57d" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="72b7-4bec-7110-b8c2" name="Elya" hidden="false" collective="false" import="true" type="model">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="3177-4eaa-73d7-bc28" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="3557-bcfa-2429-63cd" name="Elya" hidden="false" typeId="3ae3-9405-766b-6417" typeName="Hero">
+                  <characteristics>
+                    <characteristic name="Health" typeId="a13c-10b7-2896-bb31">7</characteristic>
+                    <characteristic name="Attack" typeId="6c2e-f536-b3a6-1fa9">4</characteristic>
+                    <characteristic name="Range" typeId="49d0-0a04-6cbc-f286">1</characteristic>
+                    <characteristic name="Defense" typeId="3a86-11ca-f002-eeb7">4</characteristic>
+                    <characteristic name="Armour" typeId="462e-16c7-c53f-a16b">0</characteristic>
+                    <characteristic name="Speed" typeId="028d-f362-815c-38f0">5</characteristic>
+                    <characteristic name="Skill 1" typeId="4b76-bce7-94ec-53ff">Duelist (Reaction)</characteristic>
+                    <characteristic name="Skill 2" typeId="403a-8e7a-a3b3-57db">Commander of the Rose (Swift) </characteristic>
+                    <characteristic name="Skill 3" typeId="cf14-caf6-b618-436c">Swirling Riposte {3} (Reaction)</characteristic>
+                    <characteristic name="Traits" typeId="4ccc-8757-1b3b-3c31">Knight, Human, Rouge, Rose, Leader</characteristic>
+                    <characteristic name="Criticals" typeId="ef0e-8242-f583-664e">Explode or Wound</characteristic>
+                    <characteristic name="Token Skills" typeId="80f8-014e-3c19-66d6">Focus, Evade, Command</characteristic>
+                    <characteristic name="Keywords" typeId="c0b7-ff64-68c6-0bcc">Pierce 1</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <rules>
+                <rule id="e546-2a5e-1876-a049" name="Duelist" hidden="false">
+                  <description>While Elya is threatened by only a single enemy she gains Accuracy 4 and Evasive 4</description>
+                </rule>
+                <rule id="c668-5c20-e441-ede2" name="Commander of the Rose" hidden="false">
+                  <description>Command a Rose character, regardless of Rank. you may spend {2} to Command each adjacent Rose character regardless of Rank. 
+
+Note: This Swift is a great way to make a Power move against your enemy. If you are in a pinch use this to get an instantaneous activation of a near by character without having to wait for their turn. (Still counts as that Characters activation) This does not activate whole units. Only 1 troop in that unit. </description>
+                </rule>
+                <rule id="603d-1f4a-00ab-fb43" name="Swirling Riposte" hidden="false">
+                  <description>After an attack against Elya resolves Sidestep. Attack the enemy that just attacked Elya. 
+
+Note: This does not count as an activation as it is a reaction. This can activate each time a unit attacks Elya. Not just once per round. </description>
+                </rule>
+              </rules>
+              <categoryLinks>
+                <categoryLink id="973a-f314-5f0b-8f0e" name="Hero" hidden="false" targetId="92b2-75fa-5ad7-dc75" primary="false"/>
+              </categoryLinks>
+              <entryLinks>
+                <entryLink id="bc0a-89b1-c212-6e51" name="Upgrades" hidden="false" collective="false" import="true" targetId="ba3b-6f79-e920-db59" type="selectionEntryGroup">
+                  <categoryLinks>
+                    <categoryLink id="925e-71f8-e197-74fa" name="Upgrades" hidden="false" targetId="6173-1a99-a86b-6e28" primary="false"/>
+                  </categoryLinks>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="Cost" typeId="c494-d0ff-a958-c070" value="8.0"/>
+                <cost name="Fate" typeId="7540-583a-760c-a57d" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="99f2-0bbf-e33a-bb0d" name="Henril" hidden="false" collective="false" import="true" type="model">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="a1b8-846b-be65-c232" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="6b7b-9a11-0da1-15ce" name="Henril" hidden="false" typeId="3ae3-9405-766b-6417" typeName="Hero">
+                  <characteristics>
+                    <characteristic name="Health" typeId="a13c-10b7-2896-bb31">7</characteristic>
+                    <characteristic name="Attack" typeId="6c2e-f536-b3a6-1fa9">3</characteristic>
+                    <characteristic name="Range" typeId="49d0-0a04-6cbc-f286">1 Melee/ 4 Ranged</characteristic>
+                    <characteristic name="Defense" typeId="3a86-11ca-f002-eeb7">3</characteristic>
+                    <characteristic name="Armour" typeId="462e-16c7-c53f-a16b">0</characteristic>
+                    <characteristic name="Speed" typeId="028d-f362-815c-38f0">5</characteristic>
+                    <characteristic name="Skill 1" typeId="4b76-bce7-94ec-53ff">Blessed Bolt {2} (Active Ability)</characteristic>
+                    <characteristic name="Skill 2" typeId="403a-8e7a-a3b3-57db">Consecrated Ward (Constant)</characteristic>
+                    <characteristic name="Skill 3" typeId="cf14-caf6-b618-436c">Break the Seal (Reaction)</characteristic>
+                    <characteristic name="Traits" typeId="4ccc-8757-1b3b-3c31">Hunter, Human, Rouge, Marksman</characteristic>
+                    <characteristic name="Criticals" typeId="ef0e-8242-f583-664e">Explode</characteristic>
+                    <characteristic name="Token Skills" typeId="80f8-014e-3c19-66d6">Focus, Evade</characteristic>
+                    <characteristic name="Keywords" typeId="c0b7-ff64-68c6-0bcc">Accuracy 2, Evasive 3</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <rules>
+                <rule id="e444-b2dc-d26e-5877" name="Consecrated Ward" hidden="false">
+                  <description>Henril cannot be chose as part of enemy card effects or abilities.
+
+Note: This makes him a great foe to Vahlrose and any Lillin characters. </description>
+                </rule>
+                <rule id="5e83-80cb-b0ca-0cd4" name="Break the Seal" hidden="false">
+                  <description>When Henril&apos;s Health is Equal or less than 2 then Recover 2, Attack +3. cannot use ranged weapons, Defense +1, Speed +1 place a Wound Token on himself Cannot use the trait Human for the rest of the game.</description>
+                </rule>
+                <rule id="d5b7-72d7-d27d-2bda" name="Blessed Bolt" hidden="false">
+                  <description>Attack. After this attack resolves, if the defender too any damage as part of this attack, Daze them and deal 3 Dice of Direct Damage to them. 
+
+Note: With this attack you ignore enemy armor in the Defend total calculations. (Only with the Dice of Direct Damage) </description>
+                </rule>
+              </rules>
+              <categoryLinks>
+                <categoryLink id="6ea9-74bb-eeb6-8ce7" name="Hero" hidden="false" targetId="92b2-75fa-5ad7-dc75" primary="false"/>
+              </categoryLinks>
+              <entryLinks>
+                <entryLink id="3a92-1f77-9560-8c16" name="Upgrades" hidden="false" collective="false" import="true" targetId="ba3b-6f79-e920-db59" type="selectionEntryGroup">
+                  <categoryLinks>
+                    <categoryLink id="adcb-6fc4-a687-86a1" name="Upgrades" hidden="false" targetId="6173-1a99-a86b-6e28" primary="false"/>
+                  </categoryLinks>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="Cost" typeId="c494-d0ff-a958-c070" value="8.0"/>
+                <cost name="Fate" typeId="7540-583a-760c-a57d" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="09a2-42fd-dd01-b988" name="Betrogard" hidden="false" collective="false" import="true" type="model">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="c658-a497-9343-7a51" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="c1a2-0eef-726b-7a94" name="Betrogard" hidden="false" typeId="3ae3-9405-766b-6417" typeName="Hero">
+                  <characteristics>
+                    <characteristic name="Health" typeId="a13c-10b7-2896-bb31">7</characteristic>
+                    <characteristic name="Attack" typeId="6c2e-f536-b3a6-1fa9">3</characteristic>
+                    <characteristic name="Range" typeId="49d0-0a04-6cbc-f286">1</characteristic>
+                    <characteristic name="Defense" typeId="3a86-11ca-f002-eeb7">4</characteristic>
+                    <characteristic name="Armour" typeId="462e-16c7-c53f-a16b">2</characteristic>
+                    <characteristic name="Speed" typeId="028d-f362-815c-38f0">3</characteristic>
+                    <characteristic name="Skill 1" typeId="4b76-bce7-94ec-53ff">Fear the Fearless {2} (Reaction)</characteristic>
+                    <characteristic name="Skill 2" typeId="403a-8e7a-a3b3-57db">Relentless (Constant)</characteristic>
+                    <characteristic name="Skill 3" typeId="cf14-caf6-b618-436c">Silence of the Fates (Constant)</characteristic>
+                    <characteristic name="Traits" typeId="4ccc-8757-1b3b-3c31">Brute, Human, Knight, Leader</characteristic>
+                    <characteristic name="Criticals" typeId="ef0e-8242-f583-664e">Explode or Daze (Push 2)</characteristic>
+                    <characteristic name="Token Skills" typeId="80f8-014e-3c19-66d6">Focus, Shield, Guard</characteristic>
+                    <characteristic name="Keywords" typeId="c0b7-ff64-68c6-0bcc">Deadly 2, Immune, Pierce 2</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <rules>
+                <rule id="b53c-8079-d3b5-25cc" name="Fear the Fearless" hidden="false">
+                  <description>When Bertrogard attacks or is attacked, Break Any on the Opposing character. </description>
+                </rule>
+                <rule id="aba5-0e0b-2222-de54" name="Silence of the Fates" hidden="false">
+                  <description>While Bertrogard is attacking or defending your opponent cannot play Fate cards. </description>
+                </rule>
+                <rule id="493a-6a8c-35ac-ac59" name="Relentless" hidden="false">
+                  <description>Betrogard cannot fall except at the end of the Activation Phase. he cannot be felled due to enemy effects or abilities. 
+
+Note: If an enemy effect were to kill him he would instead fall at the end of the Activation phase instead of immediately. </description>
+                </rule>
+              </rules>
+              <categoryLinks>
+                <categoryLink id="079f-895e-727a-aa41" name="Hero" hidden="false" targetId="92b2-75fa-5ad7-dc75" primary="false"/>
+              </categoryLinks>
+              <entryLinks>
+                <entryLink id="df32-29fd-5fb3-65b5" name="Upgrades" hidden="false" collective="false" import="true" targetId="ba3b-6f79-e920-db59" type="selectionEntryGroup">
+                  <categoryLinks>
+                    <categoryLink id="76cf-0b5b-eafc-57a8" name="Upgrades" hidden="false" targetId="6173-1a99-a86b-6e28" primary="false"/>
+                  </categoryLinks>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="Cost" typeId="c494-d0ff-a958-c070" value="7.0"/>
+                <cost name="Fate" typeId="7540-583a-760c-a57d" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="0f1e-4cb1-484e-3bf2" name="Charlotte" hidden="false" collective="false" import="true" type="model">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="aff6-ca8c-de80-83c2" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="3a04-0037-f2b4-48b1" name="Charlotte" hidden="false" typeId="3ae3-9405-766b-6417" typeName="Hero">
+                  <characteristics>
+                    <characteristic name="Health" typeId="a13c-10b7-2896-bb31">6</characteristic>
+                    <characteristic name="Attack" typeId="6c2e-f536-b3a6-1fa9">5</characteristic>
+                    <characteristic name="Range" typeId="49d0-0a04-6cbc-f286">1</characteristic>
+                    <characteristic name="Defense" typeId="3a86-11ca-f002-eeb7">3</characteristic>
+                    <characteristic name="Armour" typeId="462e-16c7-c53f-a16b">0</characteristic>
+                    <characteristic name="Speed" typeId="028d-f362-815c-38f0">5</characteristic>
+                    <characteristic name="Skill 1" typeId="4b76-bce7-94ec-53ff">Expose Weakness {2} (Reaction)</characteristic>
+                    <characteristic name="Skill 2" typeId="403a-8e7a-a3b3-57db">Shadowstep (Swift)</characteristic>
+                    <characteristic name="Skill 3" typeId="cf14-caf6-b618-436c">When They Can&apos;t Strike Back (Constant)</characteristic>
+                    <characteristic name="Traits" typeId="4ccc-8757-1b3b-3c31">Hunter, Human, Rouge</characteristic>
+                    <characteristic name="Criticals" typeId="ef0e-8242-f583-664e">Explode or Break Defence</characteristic>
+                    <characteristic name="Token Skills" typeId="80f8-014e-3c19-66d6">Focus, Evade</characteristic>
+                    <characteristic name="Keywords" typeId="c0b7-ff64-68c6-0bcc">Evasive 6</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <rules>
+                <rule id="15c8-744c-bebf-cbff" name="Expose Weakness" hidden="false">
+                  <description>When Charlotte attacks, choose one:
+Pierce 2 for this attack or -1 Defence </description>
+                </rule>
+                <rule id="192b-041d-670f-6e11" name="When They Can&apos;t Strike Back" hidden="false">
+                  <description>While Charlotte is attacking an activated character, she gains Accuracy 2 and Advantage
+
+Note: This means any character that has already been activated this phase. </description>
+                </rule>
+                <rule id="6339-b40b-f8d8-affc" name="Shadowstep" hidden="false">
+                  <description>Place Charlotte into an empty space within 2. (Great to cover distance before moving or attacking as it is a Swift)</description>
+                </rule>
+              </rules>
+              <categoryLinks>
+                <categoryLink id="1f15-3af9-5b23-dda3" name="Hero" hidden="false" targetId="92b2-75fa-5ad7-dc75" primary="false"/>
+              </categoryLinks>
+              <entryLinks>
+                <entryLink id="d846-dfba-7385-f02d" name="Upgrades" hidden="false" collective="false" import="true" targetId="ba3b-6f79-e920-db59" type="selectionEntryGroup">
+                  <categoryLinks>
+                    <categoryLink id="3183-056f-7691-1d44" name="Upgrades" hidden="false" targetId="6173-1a99-a86b-6e28" primary="false"/>
+                  </categoryLinks>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="Cost" typeId="c494-d0ff-a958-c070" value="7.0"/>
+                <cost name="Fate" typeId="7540-583a-760c-a57d" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="0297-86ab-a1d8-b4d3" name="Yakun" hidden="false" collective="false" import="true" type="model">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="f5a2-8f03-7439-ce52" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="0c87-d3d1-3102-2ada" name="Yakun" hidden="false" typeId="3ae3-9405-766b-6417" typeName="Hero">
+                  <characteristics>
+                    <characteristic name="Health" typeId="a13c-10b7-2896-bb31">6</characteristic>
+                    <characteristic name="Attack" typeId="6c2e-f536-b3a6-1fa9">2</characteristic>
+                    <characteristic name="Range" typeId="49d0-0a04-6cbc-f286">1</characteristic>
+                    <characteristic name="Defense" typeId="3a86-11ca-f002-eeb7">3</characteristic>
+                    <characteristic name="Armour" typeId="462e-16c7-c53f-a16b">0</characteristic>
+                    <characteristic name="Speed" typeId="028d-f362-815c-38f0">4</characteristic>
+                    <characteristic name="Skill 1" typeId="4b76-bce7-94ec-53ff">Bright Blessing {2} (Active Ability)</characteristic>
+                    <characteristic name="Skill 2" typeId="403a-8e7a-a3b3-57db">Chosen One (Reaction)</characteristic>
+                    <characteristic name="Skill 3" typeId="cf14-caf6-b618-436c">Inspiration {1} (Swift)</characteristic>
+                    <characteristic name="Traits" typeId="4ccc-8757-1b3b-3c31">Holy, Human, Leader</characteristic>
+                    <characteristic name="Criticals" typeId="ef0e-8242-f583-664e">Explode</characteristic>
+                    <characteristic name="Token Skills" typeId="80f8-014e-3c19-66d6">Focus, Channel Command</characteristic>
+                    <characteristic name="Keywords" typeId="c0b7-ff64-68c6-0bcc">None</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <rules>
+                <rule id="ecc2-0662-1fef-e904" name="Bright Blessing" hidden="false">
+                  <description>Recover 4 a character within 2 and sight. Discard all Banes from that character. 
+
+Note: This can not be applied to herself </description>
+                </rule>
+                <rule id="7b97-95c0-affb-4e66" name="Chosen One" hidden="false">
+                  <description>When Yakun activates, if you have fewer Fate in your pool than your opponent, shift one Fate to your pool. </description>
+                </rule>
+                <rule id="5391-3c78-db7d-b8ba" name="Inspiration" hidden="false">
+                  <description>Command, ignoring Rank</description>
+                </rule>
+              </rules>
+              <categoryLinks>
+                <categoryLink id="4157-14ef-67e0-ae8e" name="Hero" hidden="false" targetId="92b2-75fa-5ad7-dc75" primary="false"/>
+              </categoryLinks>
+              <entryLinks>
+                <entryLink id="9ec5-49d7-e7c1-7c6f" name="Upgrades" hidden="false" collective="false" import="true" targetId="ba3b-6f79-e920-db59" type="selectionEntryGroup">
+                  <categoryLinks>
+                    <categoryLink id="56de-ee7a-779d-f7f5" name="Upgrades" hidden="false" targetId="6173-1a99-a86b-6e28" primary="false"/>
+                  </categoryLinks>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="Cost" typeId="c494-d0ff-a958-c070" value="6.0"/>
+                <cost name="Fate" typeId="7540-583a-760c-a57d" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="Fate" typeId="7540-583a-760c-a57d" value="0.0"/>
+        <cost name="Cost" typeId="c494-d0ff-a958-c070" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="d192-2d5d-7257-ca6d" name="Troops" hidden="false" collective="false" import="true" type="unit">
+      <categoryLinks>
+        <categoryLink id="0daf-fba7-bd5e-5baf" name="Troop" hidden="false" targetId="9d34-3652-fcc5-0fa3" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="9278-e9b3-61d7-1bb2" name="Troops" hidden="false" collective="false" import="true">
+          <categoryLinks>
+            <categoryLink id="a974-de5b-c92f-a0b3" name="Troop" hidden="false" targetId="9d34-3652-fcc5-0fa3" primary="false"/>
+          </categoryLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="164b-f97a-2f39-8900" name="Shield Guards" hidden="false" collective="false" import="true">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="c90f-2163-bc82-dfd6" type="max"/>
+              </constraints>
+              <rules>
+                <rule id="c16b-60f4-0b2f-2489" name="Protect the King" hidden="false">
+                  <description>After a friendly adjacent character is attacked, move a Shield token from yourself to the defending character. </description>
+                </rule>
+                <rule id="94bf-7e56-3067-21bd" name="Shield Bash" hidden="false">
+                  <description>Attack 3. You lose Pierce 2 for this attack. If this attack deals at least 1 damage, Daze the defender. </description>
+                </rule>
+              </rules>
+              <categoryLinks>
+                <categoryLink id="053d-be78-b9a4-77c0" name="Troop" hidden="false" targetId="9d34-3652-fcc5-0fa3" primary="false"/>
+              </categoryLinks>
+              <selectionEntries>
+                <selectionEntry id="11f7-4153-43fc-6419" name="1 Guard" hidden="false" collective="false" import="true" type="model">
+                  <profiles>
+                    <profile id="f3ce-f26e-fd95-8509" name="Shield Guard" hidden="false" typeId="67ed-66d0-e4ae-8ccc" typeName="Troop">
+                      <characteristics>
+                        <characteristic name="Health" typeId="0aff-3d11-f241-82a0">6</characteristic>
+                        <characteristic name="Attack" typeId="67da-6694-0f94-47c5">4</characteristic>
+                        <characteristic name="Range" typeId="b4f1-ad98-8eb1-e25d">1</characteristic>
+                        <characteristic name="Defense" typeId="5dba-13c9-182c-c04c">3</characteristic>
+                        <characteristic name="Armour" typeId="11f5-dd18-2756-6e91">2</characteristic>
+                        <characteristic name="Speed" typeId="5fba-4ecc-4581-be8e">3</characteristic>
+                        <characteristic name="Skill 1" typeId="89e2-1316-b1f4-737b">Protect The King (Reaction)</characteristic>
+                        <characteristic name="Skill 2" typeId="6008-87fa-4c1a-6cee">Shield Bash (Active Ability)</characteristic>
+                        <characteristic name="Traits" typeId="a185-ee4a-642e-37d2">Guardian, Knight, Human</characteristic>
+                        <characteristic name="Criticals" typeId="9ef8-76bb-c4cc-3a78">Explode</characteristic>
+                        <characteristic name="VP Track" typeId="a0b2-ad1b-7f1e-f32c">Fallen:
+5 Points</characteristic>
+                        <characteristic name="Keywords" typeId="c4f7-494f-7643-7638">Elite, Pierce 2</characteristic>
+                        <characteristic name="Token Skills" typeId="9cac-1866-e02e-1d1d">Focus, Guard, Shield</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <rules>
+                    <rule id="2144-0c75-8f13-1189" name="Protect the King" hidden="false">
+                      <description>After a friendly adjacent character is attacked, move a Shield token from yourself to the defending character. </description>
+                    </rule>
+                    <rule id="14a7-ce7d-d836-f5a9" name="Shield Bash" hidden="false">
+                      <description>Attack 3. You lose Pierce 2 for this attack. If this attack deals at least 1 damage, Daze the defender. </description>
+                    </rule>
+                  </rules>
+                  <categoryLinks>
+                    <categoryLink id="2dbc-4342-b052-3364" name="Troop" hidden="false" targetId="9d34-3652-fcc5-0fa3" primary="false"/>
+                  </categoryLinks>
+                  <costs>
+                    <cost name="Cost" typeId="c494-d0ff-a958-c070" value="5.0"/>
+                    <cost name="Fate" typeId="7540-583a-760c-a57d" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="651a-d41f-b160-3882" name="3 Guards" hidden="false" collective="false" import="true" type="model">
+                  <profiles>
+                    <profile id="533e-c1cb-e989-6d4a" name="Shield Guard" hidden="false" typeId="67ed-66d0-e4ae-8ccc" typeName="Troop">
+                      <characteristics>
+                        <characteristic name="Health" typeId="0aff-3d11-f241-82a0">6</characteristic>
+                        <characteristic name="Attack" typeId="67da-6694-0f94-47c5">4</characteristic>
+                        <characteristic name="Range" typeId="b4f1-ad98-8eb1-e25d">1</characteristic>
+                        <characteristic name="Defense" typeId="5dba-13c9-182c-c04c">3</characteristic>
+                        <characteristic name="Armour" typeId="11f5-dd18-2756-6e91">2</characteristic>
+                        <characteristic name="Speed" typeId="5fba-4ecc-4581-be8e">3</characteristic>
+                        <characteristic name="Skill 1" typeId="89e2-1316-b1f4-737b">Protect The King (Reaction)</characteristic>
+                        <characteristic name="Skill 2" typeId="6008-87fa-4c1a-6cee">Shield Bash (Active Ability)</characteristic>
+                        <characteristic name="Traits" typeId="a185-ee4a-642e-37d2">Guardian, Knight, Human</characteristic>
+                        <characteristic name="Criticals" typeId="9ef8-76bb-c4cc-3a78">Explode</characteristic>
+                        <characteristic name="VP Track" typeId="a0b2-ad1b-7f1e-f32c">Fallen:
+1 =5 Points
+2= 9 Points
+3= 13 Points</characteristic>
+                        <characteristic name="Keywords" typeId="c4f7-494f-7643-7638">Elite, Pierce 2</characteristic>
+                        <characteristic name="Token Skills" typeId="9cac-1866-e02e-1d1d">Focus, Guard, Shield</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <rules>
+                    <rule id="aaac-5eb3-a182-8af0" name="Protect the King" hidden="false">
+                      <description>After a friendly adjacent character is attacked, move a Shield token from yourself to the defending character. </description>
+                    </rule>
+                    <rule id="0e35-8efd-cbe0-18ef" name="Shield Bash" hidden="false">
+                      <description>Attack 3. You lose Pierce 2 for this attack. If this attack deals at least 1 damage, Daze the defender. </description>
+                    </rule>
+                  </rules>
+                  <categoryLinks>
+                    <categoryLink id="51c1-01a5-61a2-4cba" name="Troop" hidden="false" targetId="9d34-3652-fcc5-0fa3" primary="false"/>
+                  </categoryLinks>
+                  <costs>
+                    <cost name="Cost" typeId="c494-d0ff-a958-c070" value="13.0"/>
+                    <cost name="Fate" typeId="7540-583a-760c-a57d" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="034a-74f6-d068-d8ef" name="2 Guards" hidden="false" collective="false" import="true" type="model">
+                  <profiles>
+                    <profile id="9d07-b149-5b9d-4310" name="Shield Guard" hidden="false" typeId="67ed-66d0-e4ae-8ccc" typeName="Troop">
+                      <characteristics>
+                        <characteristic name="Health" typeId="0aff-3d11-f241-82a0">6</characteristic>
+                        <characteristic name="Attack" typeId="67da-6694-0f94-47c5">4</characteristic>
+                        <characteristic name="Range" typeId="b4f1-ad98-8eb1-e25d">1</characteristic>
+                        <characteristic name="Defense" typeId="5dba-13c9-182c-c04c">3</characteristic>
+                        <characteristic name="Armour" typeId="11f5-dd18-2756-6e91">2</characteristic>
+                        <characteristic name="Speed" typeId="5fba-4ecc-4581-be8e">3</characteristic>
+                        <characteristic name="Skill 1" typeId="89e2-1316-b1f4-737b">Protect The King (Reaction)</characteristic>
+                        <characteristic name="Skill 2" typeId="6008-87fa-4c1a-6cee">Shield Bash (Active Ability)</characteristic>
+                        <characteristic name="Traits" typeId="a185-ee4a-642e-37d2">Guardian, Knight, Human</characteristic>
+                        <characteristic name="Criticals" typeId="9ef8-76bb-c4cc-3a78">Explode</characteristic>
+                        <characteristic name="VP Track" typeId="a0b2-ad1b-7f1e-f32c">Fallen:
+1 =5 Points
+2= 9 Points</characteristic>
+                        <characteristic name="Keywords" typeId="c4f7-494f-7643-7638">Elite, Pierce 2</characteristic>
+                        <characteristic name="Token Skills" typeId="9cac-1866-e02e-1d1d">Focus, Guard, Shield</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <rules>
+                    <rule id="8987-abf4-b45a-bfd5" name="Protect the King" hidden="false">
+                      <description>After a friendly adjacent character is attacked, move a Shield token from yourself to the defending character. </description>
+                    </rule>
+                    <rule id="1af6-5794-c98f-5e5f" name="Shield Bash" hidden="false">
+                      <description>Attack 3. You lose Pierce 2 for this attack. If this attack deals at least 1 damage, Daze the defender. </description>
+                    </rule>
+                  </rules>
+                  <categoryLinks>
+                    <categoryLink id="c7b8-f32c-7229-62cc" name="Troop" hidden="false" targetId="9d34-3652-fcc5-0fa3" primary="false"/>
+                  </categoryLinks>
+                  <costs>
+                    <cost name="Cost" typeId="c494-d0ff-a958-c070" value="9.0"/>
+                    <cost name="Fate" typeId="7540-583a-760c-a57d" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+              <entryLinks>
+                <entryLink id="16e4-9857-c62d-3818" name="Upgrades" hidden="false" collective="false" import="true" targetId="ba3b-6f79-e920-db59" type="selectionEntryGroup">
+                  <categoryLinks>
+                    <categoryLink id="2896-1232-00b7-17c0" name="Upgrades" hidden="false" targetId="6173-1a99-a86b-6e28" primary="false"/>
+                  </categoryLinks>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="54a8-ec46-8724-7c36" name="The Rose&apos;s Thorns" hidden="false" collective="false" import="true">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="834e-85b2-9472-16a0" type="max"/>
+              </constraints>
+              <rules>
+                <rule id="5a05-f935-6611-1778" name="Avenger" hidden="false">
+                  <description>When a friendly Hero or Rose character Falls, Focus or Attack. 
+
+Note: This is a better version of a basic Rose Knights Avenger. You do not need to be near your ally when they fall. </description>
+                </rule>
+                <rule id="fccf-d2a7-d27e-627e" name="Light in the Dark" hidden="false">
+                  <description>At the end of this character&apos;s Activation, Recover 3 a troop within 2. You may remove a Bane from the troop. Limit once per group activation. </description>
+                </rule>
+              </rules>
+              <categoryLinks>
+                <categoryLink id="b6fb-3e12-8800-0321" name="Troop" hidden="false" targetId="9d34-3652-fcc5-0fa3" primary="false"/>
+              </categoryLinks>
+              <selectionEntries>
+                <selectionEntry id="6cac-9e12-51be-62ee" name="1 Thorn" hidden="false" collective="false" import="true" type="model">
+                  <profiles>
+                    <profile id="39f1-517d-00e6-611a" name="The Rose&apos;s Thorn" hidden="false" typeId="67ed-66d0-e4ae-8ccc" typeName="Troop">
+                      <characteristics>
+                        <characteristic name="Health" typeId="0aff-3d11-f241-82a0">5</characteristic>
+                        <characteristic name="Attack" typeId="67da-6694-0f94-47c5">4</characteristic>
+                        <characteristic name="Range" typeId="b4f1-ad98-8eb1-e25d">1</characteristic>
+                        <characteristic name="Defense" typeId="5dba-13c9-182c-c04c">3</characteristic>
+                        <characteristic name="Armour" typeId="11f5-dd18-2756-6e91">1</characteristic>
+                        <characteristic name="Speed" typeId="5fba-4ecc-4581-be8e">4</characteristic>
+                        <characteristic name="Skill 1" typeId="89e2-1316-b1f4-737b">Avenger (Reaction)</characteristic>
+                        <characteristic name="Skill 2" typeId="6008-87fa-4c1a-6cee">Light in the Dark (Active Ability)</characteristic>
+                        <characteristic name="Traits" typeId="a185-ee4a-642e-37d2">Rose, Knight, Human</characteristic>
+                        <characteristic name="Criticals" typeId="9ef8-76bb-c4cc-3a78">Explode</characteristic>
+                        <characteristic name="VP Track" typeId="a0b2-ad1b-7f1e-f32c">Fallen:
+4 Points</characteristic>
+                        <characteristic name="Keywords" typeId="c4f7-494f-7643-7638">Elite, Accuracy 2</characteristic>
+                        <characteristic name="Token Skills" typeId="9cac-1866-e02e-1d1d">Focus</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <rules>
+                    <rule id="1430-e4cc-13ff-8341" name="Avenger" hidden="false">
+                      <description>When a friendly Hero or Rose character Falls, Focus or Attack. 
+
+Note: This is a better version of a basic Rose Knights Avenger. You do not need to be near your ally when they fall. </description>
+                    </rule>
+                    <rule id="b518-c7bf-3120-0ddb" name="Light in the Dark" hidden="false">
+                      <description>At the end of this character&apos;s Activation, Recover 3 a troop within 2. You may remove a Bane from the troop. Limit once per group activation. </description>
+                    </rule>
+                  </rules>
+                  <categoryLinks>
+                    <categoryLink id="6735-b37f-1b31-121f" name="Troop" hidden="false" targetId="9d34-3652-fcc5-0fa3" primary="false"/>
+                  </categoryLinks>
+                  <costs>
+                    <cost name="Cost" typeId="c494-d0ff-a958-c070" value="4.0"/>
+                    <cost name="Fate" typeId="7540-583a-760c-a57d" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="949e-12a2-dcd3-3895" name="3 Thorns" hidden="false" collective="false" import="true" type="model">
+                  <profiles>
+                    <profile id="9ac4-e906-4543-7ed7" name="The Rose&apos;s Thorn" hidden="false" typeId="67ed-66d0-e4ae-8ccc" typeName="Troop">
+                      <characteristics>
+                        <characteristic name="Health" typeId="0aff-3d11-f241-82a0">5</characteristic>
+                        <characteristic name="Attack" typeId="67da-6694-0f94-47c5">4</characteristic>
+                        <characteristic name="Range" typeId="b4f1-ad98-8eb1-e25d">1</characteristic>
+                        <characteristic name="Defense" typeId="5dba-13c9-182c-c04c">3</characteristic>
+                        <characteristic name="Armour" typeId="11f5-dd18-2756-6e91">1</characteristic>
+                        <characteristic name="Speed" typeId="5fba-4ecc-4581-be8e">4</characteristic>
+                        <characteristic name="Skill 1" typeId="89e2-1316-b1f4-737b">Avenger (Reaction)</characteristic>
+                        <characteristic name="Skill 2" typeId="6008-87fa-4c1a-6cee">Light in the Dark (Active Ability)</characteristic>
+                        <characteristic name="Traits" typeId="a185-ee4a-642e-37d2">Rose, Knight, Human</characteristic>
+                        <characteristic name="Criticals" typeId="9ef8-76bb-c4cc-3a78">Explode</characteristic>
+                        <characteristic name="VP Track" typeId="a0b2-ad1b-7f1e-f32c">Fallen:
+1 =4 Points
+2 = 8 Points
+3 = 11 Points</characteristic>
+                        <characteristic name="Keywords" typeId="c4f7-494f-7643-7638">Elite, Accuracy 2</characteristic>
+                        <characteristic name="Token Skills" typeId="9cac-1866-e02e-1d1d">Focus</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <rules>
+                    <rule id="d2a7-48e8-1d56-7a53" name="Avenger" hidden="false">
+                      <description>When a friendly Hero or Rose character Falls, Focus or Attack. 
+
+Note: This is a better version of a basic Rose Knights Avenger. You do not need to be near your ally when they fall. </description>
+                    </rule>
+                    <rule id="d421-387c-da3b-65ee" name="Light in the Dark" hidden="false">
+                      <description>At the end of this character&apos;s Activation, Recover 3 a troop within 2. You may remove a Bane from the troop. Limit once per group activation. </description>
+                    </rule>
+                  </rules>
+                  <categoryLinks>
+                    <categoryLink id="9954-4ac7-8e75-21b9" name="Troop" hidden="false" targetId="9d34-3652-fcc5-0fa3" primary="false"/>
+                  </categoryLinks>
+                  <costs>
+                    <cost name="Cost" typeId="c494-d0ff-a958-c070" value="11.0"/>
+                    <cost name="Fate" typeId="7540-583a-760c-a57d" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="40d9-63f6-bf28-d7a2" name="2 Thorns" hidden="false" collective="false" import="true" type="model">
+                  <profiles>
+                    <profile id="24df-541a-d1fa-e744" name="The Rose&apos;s Thorn" hidden="false" typeId="67ed-66d0-e4ae-8ccc" typeName="Troop">
+                      <characteristics>
+                        <characteristic name="Health" typeId="0aff-3d11-f241-82a0">5</characteristic>
+                        <characteristic name="Attack" typeId="67da-6694-0f94-47c5">4</characteristic>
+                        <characteristic name="Range" typeId="b4f1-ad98-8eb1-e25d">1</characteristic>
+                        <characteristic name="Defense" typeId="5dba-13c9-182c-c04c">3</characteristic>
+                        <characteristic name="Armour" typeId="11f5-dd18-2756-6e91">1</characteristic>
+                        <characteristic name="Speed" typeId="5fba-4ecc-4581-be8e">4</characteristic>
+                        <characteristic name="Skill 1" typeId="89e2-1316-b1f4-737b">Avenger (Reaction)</characteristic>
+                        <characteristic name="Skill 2" typeId="6008-87fa-4c1a-6cee">Light in the Dark (Active Ability)</characteristic>
+                        <characteristic name="Traits" typeId="a185-ee4a-642e-37d2">Rose, Knight, Human</characteristic>
+                        <characteristic name="Criticals" typeId="9ef8-76bb-c4cc-3a78">Explode</characteristic>
+                        <characteristic name="VP Track" typeId="a0b2-ad1b-7f1e-f32c">Fallen:
+1 =4 Points
+2 = 8 Points</characteristic>
+                        <characteristic name="Keywords" typeId="c4f7-494f-7643-7638">Elite, Accuracy 2</characteristic>
+                        <characteristic name="Token Skills" typeId="9cac-1866-e02e-1d1d">Focus</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <rules>
+                    <rule id="39d2-2501-8b35-7277" name="Avenger" hidden="false">
+                      <description>When a friendly Hero or Rose character Falls, Focus or Attack. 
+
+Note: This is a better version of a basic Rose Knights Avenger. You do not need to be near your ally when they fall. </description>
+                    </rule>
+                    <rule id="2ec8-d73e-1fb7-c0c7" name="Light in the Dark" hidden="false">
+                      <description>At the end of this character&apos;s Activation, Recover 3 a troop within 2. You may remove a Bane from the troop. Limit once per group activation. </description>
+                    </rule>
+                  </rules>
+                  <categoryLinks>
+                    <categoryLink id="d07e-8835-9697-0ba9" name="Troop" hidden="false" targetId="9d34-3652-fcc5-0fa3" primary="false"/>
+                  </categoryLinks>
+                  <costs>
+                    <cost name="Cost" typeId="c494-d0ff-a958-c070" value="8.0"/>
+                    <cost name="Fate" typeId="7540-583a-760c-a57d" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+              <entryLinks>
+                <entryLink id="13a7-8fc6-7823-8cc0" name="Upgrades" hidden="false" collective="false" import="true" targetId="ba3b-6f79-e920-db59" type="selectionEntryGroup">
+                  <categoryLinks>
+                    <categoryLink id="da90-468a-df5e-5f63" name="Upgrades" hidden="false" targetId="6173-1a99-a86b-6e28" primary="false"/>
+                  </categoryLinks>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="c28a-b3a6-d1da-8bfb" name="Tiger Knight Archers" hidden="false" collective="false" import="true">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="f4d7-b505-4239-03f7" type="max"/>
+              </constraints>
+              <rules>
+                <rule id="9c10-613d-8767-6148" name="Blood Scent" hidden="false">
+                  <description>While attacking a Bloodied enemy or an enemy with Wound, Tiger archers gain Accuracy 3.</description>
+                </rule>
+                <rule id="12a3-deba-09a6-d9b6" name="Eye of The Tiger" hidden="false">
+                  <description>Friendly characters don&apos;t obstruct Tiger Archer&apos;s ranged attacks. </description>
+                </rule>
+              </rules>
+              <categoryLinks>
+                <categoryLink id="b81d-b8f5-a236-c339" name="Troop" hidden="false" targetId="9d34-3652-fcc5-0fa3" primary="false"/>
+              </categoryLinks>
+              <selectionEntries>
+                <selectionEntry id="075a-3d51-239e-6e04" name="1 Archer" hidden="false" collective="false" import="true" type="model">
+                  <profiles>
+                    <profile id="3c43-2d0c-4a84-3800" name="Tiger Knight Archer" hidden="false" typeId="67ed-66d0-e4ae-8ccc" typeName="Troop">
+                      <characteristics>
+                        <characteristic name="Health" typeId="0aff-3d11-f241-82a0">4</characteristic>
+                        <characteristic name="Attack" typeId="67da-6694-0f94-47c5">2</characteristic>
+                        <characteristic name="Range" typeId="b4f1-ad98-8eb1-e25d">1 Melee/ 4 Ranged</characteristic>
+                        <characteristic name="Defense" typeId="5dba-13c9-182c-c04c">3</characteristic>
+                        <characteristic name="Armour" typeId="11f5-dd18-2756-6e91">0</characteristic>
+                        <characteristic name="Speed" typeId="5fba-4ecc-4581-be8e">4</characteristic>
+                        <characteristic name="Skill 1" typeId="89e2-1316-b1f4-737b">Blood Scent (Constant)</characteristic>
+                        <characteristic name="Skill 2" typeId="6008-87fa-4c1a-6cee">Eye of the Tiger (Constant)</characteristic>
+                        <characteristic name="Traits" typeId="a185-ee4a-642e-37d2">Human, Marksman, Knight</characteristic>
+                        <characteristic name="Criticals" typeId="9ef8-76bb-c4cc-3a78">Explode</characteristic>
+                        <characteristic name="VP Track" typeId="a0b2-ad1b-7f1e-f32c">Fallen:
+3 Points</characteristic>
+                        <characteristic name="Keywords" typeId="c4f7-494f-7643-7638">Pierce 1</characteristic>
+                        <characteristic name="Token Skills" typeId="9cac-1866-e02e-1d1d">Focus</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <rules>
+                    <rule id="ee0c-6d08-c96d-fe48" name="Blood Scent" hidden="false">
+                      <description>While attacking a Bloodied enemy or an enemy with Wound, Tiger archers gain Accuracy 3.</description>
+                    </rule>
+                    <rule id="6164-1680-f34d-bae2" name="Eye of The Tiger" hidden="false">
+                      <description>Friendly characters don&apos;t obstruct Tiger Archer&apos;s ranged attacks. </description>
+                    </rule>
+                  </rules>
+                  <categoryLinks>
+                    <categoryLink id="8e96-af05-9bcd-9eb6" name="Troop" hidden="false" targetId="9d34-3652-fcc5-0fa3" primary="false"/>
+                  </categoryLinks>
+                  <costs>
+                    <cost name="Cost" typeId="c494-d0ff-a958-c070" value="3.0"/>
+                    <cost name="Fate" typeId="7540-583a-760c-a57d" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="78ec-40ba-4549-fa6e" name="3 Archers" hidden="false" collective="false" import="true" type="model">
+                  <profiles>
+                    <profile id="a1a1-f7d6-fa32-0d53" name="Tiger Knight Archer" hidden="false" typeId="67ed-66d0-e4ae-8ccc" typeName="Troop">
+                      <characteristics>
+                        <characteristic name="Health" typeId="0aff-3d11-f241-82a0">4</characteristic>
+                        <characteristic name="Attack" typeId="67da-6694-0f94-47c5">2</characteristic>
+                        <characteristic name="Range" typeId="b4f1-ad98-8eb1-e25d">1 Melee/ 4 Ranged</characteristic>
+                        <characteristic name="Defense" typeId="5dba-13c9-182c-c04c">3</characteristic>
+                        <characteristic name="Armour" typeId="11f5-dd18-2756-6e91">0</characteristic>
+                        <characteristic name="Speed" typeId="5fba-4ecc-4581-be8e">4</characteristic>
+                        <characteristic name="Skill 1" typeId="89e2-1316-b1f4-737b">Blood Scent (Constant)</characteristic>
+                        <characteristic name="Skill 2" typeId="6008-87fa-4c1a-6cee">Eye of the Tiger (Constant)</characteristic>
+                        <characteristic name="Traits" typeId="a185-ee4a-642e-37d2">Human, Marksman, Knight</characteristic>
+                        <characteristic name="Criticals" typeId="9ef8-76bb-c4cc-3a78">Explode</characteristic>
+                        <characteristic name="VP Track" typeId="a0b2-ad1b-7f1e-f32c">Fallen:
+1= 3 Points
+2= 6 Points
+3= 8 Points</characteristic>
+                        <characteristic name="Keywords" typeId="c4f7-494f-7643-7638">Pierce 1</characteristic>
+                        <characteristic name="Token Skills" typeId="9cac-1866-e02e-1d1d">Focus</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <rules>
+                    <rule id="aac3-0087-761b-e480" name="Blood Scent" hidden="false">
+                      <description>While attacking a Bloodied enemy or an enemy with Wound, Tiger archers gain Accuracy 3.</description>
+                    </rule>
+                    <rule id="8731-3033-7b9b-0144" name="Eye of The Tiger" hidden="false">
+                      <description>Friendly characters don&apos;t obstruct Tiger Archer&apos;s ranged attacks. </description>
+                    </rule>
+                  </rules>
+                  <categoryLinks>
+                    <categoryLink id="0b24-c1c6-83fc-4a08" name="Troop" hidden="false" targetId="9d34-3652-fcc5-0fa3" primary="false"/>
+                  </categoryLinks>
+                  <costs>
+                    <cost name="Cost" typeId="c494-d0ff-a958-c070" value="8.0"/>
+                    <cost name="Fate" typeId="7540-583a-760c-a57d" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="a030-81c8-6315-b55c" name="2 Archers" hidden="false" collective="false" import="true" type="model">
+                  <profiles>
+                    <profile id="a736-0be1-96b0-abe1" name="Tiger Knight Archer" hidden="false" typeId="67ed-66d0-e4ae-8ccc" typeName="Troop">
+                      <characteristics>
+                        <characteristic name="Health" typeId="0aff-3d11-f241-82a0">4</characteristic>
+                        <characteristic name="Attack" typeId="67da-6694-0f94-47c5">2</characteristic>
+                        <characteristic name="Range" typeId="b4f1-ad98-8eb1-e25d">1 Melee/ 4 Ranged</characteristic>
+                        <characteristic name="Defense" typeId="5dba-13c9-182c-c04c">3</characteristic>
+                        <characteristic name="Armour" typeId="11f5-dd18-2756-6e91">0</characteristic>
+                        <characteristic name="Speed" typeId="5fba-4ecc-4581-be8e">4</characteristic>
+                        <characteristic name="Skill 1" typeId="89e2-1316-b1f4-737b">Blood Scent (Constant)</characteristic>
+                        <characteristic name="Skill 2" typeId="6008-87fa-4c1a-6cee">Eye of the Tiger (Constant)</characteristic>
+                        <characteristic name="Traits" typeId="a185-ee4a-642e-37d2">Human, Marksman, Knight</characteristic>
+                        <characteristic name="Criticals" typeId="9ef8-76bb-c4cc-3a78">Explode</characteristic>
+                        <characteristic name="VP Track" typeId="a0b2-ad1b-7f1e-f32c">Fallen:
+1= 3 Points
+2= 6 Points
+</characteristic>
+                        <characteristic name="Keywords" typeId="c4f7-494f-7643-7638">Pierce 1</characteristic>
+                        <characteristic name="Token Skills" typeId="9cac-1866-e02e-1d1d">Focus</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <rules>
+                    <rule id="f235-7bbc-85ce-b9ca" name="Blood Scent" hidden="false">
+                      <description>While attacking a Bloodied enemy or an enemy with Wound, Tiger archers gain Accuracy 3.</description>
+                    </rule>
+                    <rule id="cde3-7c4a-0380-1258" name="Eye of The Tiger" hidden="false">
+                      <description>Friendly characters don&apos;t obstruct Tiger Archer&apos;s ranged attacks. </description>
+                    </rule>
+                  </rules>
+                  <categoryLinks>
+                    <categoryLink id="85ee-312e-c795-d79c" name="Troop" hidden="false" targetId="9d34-3652-fcc5-0fa3" primary="false"/>
+                  </categoryLinks>
+                  <costs>
+                    <cost name="Cost" typeId="c494-d0ff-a958-c070" value="6.0"/>
+                    <cost name="Fate" typeId="7540-583a-760c-a57d" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+              <entryLinks>
+                <entryLink id="ce9a-a9af-28eb-056c" name="Upgrades" hidden="false" collective="false" import="true" targetId="ba3b-6f79-e920-db59" type="selectionEntryGroup">
+                  <categoryLinks>
+                    <categoryLink id="fe68-f13d-b7d4-207d" name="Upgrades" hidden="false" targetId="6173-1a99-a86b-6e28" primary="false"/>
+                  </categoryLinks>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="3fc4-76f1-e7db-d25f" name="Tiger Knight Halberdiers" hidden="false" collective="false" import="true">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="1474-af27-d26a-5ae0" type="max"/>
+              </constraints>
+              <rules>
+                <rule id="f808-a9fb-111d-b724" name="Opportunist" hidden="false">
+                  <description>While attacking outside its activation, Tiger Knight gains Advantage. 
+
+Note: This is essentially when you are commanded to activate when you are outside its activation turn. </description>
+                </rule>
+                <rule id="1a45-66df-47fe-e3cf" name="The Best Defence" hidden="false">
+                  <description>When an enemy enters Tiger Knight&apos;s threat range, discard a Guard Token to Attack that enemy. 
+
+Note: This is a great combo move to use with Opportunist as it will give you Advantage 1. </description>
+                </rule>
+              </rules>
+              <categoryLinks>
+                <categoryLink id="ef2d-ce70-762a-da73" name="Troop" hidden="false" targetId="9d34-3652-fcc5-0fa3" primary="false"/>
+              </categoryLinks>
+              <selectionEntries>
+                <selectionEntry id="0fe3-87ef-4963-bcac" name="1 Halberdier" hidden="false" collective="false" import="true" type="model">
+                  <profiles>
+                    <profile id="bbcb-c27b-8168-33f7" name="Tiger Knight Halberdier" hidden="false" typeId="67ed-66d0-e4ae-8ccc" typeName="Troop">
+                      <characteristics>
+                        <characteristic name="Health" typeId="0aff-3d11-f241-82a0">4</characteristic>
+                        <characteristic name="Attack" typeId="67da-6694-0f94-47c5">3</characteristic>
+                        <characteristic name="Range" typeId="b4f1-ad98-8eb1-e25d">1</characteristic>
+                        <characteristic name="Defense" typeId="5dba-13c9-182c-c04c">3</characteristic>
+                        <characteristic name="Armour" typeId="11f5-dd18-2756-6e91">0</characteristic>
+                        <characteristic name="Speed" typeId="5fba-4ecc-4581-be8e">4</characteristic>
+                        <characteristic name="Skill 1" typeId="89e2-1316-b1f4-737b">Opportunist (Constant)</characteristic>
+                        <characteristic name="Skill 2" typeId="6008-87fa-4c1a-6cee">The Best Defence (Reaction)</characteristic>
+                        <characteristic name="Traits" typeId="a185-ee4a-642e-37d2">Guardian, Knight, Human</characteristic>
+                        <characteristic name="Criticals" typeId="9ef8-76bb-c4cc-3a78">Explode, Wound</characteristic>
+                        <characteristic name="VP Track" typeId="a0b2-ad1b-7f1e-f32c">Fallen:
+3 Points</characteristic>
+                        <characteristic name="Keywords" typeId="c4f7-494f-7643-7638">None</characteristic>
+                        <characteristic name="Token Skills" typeId="9cac-1866-e02e-1d1d">Focus, Guard</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <rules>
+                    <rule id="b055-046e-9deb-86c6" name="Opportunist" hidden="false">
+                      <description>While attacking outside its activation, Tiger Knight gains Advantage. 
+
+Note: This is essentially when you are commanded to activate when you are outside its activation turn. </description>
+                    </rule>
+                    <rule id="0720-918b-75c3-c2aa" name="The Best Defence" hidden="false">
+                      <description>When an enemy enters Tiger Knight&apos;s threat range, discard a Guard Token to Attack that enemy. 
+
+Note: This is a great combo move to use with Opportunist as it will give you Advantage 1. </description>
+                    </rule>
+                  </rules>
+                  <categoryLinks>
+                    <categoryLink id="cbe4-156e-9251-216c" name="Troop" hidden="false" targetId="9d34-3652-fcc5-0fa3" primary="false"/>
+                  </categoryLinks>
+                  <costs>
+                    <cost name="Cost" typeId="c494-d0ff-a958-c070" value="3.0"/>
+                    <cost name="Fate" typeId="7540-583a-760c-a57d" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="e627-1538-3425-a45c" name="3 Halberdier" hidden="false" collective="false" import="true" type="model">
+                  <profiles>
+                    <profile id="32dd-f50f-a3fc-22ce" name="Tiger Knight Halberdier" hidden="false" typeId="67ed-66d0-e4ae-8ccc" typeName="Troop">
+                      <characteristics>
+                        <characteristic name="Health" typeId="0aff-3d11-f241-82a0">4</characteristic>
+                        <characteristic name="Attack" typeId="67da-6694-0f94-47c5">3</characteristic>
+                        <characteristic name="Range" typeId="b4f1-ad98-8eb1-e25d">1</characteristic>
+                        <characteristic name="Defense" typeId="5dba-13c9-182c-c04c">3</characteristic>
+                        <characteristic name="Armour" typeId="11f5-dd18-2756-6e91">0</characteristic>
+                        <characteristic name="Speed" typeId="5fba-4ecc-4581-be8e">4</characteristic>
+                        <characteristic name="Skill 1" typeId="89e2-1316-b1f4-737b">Opportunist (Constant)</characteristic>
+                        <characteristic name="Skill 2" typeId="6008-87fa-4c1a-6cee">The Best Defence (Reaction)</characteristic>
+                        <characteristic name="Traits" typeId="a185-ee4a-642e-37d2">Guardian, Knight, Human</characteristic>
+                        <characteristic name="Criticals" typeId="9ef8-76bb-c4cc-3a78">Explode, Wound</characteristic>
+                        <characteristic name="VP Track" typeId="a0b2-ad1b-7f1e-f32c">Fallen:
+1 = 3 Points
+2 = 5 Points
+3 = 7 Points</characteristic>
+                        <characteristic name="Keywords" typeId="c4f7-494f-7643-7638">None</characteristic>
+                        <characteristic name="Token Skills" typeId="9cac-1866-e02e-1d1d">Focus, Guard</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <rules>
+                    <rule id="c138-e232-11cd-fc5b" name="Opportunist" hidden="false">
+                      <description>While attacking outside its activation, Tiger Knight gains Advantage. 
+
+Note: This is essentially when you are commanded to activate when you are outside its activation turn. </description>
+                    </rule>
+                    <rule id="b5b2-cddb-fc49-608e" name="The Best Defence" hidden="false">
+                      <description>When an enemy enters Tiger Knight&apos;s threat range, discard a Guard Token to Attack that enemy. 
+
+Note: This is a great combo move to use with Opportunist as it will give you Advantage 1. </description>
+                    </rule>
+                  </rules>
+                  <categoryLinks>
+                    <categoryLink id="29c8-10b0-3d96-9e47" name="Troop" hidden="false" targetId="9d34-3652-fcc5-0fa3" primary="false"/>
+                  </categoryLinks>
+                  <costs>
+                    <cost name="Cost" typeId="c494-d0ff-a958-c070" value="7.0"/>
+                    <cost name="Fate" typeId="7540-583a-760c-a57d" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="dc60-7317-6d13-dce8" name="2 Halberdier" hidden="false" collective="false" import="true" type="model">
+                  <profiles>
+                    <profile id="77ad-575d-8e8a-f6ed" name="Tiger Knight Halberdier" hidden="false" typeId="67ed-66d0-e4ae-8ccc" typeName="Troop">
+                      <characteristics>
+                        <characteristic name="Health" typeId="0aff-3d11-f241-82a0">4</characteristic>
+                        <characteristic name="Attack" typeId="67da-6694-0f94-47c5">3</characteristic>
+                        <characteristic name="Range" typeId="b4f1-ad98-8eb1-e25d">1</characteristic>
+                        <characteristic name="Defense" typeId="5dba-13c9-182c-c04c">3</characteristic>
+                        <characteristic name="Armour" typeId="11f5-dd18-2756-6e91">0</characteristic>
+                        <characteristic name="Speed" typeId="5fba-4ecc-4581-be8e">4</characteristic>
+                        <characteristic name="Skill 1" typeId="89e2-1316-b1f4-737b">Opportunist (Constant)</characteristic>
+                        <characteristic name="Skill 2" typeId="6008-87fa-4c1a-6cee">The Best Defence (Reaction)</characteristic>
+                        <characteristic name="Traits" typeId="a185-ee4a-642e-37d2">Guardian, Knight, Human</characteristic>
+                        <characteristic name="Criticals" typeId="9ef8-76bb-c4cc-3a78">Explode, Wound</characteristic>
+                        <characteristic name="VP Track" typeId="a0b2-ad1b-7f1e-f32c">Fallen:
+1 = 3 Points
+2 = 5 Points
+</characteristic>
+                        <characteristic name="Keywords" typeId="c4f7-494f-7643-7638">None</characteristic>
+                        <characteristic name="Token Skills" typeId="9cac-1866-e02e-1d1d">Focus, Guard</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <rules>
+                    <rule id="8b1a-984f-f2f0-a200" name="Opportunist" hidden="false">
+                      <description>While attacking outside its activation, Tiger Knight gains Advantage. 
+
+Note: This is essentially when you are commanded to activate when you are outside its activation turn. </description>
+                    </rule>
+                    <rule id="61b8-fb9e-08ef-d577" name="The Best Defence" hidden="false">
+                      <description>When an enemy enters Tiger Knight&apos;s threat range, discard a Guard Token to Attack that enemy. 
+
+Note: This is a great combo move to use with Opportunist as it will give you Advantage 1. </description>
+                    </rule>
+                  </rules>
+                  <categoryLinks>
+                    <categoryLink id="9e0f-8627-2d17-9f63" name="Troop" hidden="false" targetId="9d34-3652-fcc5-0fa3" primary="false"/>
+                  </categoryLinks>
+                  <costs>
+                    <cost name="Cost" typeId="c494-d0ff-a958-c070" value="5.0"/>
+                    <cost name="Fate" typeId="7540-583a-760c-a57d" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+              <entryLinks>
+                <entryLink id="0354-eee8-5f8c-fec2" name="Upgrades" hidden="false" collective="false" import="true" targetId="ba3b-6f79-e920-db59" type="selectionEntryGroup">
+                  <categoryLinks>
+                    <categoryLink id="e682-58f2-e82b-7e9b" name="Upgrades" hidden="false" targetId="6173-1a99-a86b-6e28" primary="false"/>
+                  </categoryLinks>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="a1bf-596c-24e2-41c6" name="Rose Knights" hidden="false" collective="false" import="true">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="751b-acfa-59d1-a898" type="max"/>
+              </constraints>
+              <categoryLinks>
+                <categoryLink id="c4e5-91d7-0bd7-43c1" name="Troop" hidden="false" targetId="9d34-3652-fcc5-0fa3" primary="false"/>
+              </categoryLinks>
+              <selectionEntries>
+                <selectionEntry id="786f-2afd-46a4-eca4" name="1 Knight" hidden="false" collective="false" import="true" type="model">
+                  <profiles>
+                    <profile id="6820-4fa1-a6a5-863f" name="Rose Knight" hidden="false" typeId="67ed-66d0-e4ae-8ccc" typeName="Troop">
+                      <characteristics>
+                        <characteristic name="Health" typeId="0aff-3d11-f241-82a0">3</characteristic>
+                        <characteristic name="Attack" typeId="67da-6694-0f94-47c5">3</characteristic>
+                        <characteristic name="Range" typeId="b4f1-ad98-8eb1-e25d">1</characteristic>
+                        <characteristic name="Defense" typeId="5dba-13c9-182c-c04c">3</characteristic>
+                        <characteristic name="Armour" typeId="11f5-dd18-2756-6e91">1</characteristic>
+                        <characteristic name="Speed" typeId="5fba-4ecc-4581-be8e">4</characteristic>
+                        <characteristic name="Skill 1" typeId="89e2-1316-b1f4-737b">Avenger (Reaction)</characteristic>
+                        <characteristic name="Skill 2" typeId="6008-87fa-4c1a-6cee">Teamwork (Constant)</characteristic>
+                        <characteristic name="Traits" typeId="a185-ee4a-642e-37d2">Rose, Knight, Human</characteristic>
+                        <characteristic name="Criticals" typeId="9ef8-76bb-c4cc-3a78">Explode</characteristic>
+                        <characteristic name="VP Track" typeId="a0b2-ad1b-7f1e-f32c">Fallen:
+3 Points</characteristic>
+                        <characteristic name="Keywords" typeId="c4f7-494f-7643-7638">Accuracy 1</characteristic>
+                        <characteristic name="Token Skills" typeId="9cac-1866-e02e-1d1d">Focus</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <rules>
+                    <rule id="90af-4602-4d92-fe7d" name="Avenger" hidden="false">
+                      <description>When a friendly Hero or Rose character within 2 false Focus or Attack</description>
+                    </rule>
+                    <rule id="789d-da18-2e75-d371" name="Teamwork" hidden="false">
+                      <description>Rose Knights gain Accuracy 2 while attacking a flanked character. </description>
+                    </rule>
+                  </rules>
+                  <categoryLinks>
+                    <categoryLink id="0aed-d8b3-dd13-f918" name="Troop" hidden="false" targetId="9d34-3652-fcc5-0fa3" primary="false"/>
+                  </categoryLinks>
+                  <costs>
+                    <cost name="Cost" typeId="c494-d0ff-a958-c070" value="3.0"/>
+                    <cost name="Fate" typeId="7540-583a-760c-a57d" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="9f09-a795-3107-a149" name="3 Knights" hidden="false" collective="false" import="true" type="model">
+                  <profiles>
+                    <profile id="90ba-910f-c879-93f1" name="Rose Knight" hidden="false" typeId="67ed-66d0-e4ae-8ccc" typeName="Troop">
+                      <characteristics>
+                        <characteristic name="Health" typeId="0aff-3d11-f241-82a0">3</characteristic>
+                        <characteristic name="Attack" typeId="67da-6694-0f94-47c5">3</characteristic>
+                        <characteristic name="Range" typeId="b4f1-ad98-8eb1-e25d">1</characteristic>
+                        <characteristic name="Defense" typeId="5dba-13c9-182c-c04c">3</characteristic>
+                        <characteristic name="Armour" typeId="11f5-dd18-2756-6e91">1</characteristic>
+                        <characteristic name="Speed" typeId="5fba-4ecc-4581-be8e">4</characteristic>
+                        <characteristic name="Skill 1" typeId="89e2-1316-b1f4-737b">Avenger (Reaction)</characteristic>
+                        <characteristic name="Skill 2" typeId="6008-87fa-4c1a-6cee">Teamwork (Constant)</characteristic>
+                        <characteristic name="Traits" typeId="a185-ee4a-642e-37d2">Rose, Knight, Human</characteristic>
+                        <characteristic name="Criticals" typeId="9ef8-76bb-c4cc-3a78">Explode</characteristic>
+                        <characteristic name="VP Track" typeId="a0b2-ad1b-7f1e-f32c">Fallen:
+1 = 3 Points
+2 = 5 Points
+3 = 7 Points</characteristic>
+                        <characteristic name="Keywords" typeId="c4f7-494f-7643-7638">Accuracy 1</characteristic>
+                        <characteristic name="Token Skills" typeId="9cac-1866-e02e-1d1d">Focus</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <rules>
+                    <rule id="5c8c-b8fe-3c14-1ebd" name="Avenger" hidden="false">
+                      <description>When a friendly Hero or Rose character within 2 false Focus or Attack</description>
+                    </rule>
+                    <rule id="7ce8-c754-0764-4717" name="Teamwork" hidden="false">
+                      <description>Rose Knights gain Accuracy 2 while attacking a flanked character. </description>
+                    </rule>
+                  </rules>
+                  <categoryLinks>
+                    <categoryLink id="deaf-e655-8f04-63fd" name="Troop" hidden="false" targetId="9d34-3652-fcc5-0fa3" primary="false"/>
+                  </categoryLinks>
+                  <costs>
+                    <cost name="Cost" typeId="c494-d0ff-a958-c070" value="7.0"/>
+                    <cost name="Fate" typeId="7540-583a-760c-a57d" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="6576-9d3f-a8c9-1e7f" name="2 Knights" hidden="false" collective="false" import="true" type="model">
+                  <profiles>
+                    <profile id="92cd-6212-3075-6555" name="Rose Knight" hidden="false" typeId="67ed-66d0-e4ae-8ccc" typeName="Troop">
+                      <characteristics>
+                        <characteristic name="Health" typeId="0aff-3d11-f241-82a0">3</characteristic>
+                        <characteristic name="Attack" typeId="67da-6694-0f94-47c5">3</characteristic>
+                        <characteristic name="Range" typeId="b4f1-ad98-8eb1-e25d">1</characteristic>
+                        <characteristic name="Defense" typeId="5dba-13c9-182c-c04c">3</characteristic>
+                        <characteristic name="Armour" typeId="11f5-dd18-2756-6e91">1</characteristic>
+                        <characteristic name="Speed" typeId="5fba-4ecc-4581-be8e">4</characteristic>
+                        <characteristic name="Skill 1" typeId="89e2-1316-b1f4-737b">Avenger (Reaction)</characteristic>
+                        <characteristic name="Skill 2" typeId="6008-87fa-4c1a-6cee">Teamwork (Constant)</characteristic>
+                        <characteristic name="Traits" typeId="a185-ee4a-642e-37d2">Rose, Knight, Human</characteristic>
+                        <characteristic name="Criticals" typeId="9ef8-76bb-c4cc-3a78">Explode</characteristic>
+                        <characteristic name="VP Track" typeId="a0b2-ad1b-7f1e-f32c">Fallen:
+1 = 3 Points
+2 = 5 Points
+</characteristic>
+                        <characteristic name="Keywords" typeId="c4f7-494f-7643-7638">Accuracy 1</characteristic>
+                        <characteristic name="Token Skills" typeId="9cac-1866-e02e-1d1d">Focus</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <rules>
+                    <rule id="bfa6-3e25-5b72-ba8a" name="Avenger" hidden="false">
+                      <description>When a friendly Hero or Rose character within 2 false Focus or Attack</description>
+                    </rule>
+                    <rule id="7813-65db-5c65-6b81" name="Teamwork" hidden="false">
+                      <description>Rose Knights gain Accuracy 2 while attacking a flanked character. </description>
+                    </rule>
+                  </rules>
+                  <categoryLinks>
+                    <categoryLink id="61fa-90c3-decf-354b" name="Troop" hidden="false" targetId="9d34-3652-fcc5-0fa3" primary="false"/>
+                  </categoryLinks>
+                  <costs>
+                    <cost name="Cost" typeId="c494-d0ff-a958-c070" value="5.0"/>
+                    <cost name="Fate" typeId="7540-583a-760c-a57d" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+              <entryLinks>
+                <entryLink id="665c-96b4-8ce4-e7d7" name="Upgrades" hidden="false" collective="false" import="true" targetId="ba3b-6f79-e920-db59" type="selectionEntryGroup">
+                  <categoryLinks>
+                    <categoryLink id="c39f-5398-48c2-243f" name="Upgrades" hidden="false" targetId="6173-1a99-a86b-6e28" primary="false"/>
+                  </categoryLinks>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="1525-2fd7-6944-ba87" name="Rose Knights" hidden="false" collective="false" import="true">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="73b9-4172-29e9-8c87" type="max"/>
+              </constraints>
+              <categoryLinks>
+                <categoryLink id="0cb7-67bf-9bcf-3af5" name="Troop" hidden="false" targetId="9d34-3652-fcc5-0fa3" primary="false"/>
+              </categoryLinks>
+              <selectionEntries>
+                <selectionEntry id="3552-d8f9-607b-47ed" name="1 Knight" hidden="false" collective="false" import="true" type="model">
+                  <profiles>
+                    <profile id="826a-859c-1550-81ed" name="Rose Knight" hidden="false" typeId="67ed-66d0-e4ae-8ccc" typeName="Troop">
+                      <characteristics>
+                        <characteristic name="Health" typeId="0aff-3d11-f241-82a0">3</characteristic>
+                        <characteristic name="Attack" typeId="67da-6694-0f94-47c5">3</characteristic>
+                        <characteristic name="Range" typeId="b4f1-ad98-8eb1-e25d">1</characteristic>
+                        <characteristic name="Defense" typeId="5dba-13c9-182c-c04c">3</characteristic>
+                        <characteristic name="Armour" typeId="11f5-dd18-2756-6e91">1</characteristic>
+                        <characteristic name="Speed" typeId="5fba-4ecc-4581-be8e">4</characteristic>
+                        <characteristic name="Skill 1" typeId="89e2-1316-b1f4-737b">Avenger (Reaction)</characteristic>
+                        <characteristic name="Skill 2" typeId="6008-87fa-4c1a-6cee">Teamwork (Constant)</characteristic>
+                        <characteristic name="Traits" typeId="a185-ee4a-642e-37d2">Rose, Knight, Human</characteristic>
+                        <characteristic name="Criticals" typeId="9ef8-76bb-c4cc-3a78">Explode</characteristic>
+                        <characteristic name="VP Track" typeId="a0b2-ad1b-7f1e-f32c">Fallen:
+3 Points</characteristic>
+                        <characteristic name="Keywords" typeId="c4f7-494f-7643-7638">Accuracy 1</characteristic>
+                        <characteristic name="Token Skills" typeId="9cac-1866-e02e-1d1d">Focus</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <rules>
+                    <rule id="d86e-56c7-d61f-ba91" name="Avenger" hidden="false">
+                      <description>When a friendly Hero or Rose character within 2 false Focus or Attack</description>
+                    </rule>
+                    <rule id="07e1-c0a9-c224-150e" name="Teamwork" hidden="false">
+                      <description>Rose Knights gain Accuracy 2 while attacking a flanked character. </description>
+                    </rule>
+                  </rules>
+                  <categoryLinks>
+                    <categoryLink id="2dd4-9eea-bbb8-b815" name="Troop" hidden="false" targetId="9d34-3652-fcc5-0fa3" primary="false"/>
+                  </categoryLinks>
+                  <costs>
+                    <cost name="Cost" typeId="c494-d0ff-a958-c070" value="3.0"/>
+                    <cost name="Fate" typeId="7540-583a-760c-a57d" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="ef56-0192-fa0c-7568" name="3 Knights" hidden="false" collective="false" import="true" type="model">
+                  <profiles>
+                    <profile id="6639-064d-794c-5126" name="Rose Knight" hidden="false" typeId="67ed-66d0-e4ae-8ccc" typeName="Troop">
+                      <characteristics>
+                        <characteristic name="Health" typeId="0aff-3d11-f241-82a0">3</characteristic>
+                        <characteristic name="Attack" typeId="67da-6694-0f94-47c5">3</characteristic>
+                        <characteristic name="Range" typeId="b4f1-ad98-8eb1-e25d">1</characteristic>
+                        <characteristic name="Defense" typeId="5dba-13c9-182c-c04c">3</characteristic>
+                        <characteristic name="Armour" typeId="11f5-dd18-2756-6e91">1</characteristic>
+                        <characteristic name="Speed" typeId="5fba-4ecc-4581-be8e">4</characteristic>
+                        <characteristic name="Skill 1" typeId="89e2-1316-b1f4-737b">Avenger (Reaction)</characteristic>
+                        <characteristic name="Skill 2" typeId="6008-87fa-4c1a-6cee">Teamwork (Constant)</characteristic>
+                        <characteristic name="Traits" typeId="a185-ee4a-642e-37d2">Rose, Knight, Human</characteristic>
+                        <characteristic name="Criticals" typeId="9ef8-76bb-c4cc-3a78">Explode</characteristic>
+                        <characteristic name="VP Track" typeId="a0b2-ad1b-7f1e-f32c">Fallen:
+1 = 3 Points
+2 = 5 Points
+3 = 7 Points</characteristic>
+                        <characteristic name="Keywords" typeId="c4f7-494f-7643-7638">Accuracy 1</characteristic>
+                        <characteristic name="Token Skills" typeId="9cac-1866-e02e-1d1d">Focus</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <rules>
+                    <rule id="ddfa-a53f-cbb0-6574" name="Avenger" hidden="false">
+                      <description>When a friendly Hero or Rose character within 2 false Focus or Attack</description>
+                    </rule>
+                    <rule id="4e74-cd65-a4dd-7b46" name="Teamwork" hidden="false">
+                      <description>Rose Knights gain Accuracy 2 while attacking a flanked character. </description>
+                    </rule>
+                  </rules>
+                  <categoryLinks>
+                    <categoryLink id="6864-a36a-c31a-88e1" name="Troop" hidden="false" targetId="9d34-3652-fcc5-0fa3" primary="false"/>
+                  </categoryLinks>
+                  <costs>
+                    <cost name="Cost" typeId="c494-d0ff-a958-c070" value="7.0"/>
+                    <cost name="Fate" typeId="7540-583a-760c-a57d" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="6af6-cb0f-9f80-b03e" name="2 Knights" hidden="false" collective="false" import="true" type="model">
+                  <profiles>
+                    <profile id="52db-76e6-c98c-0d53" name="Rose Knight" hidden="false" typeId="67ed-66d0-e4ae-8ccc" typeName="Troop">
+                      <characteristics>
+                        <characteristic name="Health" typeId="0aff-3d11-f241-82a0">3</characteristic>
+                        <characteristic name="Attack" typeId="67da-6694-0f94-47c5">3</characteristic>
+                        <characteristic name="Range" typeId="b4f1-ad98-8eb1-e25d">1</characteristic>
+                        <characteristic name="Defense" typeId="5dba-13c9-182c-c04c">3</characteristic>
+                        <characteristic name="Armour" typeId="11f5-dd18-2756-6e91">1</characteristic>
+                        <characteristic name="Speed" typeId="5fba-4ecc-4581-be8e">4</characteristic>
+                        <characteristic name="Skill 1" typeId="89e2-1316-b1f4-737b">Avenger (Reaction)</characteristic>
+                        <characteristic name="Skill 2" typeId="6008-87fa-4c1a-6cee">Teamwork (Constant)</characteristic>
+                        <characteristic name="Traits" typeId="a185-ee4a-642e-37d2">Rose, Knight, Human</characteristic>
+                        <characteristic name="Criticals" typeId="9ef8-76bb-c4cc-3a78">Explode</characteristic>
+                        <characteristic name="VP Track" typeId="a0b2-ad1b-7f1e-f32c">Fallen:
+1 = 3 Points
+2 = 5 Points
+</characteristic>
+                        <characteristic name="Keywords" typeId="c4f7-494f-7643-7638">Accuracy 1</characteristic>
+                        <characteristic name="Token Skills" typeId="9cac-1866-e02e-1d1d">Focus</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <rules>
+                    <rule id="1012-70a1-b3bc-c46b" name="Avenger" hidden="false">
+                      <description>When a friendly Hero or Rose character within 2 false Focus or Attack</description>
+                    </rule>
+                    <rule id="b0a6-4da4-605c-0d83" name="Teamwork" hidden="false">
+                      <description>Rose Knights gain Accuracy 2 while attacking a flanked character. </description>
+                    </rule>
+                  </rules>
+                  <categoryLinks>
+                    <categoryLink id="09c8-bc51-277c-1973" name="Troop" hidden="false" targetId="9d34-3652-fcc5-0fa3" primary="false"/>
+                  </categoryLinks>
+                  <costs>
+                    <cost name="Cost" typeId="c494-d0ff-a958-c070" value="5.0"/>
+                    <cost name="Fate" typeId="7540-583a-760c-a57d" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+              <entryLinks>
+                <entryLink id="b1c2-2659-26ff-b76b" name="Upgrades" hidden="false" collective="false" import="true" targetId="ba3b-6f79-e920-db59" type="selectionEntryGroup">
+                  <categoryLinks>
+                    <categoryLink id="ab7c-f859-e773-92f0" name="Upgrades" hidden="false" targetId="6173-1a99-a86b-6e28" primary="false"/>
+                  </categoryLinks>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="a6ab-f6b9-43be-6a55" name="Tiger Knight Archers" hidden="false" collective="false" import="true">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="4303-636a-f31e-c118" type="max"/>
+              </constraints>
+              <rules>
+                <rule id="0706-bd10-75ac-e7cd" name="Blood Scent" hidden="false">
+                  <description>While attacking a Bloodied enemy or an enemy with Wound, Tiger archers gain Accuracy 3.</description>
+                </rule>
+                <rule id="219b-7a03-b669-1a3a" name="Eye of The Tiger" hidden="false">
+                  <description>Friendly characters don&apos;t obstruct Tiger Archer&apos;s ranged attacks. </description>
+                </rule>
+              </rules>
+              <categoryLinks>
+                <categoryLink id="5467-dd84-cc4c-7607" name="Troop" hidden="false" targetId="9d34-3652-fcc5-0fa3" primary="false"/>
+              </categoryLinks>
+              <selectionEntries>
+                <selectionEntry id="f97a-222b-1374-f036" name="1 Archer" hidden="false" collective="false" import="true" type="model">
+                  <profiles>
+                    <profile id="fd5a-8f83-6288-b088" name="Tiger Knight Archer" hidden="false" typeId="67ed-66d0-e4ae-8ccc" typeName="Troop">
+                      <characteristics>
+                        <characteristic name="Health" typeId="0aff-3d11-f241-82a0">4</characteristic>
+                        <characteristic name="Attack" typeId="67da-6694-0f94-47c5">2</characteristic>
+                        <characteristic name="Range" typeId="b4f1-ad98-8eb1-e25d">1 Melee/ 4 Ranged</characteristic>
+                        <characteristic name="Defense" typeId="5dba-13c9-182c-c04c">3</characteristic>
+                        <characteristic name="Armour" typeId="11f5-dd18-2756-6e91">0</characteristic>
+                        <characteristic name="Speed" typeId="5fba-4ecc-4581-be8e">4</characteristic>
+                        <characteristic name="Skill 1" typeId="89e2-1316-b1f4-737b">Blood Scent (Constant)</characteristic>
+                        <characteristic name="Skill 2" typeId="6008-87fa-4c1a-6cee">Eye of the Tiger (Constant)</characteristic>
+                        <characteristic name="Traits" typeId="a185-ee4a-642e-37d2">Human, Marksman, Knight</characteristic>
+                        <characteristic name="Criticals" typeId="9ef8-76bb-c4cc-3a78">Explode</characteristic>
+                        <characteristic name="VP Track" typeId="a0b2-ad1b-7f1e-f32c">Fallen:
+3 Points</characteristic>
+                        <characteristic name="Keywords" typeId="c4f7-494f-7643-7638">Pierce 1</characteristic>
+                        <characteristic name="Token Skills" typeId="9cac-1866-e02e-1d1d">Focus</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <rules>
+                    <rule id="0eb5-58b3-cec8-2b3b" name="Blood Scent" hidden="false">
+                      <description>While attacking a Bloodied enemy or an enemy with Wound, Tiger archers gain Accuracy 3.</description>
+                    </rule>
+                    <rule id="c8c6-a782-b4bc-c8a0" name="Eye of The Tiger" hidden="false">
+                      <description>Friendly characters don&apos;t obstruct Tiger Archer&apos;s ranged attacks. </description>
+                    </rule>
+                  </rules>
+                  <categoryLinks>
+                    <categoryLink id="1b84-ca11-f345-ae46" name="Troop" hidden="false" targetId="9d34-3652-fcc5-0fa3" primary="false"/>
+                  </categoryLinks>
+                  <costs>
+                    <cost name="Cost" typeId="c494-d0ff-a958-c070" value="3.0"/>
+                    <cost name="Fate" typeId="7540-583a-760c-a57d" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="7e50-b2dc-c6a9-41a2" name="3 Archers" hidden="false" collective="false" import="true" type="model">
+                  <profiles>
+                    <profile id="345a-b60a-bf97-15cc" name="Tiger Knight Archer" hidden="false" typeId="67ed-66d0-e4ae-8ccc" typeName="Troop">
+                      <characteristics>
+                        <characteristic name="Health" typeId="0aff-3d11-f241-82a0">4</characteristic>
+                        <characteristic name="Attack" typeId="67da-6694-0f94-47c5">2</characteristic>
+                        <characteristic name="Range" typeId="b4f1-ad98-8eb1-e25d">1 Melee/ 4 Ranged</characteristic>
+                        <characteristic name="Defense" typeId="5dba-13c9-182c-c04c">3</characteristic>
+                        <characteristic name="Armour" typeId="11f5-dd18-2756-6e91">0</characteristic>
+                        <characteristic name="Speed" typeId="5fba-4ecc-4581-be8e">4</characteristic>
+                        <characteristic name="Skill 1" typeId="89e2-1316-b1f4-737b">Blood Scent (Constant)</characteristic>
+                        <characteristic name="Skill 2" typeId="6008-87fa-4c1a-6cee">Eye of the Tiger (Constant)</characteristic>
+                        <characteristic name="Traits" typeId="a185-ee4a-642e-37d2">Human, Marksman, Knight</characteristic>
+                        <characteristic name="Criticals" typeId="9ef8-76bb-c4cc-3a78">Explode</characteristic>
+                        <characteristic name="VP Track" typeId="a0b2-ad1b-7f1e-f32c">Fallen:
+1= 3 Points
+2= 6 Points
+3= 8 Points</characteristic>
+                        <characteristic name="Keywords" typeId="c4f7-494f-7643-7638">Pierce 1</characteristic>
+                        <characteristic name="Token Skills" typeId="9cac-1866-e02e-1d1d">Focus</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <rules>
+                    <rule id="ce67-0ce2-6b0f-2031" name="Blood Scent" hidden="false">
+                      <description>While attacking a Bloodied enemy or an enemy with Wound, Tiger archers gain Accuracy 3.</description>
+                    </rule>
+                    <rule id="3196-4d1a-5245-a855" name="Eye of The Tiger" hidden="false">
+                      <description>Friendly characters don&apos;t obstruct Tiger Archer&apos;s ranged attacks. </description>
+                    </rule>
+                  </rules>
+                  <categoryLinks>
+                    <categoryLink id="5f25-d545-a89d-6fee" name="Troop" hidden="false" targetId="9d34-3652-fcc5-0fa3" primary="false"/>
+                  </categoryLinks>
+                  <costs>
+                    <cost name="Cost" typeId="c494-d0ff-a958-c070" value="8.0"/>
+                    <cost name="Fate" typeId="7540-583a-760c-a57d" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="7b85-9ec5-e0a2-f08f" name="2 Archers" hidden="false" collective="false" import="true" type="model">
+                  <profiles>
+                    <profile id="ac57-e00b-4328-4d35" name="Tiger Knight Archer" hidden="false" typeId="67ed-66d0-e4ae-8ccc" typeName="Troop">
+                      <characteristics>
+                        <characteristic name="Health" typeId="0aff-3d11-f241-82a0">4</characteristic>
+                        <characteristic name="Attack" typeId="67da-6694-0f94-47c5">2</characteristic>
+                        <characteristic name="Range" typeId="b4f1-ad98-8eb1-e25d">1 Melee/ 4 Ranged</characteristic>
+                        <characteristic name="Defense" typeId="5dba-13c9-182c-c04c">3</characteristic>
+                        <characteristic name="Armour" typeId="11f5-dd18-2756-6e91">0</characteristic>
+                        <characteristic name="Speed" typeId="5fba-4ecc-4581-be8e">4</characteristic>
+                        <characteristic name="Skill 1" typeId="89e2-1316-b1f4-737b">Blood Scent (Constant)</characteristic>
+                        <characteristic name="Skill 2" typeId="6008-87fa-4c1a-6cee">Eye of the Tiger (Constant)</characteristic>
+                        <characteristic name="Traits" typeId="a185-ee4a-642e-37d2">Human, Marksman, Knight</characteristic>
+                        <characteristic name="Criticals" typeId="9ef8-76bb-c4cc-3a78">Explode</characteristic>
+                        <characteristic name="VP Track" typeId="a0b2-ad1b-7f1e-f32c">Fallen:
+1= 3 Points
+2= 6 Points
+</characteristic>
+                        <characteristic name="Keywords" typeId="c4f7-494f-7643-7638">Pierce 1</characteristic>
+                        <characteristic name="Token Skills" typeId="9cac-1866-e02e-1d1d">Focus</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <rules>
+                    <rule id="32b3-2442-c428-268b" name="Blood Scent" hidden="false">
+                      <description>While attacking a Bloodied enemy or an enemy with Wound, Tiger archers gain Accuracy 3.</description>
+                    </rule>
+                    <rule id="1a3d-afc1-a343-f2c8" name="Eye of The Tiger" hidden="false">
+                      <description>Friendly characters don&apos;t obstruct Tiger Archer&apos;s ranged attacks. </description>
+                    </rule>
+                  </rules>
+                  <categoryLinks>
+                    <categoryLink id="33bb-2f3d-d110-c43a" name="Troop" hidden="false" targetId="9d34-3652-fcc5-0fa3" primary="false"/>
+                  </categoryLinks>
+                  <costs>
+                    <cost name="Cost" typeId="c494-d0ff-a958-c070" value="6.0"/>
+                    <cost name="Fate" typeId="7540-583a-760c-a57d" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+              <entryLinks>
+                <entryLink id="acff-eeb5-72cd-a8ca" name="Upgrades" hidden="false" collective="false" import="true" targetId="ba3b-6f79-e920-db59" type="selectionEntryGroup">
+                  <categoryLinks>
+                    <categoryLink id="0757-6d0a-0f01-5445" name="Upgrades" hidden="false" targetId="6173-1a99-a86b-6e28" primary="false"/>
+                  </categoryLinks>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="33f2-4aa7-b1b1-a587" name="Tiger Knight Halberdiers" hidden="false" collective="false" import="true">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="6323-089a-3825-5f61" type="max"/>
+              </constraints>
+              <rules>
+                <rule id="8f81-43f3-bf4d-ba9a" name="Opportunist" hidden="false">
+                  <description>While attacking outside its activation, Tiger Knight gains Advantage. 
+
+Note: This is essentially when you are commanded to activate when you are outside its activation turn. </description>
+                </rule>
+                <rule id="02e7-5767-ad23-297e" name="The Best Defence" hidden="false">
+                  <description>When an enemy enters Tiger Knight&apos;s threat range, discard a Guard Token to Attack that enemy. 
+
+Note: This is a great combo move to use with Opportunist as it will give you Advantage 1. </description>
+                </rule>
+              </rules>
+              <categoryLinks>
+                <categoryLink id="3b0c-a273-3d67-5eb5" name="Troop" hidden="false" targetId="9d34-3652-fcc5-0fa3" primary="false"/>
+              </categoryLinks>
+              <selectionEntries>
+                <selectionEntry id="90bf-7c79-aa2f-447c" name="1 Halberdier" hidden="false" collective="false" import="true" type="model">
+                  <profiles>
+                    <profile id="e79c-6631-dda6-3748" name="Tiger Knight Halberdier" hidden="false" typeId="67ed-66d0-e4ae-8ccc" typeName="Troop">
+                      <characteristics>
+                        <characteristic name="Health" typeId="0aff-3d11-f241-82a0">4</characteristic>
+                        <characteristic name="Attack" typeId="67da-6694-0f94-47c5">3</characteristic>
+                        <characteristic name="Range" typeId="b4f1-ad98-8eb1-e25d">1</characteristic>
+                        <characteristic name="Defense" typeId="5dba-13c9-182c-c04c">3</characteristic>
+                        <characteristic name="Armour" typeId="11f5-dd18-2756-6e91">0</characteristic>
+                        <characteristic name="Speed" typeId="5fba-4ecc-4581-be8e">4</characteristic>
+                        <characteristic name="Skill 1" typeId="89e2-1316-b1f4-737b">Opportunist (Constant)</characteristic>
+                        <characteristic name="Skill 2" typeId="6008-87fa-4c1a-6cee">The Best Defence (Reaction)</characteristic>
+                        <characteristic name="Traits" typeId="a185-ee4a-642e-37d2">Guardian, Knight, Human</characteristic>
+                        <characteristic name="Criticals" typeId="9ef8-76bb-c4cc-3a78">Explode, Wound</characteristic>
+                        <characteristic name="VP Track" typeId="a0b2-ad1b-7f1e-f32c">Fallen:
+3 Points</characteristic>
+                        <characteristic name="Keywords" typeId="c4f7-494f-7643-7638">None</characteristic>
+                        <characteristic name="Token Skills" typeId="9cac-1866-e02e-1d1d">Focus, Guard</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <rules>
+                    <rule id="d153-eb5f-7028-7111" name="Opportunist" hidden="false">
+                      <description>While attacking outside its activation, Tiger Knight gains Advantage. 
+
+Note: This is essentially when you are commanded to activate when you are outside its activation turn. </description>
+                    </rule>
+                    <rule id="3f76-4ed1-abea-70c9" name="The Best Defence" hidden="false">
+                      <description>When an enemy enters Tiger Knight&apos;s threat range, discard a Guard Token to Attack that enemy. 
+
+Note: This is a great combo move to use with Opportunist as it will give you Advantage 1. </description>
+                    </rule>
+                  </rules>
+                  <categoryLinks>
+                    <categoryLink id="39d2-2da2-d2e3-7a2c" name="Troop" hidden="false" targetId="9d34-3652-fcc5-0fa3" primary="false"/>
+                  </categoryLinks>
+                  <costs>
+                    <cost name="Cost" typeId="c494-d0ff-a958-c070" value="3.0"/>
+                    <cost name="Fate" typeId="7540-583a-760c-a57d" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="f708-2cd8-d7d8-4f7e" name="3 Halberdier" hidden="false" collective="false" import="true" type="model">
+                  <profiles>
+                    <profile id="deb1-2979-f79d-26df" name="Tiger Knight Halberdier" hidden="false" typeId="67ed-66d0-e4ae-8ccc" typeName="Troop">
+                      <characteristics>
+                        <characteristic name="Health" typeId="0aff-3d11-f241-82a0">4</characteristic>
+                        <characteristic name="Attack" typeId="67da-6694-0f94-47c5">3</characteristic>
+                        <characteristic name="Range" typeId="b4f1-ad98-8eb1-e25d">1</characteristic>
+                        <characteristic name="Defense" typeId="5dba-13c9-182c-c04c">3</characteristic>
+                        <characteristic name="Armour" typeId="11f5-dd18-2756-6e91">0</characteristic>
+                        <characteristic name="Speed" typeId="5fba-4ecc-4581-be8e">4</characteristic>
+                        <characteristic name="Skill 1" typeId="89e2-1316-b1f4-737b">Opportunist (Constant)</characteristic>
+                        <characteristic name="Skill 2" typeId="6008-87fa-4c1a-6cee">The Best Defence (Reaction)</characteristic>
+                        <characteristic name="Traits" typeId="a185-ee4a-642e-37d2">Guardian, Knight, Human</characteristic>
+                        <characteristic name="Criticals" typeId="9ef8-76bb-c4cc-3a78">Explode, Wound</characteristic>
+                        <characteristic name="VP Track" typeId="a0b2-ad1b-7f1e-f32c">Fallen:
+1 = 3 Points
+2 = 5 Points
+3 = 7 Points</characteristic>
+                        <characteristic name="Keywords" typeId="c4f7-494f-7643-7638">None</characteristic>
+                        <characteristic name="Token Skills" typeId="9cac-1866-e02e-1d1d">Focus, Guard</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <rules>
+                    <rule id="30d5-781b-2eef-e25c" name="Opportunist" hidden="false">
+                      <description>While attacking outside its activation, Tiger Knight gains Advantage. 
+
+Note: This is essentially when you are commanded to activate when you are outside its activation turn. </description>
+                    </rule>
+                    <rule id="6b88-7976-eb24-6a8c" name="The Best Defence" hidden="false">
+                      <description>When an enemy enters Tiger Knight&apos;s threat range, discard a Guard Token to Attack that enemy. 
+
+Note: This is a great combo move to use with Opportunist as it will give you Advantage 1. </description>
+                    </rule>
+                  </rules>
+                  <categoryLinks>
+                    <categoryLink id="bdec-1de8-bb5f-09e6" name="Troop" hidden="false" targetId="9d34-3652-fcc5-0fa3" primary="false"/>
+                  </categoryLinks>
+                  <costs>
+                    <cost name="Cost" typeId="c494-d0ff-a958-c070" value="7.0"/>
+                    <cost name="Fate" typeId="7540-583a-760c-a57d" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="6d3a-1ecc-5c8d-015e" name="2 Halberdier" hidden="false" collective="false" import="true" type="model">
+                  <profiles>
+                    <profile id="9dcd-79c6-96f8-9f28" name="Tiger Knight Halberdier" hidden="false" typeId="67ed-66d0-e4ae-8ccc" typeName="Troop">
+                      <characteristics>
+                        <characteristic name="Health" typeId="0aff-3d11-f241-82a0">4</characteristic>
+                        <characteristic name="Attack" typeId="67da-6694-0f94-47c5">3</characteristic>
+                        <characteristic name="Range" typeId="b4f1-ad98-8eb1-e25d">1</characteristic>
+                        <characteristic name="Defense" typeId="5dba-13c9-182c-c04c">3</characteristic>
+                        <characteristic name="Armour" typeId="11f5-dd18-2756-6e91">0</characteristic>
+                        <characteristic name="Speed" typeId="5fba-4ecc-4581-be8e">4</characteristic>
+                        <characteristic name="Skill 1" typeId="89e2-1316-b1f4-737b">Opportunist (Constant)</characteristic>
+                        <characteristic name="Skill 2" typeId="6008-87fa-4c1a-6cee">The Best Defence (Reaction)</characteristic>
+                        <characteristic name="Traits" typeId="a185-ee4a-642e-37d2">Guardian, Knight, Human</characteristic>
+                        <characteristic name="Criticals" typeId="9ef8-76bb-c4cc-3a78">Explode, Wound</characteristic>
+                        <characteristic name="VP Track" typeId="a0b2-ad1b-7f1e-f32c">Fallen:
+1 = 3 Points
+2 = 5 Points
+</characteristic>
+                        <characteristic name="Keywords" typeId="c4f7-494f-7643-7638">None</characteristic>
+                        <characteristic name="Token Skills" typeId="9cac-1866-e02e-1d1d">Focus, Guard</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <rules>
+                    <rule id="64fc-9c28-d874-a548" name="Opportunist" hidden="false">
+                      <description>While attacking outside its activation, Tiger Knight gains Advantage. 
+
+Note: This is essentially when you are commanded to activate when you are outside its activation turn. </description>
+                    </rule>
+                    <rule id="e1d2-33d8-c4f3-293b" name="The Best Defence" hidden="false">
+                      <description>When an enemy enters Tiger Knight&apos;s threat range, discard a Guard Token to Attack that enemy. 
+
+Note: This is a great combo move to use with Opportunist as it will give you Advantage 1. </description>
+                    </rule>
+                  </rules>
+                  <categoryLinks>
+                    <categoryLink id="afdc-934e-981d-8e0a" name="Troop" hidden="false" targetId="9d34-3652-fcc5-0fa3" primary="false"/>
+                  </categoryLinks>
+                  <costs>
+                    <cost name="Cost" typeId="c494-d0ff-a958-c070" value="5.0"/>
+                    <cost name="Fate" typeId="7540-583a-760c-a57d" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+              <entryLinks>
+                <entryLink id="e0c8-f0e2-6a83-8ef7" name="Upgrades" hidden="false" collective="false" import="true" targetId="ba3b-6f79-e920-db59" type="selectionEntryGroup">
+                  <categoryLinks>
+                    <categoryLink id="5e7f-73c1-46da-75a8" name="Upgrades" hidden="false" targetId="6173-1a99-a86b-6e28" primary="false"/>
+                  </categoryLinks>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="Fate" typeId="7540-583a-760c-a57d" value="0.0"/>
+        <cost name="Cost" typeId="c494-d0ff-a958-c070" value="0.0"/>
+      </costs>
+    </selectionEntry>
+  </sharedSelectionEntries>
+</catalogue>
