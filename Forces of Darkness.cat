@@ -436,6 +436,9 @@ Can only use if there are available Ossilyte models to represent them. </descrip
           </costs>
         </selectionEntry>
         <selectionEntry id="719a-54cc-565f-55bf" name="Maara" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="44be-8b0f-bd23-3173" type="max"/>
+          </constraints>
           <profiles>
             <profile id="9486-59a6-a831-900f" name="Maara" hidden="false" typeId="3ae3-9405-766b-6417" typeName="Hero">
               <characteristics>
@@ -445,25 +448,42 @@ Can only use if there are available Ossilyte models to represent them. </descrip
                 <characteristic name="Defense" typeId="3a86-11ca-f002-eeb7">3</characteristic>
                 <characteristic name="Armour" typeId="462e-16c7-c53f-a16b">1</characteristic>
                 <characteristic name="Speed" typeId="028d-f362-815c-38f0">4</characteristic>
-                <characteristic name="Skill 1" typeId="4b76-bce7-94ec-53ff"/>
-                <characteristic name="Skill 2" typeId="403a-8e7a-a3b3-57db"/>
-                <characteristic name="Skill 3" typeId="cf14-caf6-b618-436c"/>
+                <characteristic name="Skill 1" typeId="4b76-bce7-94ec-53ff">Death&apos;s Call (Constant)</characteristic>
+                <characteristic name="Skill 2" typeId="403a-8e7a-a3b3-57db">Grave Fear {2} (Active Ability)</characteristic>
+                <characteristic name="Skill 3" typeId="cf14-caf6-b618-436c">The Reaper Comes {2} (Swift)</characteristic>
                 <characteristic name="Traits" typeId="4ccc-8757-1b3b-3c31">Arcane, Undead</characteristic>
-                <characteristic name="Criticals" typeId="ef0e-8242-f583-664e"/>
-                <characteristic name="Token Skills" typeId="80f8-014e-3c19-66d6"/>
-                <characteristic name="Keywords" typeId="c0b7-ff64-68c6-0bcc"/>
+                <characteristic name="Criticals" typeId="ef0e-8242-f583-664e">Explode</characteristic>
+                <characteristic name="Token Skills" typeId="80f8-014e-3c19-66d6">Focus, Channel</characteristic>
+                <characteristic name="Keywords" typeId="c0b7-ff64-68c6-0bcc">Evasive 2, Flight, Immune</characteristic>
               </characteristics>
             </profile>
           </profiles>
+          <rules>
+            <rule id="730a-6c74-20c1-bbed" name="Death&apos;s Call" hidden="false">
+              <description>Maara gains Disadvantage while attacking Bloodied characters. Bloodied characters gain Disadvantage while attacking Maara.</description>
+            </rule>
+            <rule id="7a79-f7d5-fb58-2b77" name="Grave Fear" hidden="false">
+              <description>Push 5 and Daze a bloodied or lower ranked character within 3 and sight. </description>
+            </rule>
+            <rule id="47ca-a72a-7fb6-443c" name="The Reaper Comes" hidden="false">
+              <description>Place yourself into a space adjacent to a Bloodied character within 3 and sight. you may Daze that character. </description>
+            </rule>
+          </rules>
           <categoryLinks>
             <categoryLink id="704e-921d-f75c-43fb" name="Hero" hidden="false" targetId="92b2-75fa-5ad7-dc75" primary="false"/>
           </categoryLinks>
+          <entryLinks>
+            <entryLink id="bbea-ffbe-fc15-ef53" name="Upgrades" hidden="false" collective="false" import="true" targetId="ba3b-6f79-e920-db59" type="selectionEntryGroup"/>
+          </entryLinks>
           <costs>
             <cost name="Cost" typeId="c494-d0ff-a958-c070" value="7.0"/>
             <cost name="Fate" typeId="7540-583a-760c-a57d" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="06b1-b1f8-8a23-34b2" name="Mrawl" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="91b6-464f-80e1-b87d" type="max"/>
+          </constraints>
           <profiles>
             <profile id="bc18-df12-f5cd-f03e" name="Mrawl" hidden="false" typeId="3ae3-9405-766b-6417" typeName="Hero">
               <characteristics>
@@ -473,25 +493,42 @@ Can only use if there are available Ossilyte models to represent them. </descrip
                 <characteristic name="Defense" typeId="3a86-11ca-f002-eeb7">3</characteristic>
                 <characteristic name="Armour" typeId="462e-16c7-c53f-a16b">1</characteristic>
                 <characteristic name="Speed" typeId="028d-f362-815c-38f0">4</characteristic>
-                <characteristic name="Skill 1" typeId="4b76-bce7-94ec-53ff"/>
-                <characteristic name="Skill 2" typeId="403a-8e7a-a3b3-57db"/>
-                <characteristic name="Skill 3" typeId="cf14-caf6-b618-436c"/>
+                <characteristic name="Skill 1" typeId="4b76-bce7-94ec-53ff">Impervious (Constant)</characteristic>
+                <characteristic name="Skill 2" typeId="403a-8e7a-a3b3-57db">Monstrous Strength (Reaction) </characteristic>
+                <characteristic name="Skill 3" typeId="cf14-caf6-b618-436c">Preferred Enemy (Reaction)</characteristic>
                 <characteristic name="Traits" typeId="4ccc-8757-1b3b-3c31">Brute, Demon, Beast</characteristic>
-                <characteristic name="Criticals" typeId="ef0e-8242-f583-664e"/>
-                <characteristic name="Token Skills" typeId="80f8-014e-3c19-66d6"/>
-                <characteristic name="Keywords" typeId="c0b7-ff64-68c6-0bcc"/>
+                <characteristic name="Criticals" typeId="ef0e-8242-f583-664e">Explode, Daze</characteristic>
+                <characteristic name="Token Skills" typeId="80f8-014e-3c19-66d6">Focus</characteristic>
+                <characteristic name="Keywords" typeId="c0b7-ff64-68c6-0bcc">Pierce 2</characteristic>
               </characteristics>
             </profile>
           </profiles>
+          <rules>
+            <rule id="db4b-6101-39b8-7acb" name="Impervious" hidden="false">
+              <description>Mrawl can take no more than 3 damage during a single Attack. </description>
+            </rule>
+            <rule id="58ee-0bc8-56f5-5609" name="Monstrous Strength" hidden="false">
+              <description>After Mrawls attack resolves Push X the defender (X= The amount of damage dealt.)</description>
+            </rule>
+            <rule id="e102-0e05-c177-5353" name="Preferred Enemy" hidden="false">
+              <description>When Mrawl is attacking a character with objective token placed by Ektalok, Mrawl gains Advantage. </description>
+            </rule>
+          </rules>
           <categoryLinks>
             <categoryLink id="fe8c-3d79-254f-bd53" name="Hero" hidden="false" targetId="92b2-75fa-5ad7-dc75" primary="false"/>
           </categoryLinks>
+          <entryLinks>
+            <entryLink id="067e-e202-331b-889f" name="Upgrades" hidden="false" collective="false" import="true" targetId="ba3b-6f79-e920-db59" type="selectionEntryGroup"/>
+          </entryLinks>
           <costs>
             <cost name="Cost" typeId="c494-d0ff-a958-c070" value="7.0"/>
             <cost name="Fate" typeId="7540-583a-760c-a57d" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="2dc0-4c9c-1d95-5d6d" name="Akturis" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="63b5-aa08-ad85-7757" type="max"/>
+          </constraints>
           <profiles>
             <profile id="1fd9-928f-2668-79b8" name="Akturis" hidden="false" typeId="3ae3-9405-766b-6417" typeName="Hero">
               <characteristics>
@@ -501,25 +538,42 @@ Can only use if there are available Ossilyte models to represent them. </descrip
                 <characteristic name="Defense" typeId="3a86-11ca-f002-eeb7">3</characteristic>
                 <characteristic name="Armour" typeId="462e-16c7-c53f-a16b">1</characteristic>
                 <characteristic name="Speed" typeId="028d-f362-815c-38f0">4</characteristic>
-                <characteristic name="Skill 1" typeId="4b76-bce7-94ec-53ff"/>
-                <characteristic name="Skill 2" typeId="403a-8e7a-a3b3-57db"/>
-                <characteristic name="Skill 3" typeId="cf14-caf6-b618-436c"/>
+                <characteristic name="Skill 1" typeId="4b76-bce7-94ec-53ff">Forsaking Honor (Constant)</characteristic>
+                <characteristic name="Skill 2" typeId="403a-8e7a-a3b3-57db">Incredible Luck {2} (Reaction)</characteristic>
+                <characteristic name="Skill 3" typeId="cf14-caf6-b618-436c">Unliving Glare {2} (Swift)</characteristic>
                 <characteristic name="Traits" typeId="4ccc-8757-1b3b-3c31">Ossi;lyte, Rouge, Undead</characteristic>
-                <characteristic name="Criticals" typeId="ef0e-8242-f583-664e"/>
-                <characteristic name="Token Skills" typeId="80f8-014e-3c19-66d6"/>
-                <characteristic name="Keywords" typeId="c0b7-ff64-68c6-0bcc"/>
+                <characteristic name="Criticals" typeId="ef0e-8242-f583-664e">Explode</characteristic>
+                <characteristic name="Token Skills" typeId="80f8-014e-3c19-66d6">Focus, Evade</characteristic>
+                <characteristic name="Keywords" typeId="c0b7-ff64-68c6-0bcc">Evade 1, Immune, Pierce 1</characteristic>
               </characteristics>
             </profile>
           </profiles>
+          <rules>
+            <rule id="186d-4fcd-7e49-03e8" name="Forsaking Honor" hidden="false">
+              <description>While attacking a character threatened by another friendly character, Akturis gains Advantage</description>
+            </rule>
+            <rule id="cc47-ad96-20d8-f37e" name="Unliving Glare" hidden="false">
+              <description>Daze and Immobilise a lower cost character within 3 and sight.  </description>
+            </rule>
+            <rule id="4437-47f0-422f-a0a6" name="Incredible Luck" hidden="false">
+              <description>After dice are rolled while Akturis is attacking or defending you may change one 0 to a 5 or a 5 to a 0. that die is considered to have been re-rolled. </description>
+            </rule>
+          </rules>
           <categoryLinks>
             <categoryLink id="f593-7037-9f16-084c" name="Hero" hidden="false" targetId="92b2-75fa-5ad7-dc75" primary="false"/>
           </categoryLinks>
+          <entryLinks>
+            <entryLink id="bece-c91b-5140-3fd7" name="Upgrades" hidden="false" collective="false" import="true" targetId="ba3b-6f79-e920-db59" type="selectionEntryGroup"/>
+          </entryLinks>
           <costs>
             <cost name="Cost" typeId="c494-d0ff-a958-c070" value="7.0"/>
             <cost name="Fate" typeId="7540-583a-760c-a57d" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="c01f-2bbc-cc6c-f009" name="Triel" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="609b-fe23-91b1-2dce" type="max"/>
+          </constraints>
           <profiles>
             <profile id="5aa1-93da-6598-84b3" name="Triel" hidden="false" typeId="3ae3-9405-766b-6417" typeName="Hero">
               <characteristics>
@@ -529,25 +583,42 @@ Can only use if there are available Ossilyte models to represent them. </descrip
                 <characteristic name="Defense" typeId="3a86-11ca-f002-eeb7">3</characteristic>
                 <characteristic name="Armour" typeId="462e-16c7-c53f-a16b">0</characteristic>
                 <characteristic name="Speed" typeId="028d-f362-815c-38f0">5</characteristic>
-                <characteristic name="Skill 1" typeId="4b76-bce7-94ec-53ff"/>
-                <characteristic name="Skill 2" typeId="403a-8e7a-a3b3-57db"/>
-                <characteristic name="Skill 3" typeId="cf14-caf6-b618-436c"/>
+                <characteristic name="Skill 1" typeId="4b76-bce7-94ec-53ff">Kiss of Fire {2} (Active Abiliy)</characteristic>
+                <characteristic name="Skill 2" typeId="403a-8e7a-a3b3-57db">Silppery (Reaction)</characteristic>
+                <characteristic name="Skill 3" typeId="cf14-caf6-b618-436c">Swift Strike (Reaction)</characteristic>
                 <characteristic name="Traits" typeId="4ccc-8757-1b3b-3c31">Arcane, Demon, Lillin, Rouge</characteristic>
-                <characteristic name="Criticals" typeId="ef0e-8242-f583-664e"/>
-                <characteristic name="Token Skills" typeId="80f8-014e-3c19-66d6"/>
-                <characteristic name="Keywords" typeId="c0b7-ff64-68c6-0bcc"/>
+                <characteristic name="Criticals" typeId="ef0e-8242-f583-664e">Explode</characteristic>
+                <characteristic name="Token Skills" typeId="80f8-014e-3c19-66d6">Focus, Channel, Evade</characteristic>
+                <characteristic name="Keywords" typeId="c0b7-ff64-68c6-0bcc">Accuracy 2, Evasive 4, Reach</characteristic>
               </characteristics>
             </profile>
           </profiles>
+          <rules>
+            <rule id="74bd-5328-45ac-b11e" name="Kiss of Fire" hidden="false">
+              <description>Attack 4{4}, Pierce 2 (Wound)</description>
+            </rule>
+            <rule id="210a-1b9d-e62b-0dd8" name="Slippery" hidden="false">
+              <description>Tiriel can move though characters and does not provoke Attacks of opportunity. </description>
+            </rule>
+            <rule id="e0fe-1c9b-b013-59ff" name="Swift Strike" hidden="false">
+              <description>While attacking a ready character, Tiriel gains Advantage</description>
+            </rule>
+          </rules>
           <categoryLinks>
             <categoryLink id="ee5c-9e83-519b-5fe9" name="Hero" hidden="false" targetId="92b2-75fa-5ad7-dc75" primary="false"/>
           </categoryLinks>
+          <entryLinks>
+            <entryLink id="6600-2ce8-bd57-a77b" name="Upgrades" hidden="false" collective="false" import="true" targetId="ba3b-6f79-e920-db59" type="selectionEntryGroup"/>
+          </entryLinks>
           <costs>
             <cost name="Cost" typeId="c494-d0ff-a958-c070" value="7.0"/>
             <cost name="Fate" typeId="7540-583a-760c-a57d" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="e299-2cc1-0ed3-13f0" name="Aeteranius" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1e2f-89dc-243e-bcf0" type="max"/>
+          </constraints>
           <profiles>
             <profile id="ee62-d837-32a8-960c" name="Aeteranius" hidden="false" typeId="3ae3-9405-766b-6417" typeName="Hero">
               <characteristics>
@@ -557,19 +628,33 @@ Can only use if there are available Ossilyte models to represent them. </descrip
                 <characteristic name="Defense" typeId="3a86-11ca-f002-eeb7">3</characteristic>
                 <characteristic name="Armour" typeId="462e-16c7-c53f-a16b">1</characteristic>
                 <characteristic name="Speed" typeId="028d-f362-815c-38f0">4</characteristic>
-                <characteristic name="Skill 1" typeId="4b76-bce7-94ec-53ff"/>
-                <characteristic name="Skill 2" typeId="403a-8e7a-a3b3-57db"/>
-                <characteristic name="Skill 3" typeId="cf14-caf6-b618-436c"/>
+                <characteristic name="Skill 1" typeId="4b76-bce7-94ec-53ff">Curse of Ageing (Active Ability)</characteristic>
+                <characteristic name="Skill 2" typeId="403a-8e7a-a3b3-57db">Precognition (Reaction)</characteristic>
+                <characteristic name="Skill 3" typeId="cf14-caf6-b618-436c">Twist Fate {3} (Reaction)</characteristic>
                 <characteristic name="Traits" typeId="4ccc-8757-1b3b-3c31">Arcane, Demon</characteristic>
-                <characteristic name="Criticals" typeId="ef0e-8242-f583-664e"/>
-                <characteristic name="Token Skills" typeId="80f8-014e-3c19-66d6"/>
-                <characteristic name="Keywords" typeId="c0b7-ff64-68c6-0bcc"/>
+                <characteristic name="Criticals" typeId="ef0e-8242-f583-664e">Explode</characteristic>
+                <characteristic name="Token Skills" typeId="80f8-014e-3c19-66d6">Focus, Command, Channel</characteristic>
+                <characteristic name="Keywords" typeId="c0b7-ff64-68c6-0bcc">None</characteristic>
               </characteristics>
             </profile>
           </profiles>
+          <rules>
+            <rule id="1c60-1831-4e95-352e" name="Twist Fate" hidden="false">
+              <description>After dice are rolled during an attack involving a character within 3 and sight. Re-roll and number of those dice. </description>
+            </rule>
+            <rule id="3328-5fb6-af56-698a" name="Curse of Ageing" hidden="false">
+              <description>Choose a character within 3 and sight. Break Any and Daze that character. </description>
+            </rule>
+            <rule id="228a-c5e3-cc84-758f" name="Precognition" hidden="false">
+              <description>When Aeteranius activates your opponent reveals two cards from their fate hand to you. you may spend {2} to discard one of them. </description>
+            </rule>
+          </rules>
           <categoryLinks>
             <categoryLink id="a3f8-f1a4-2469-0147" name="Hero" hidden="false" targetId="92b2-75fa-5ad7-dc75" primary="false"/>
           </categoryLinks>
+          <entryLinks>
+            <entryLink id="af65-6cad-af30-3b93" name="Upgrades" hidden="false" collective="false" import="true" targetId="ba3b-6f79-e920-db59" type="selectionEntryGroup"/>
+          </entryLinks>
           <costs>
             <cost name="Cost" typeId="c494-d0ff-a958-c070" value="6.0"/>
             <cost name="Fate" typeId="7540-583a-760c-a57d" value="0.0"/>
@@ -585,19 +670,33 @@ Can only use if there are available Ossilyte models to represent them. </descrip
                 <characteristic name="Defense" typeId="3a86-11ca-f002-eeb7">3</characteristic>
                 <characteristic name="Armour" typeId="462e-16c7-c53f-a16b">0</characteristic>
                 <characteristic name="Speed" typeId="028d-f362-815c-38f0">5</characteristic>
-                <characteristic name="Skill 1" typeId="4b76-bce7-94ec-53ff"/>
-                <characteristic name="Skill 2" typeId="403a-8e7a-a3b3-57db"/>
-                <characteristic name="Skill 3" typeId="cf14-caf6-b618-436c"/>
+                <characteristic name="Skill 1" typeId="4b76-bce7-94ec-53ff">Distracting (Reaction)</characteristic>
+                <characteristic name="Skill 2" typeId="403a-8e7a-a3b3-57db">Lead Astray {1} (Reaction)</characteristic>
+                <characteristic name="Skill 3" typeId="cf14-caf6-b618-436c">Skitterish (Swift)</characteristic>
                 <characteristic name="Traits" typeId="4ccc-8757-1b3b-3c31">Demon, Rouge</characteristic>
-                <characteristic name="Criticals" typeId="ef0e-8242-f583-664e"/>
-                <characteristic name="Token Skills" typeId="80f8-014e-3c19-66d6"/>
-                <characteristic name="Keywords" typeId="c0b7-ff64-68c6-0bcc"/>
+                <characteristic name="Criticals" typeId="ef0e-8242-f583-664e">Explode</characteristic>
+                <characteristic name="Token Skills" typeId="80f8-014e-3c19-66d6">Focus, Evade</characteristic>
+                <characteristic name="Keywords" typeId="c0b7-ff64-68c6-0bcc">Evasive 4, Flight</characteristic>
               </characteristics>
             </profile>
           </profiles>
+          <rules>
+            <rule id="8b7a-3445-0a25-5a9f" name="Distracting" hidden="false">
+              <description>After B&apos;kta&apos;s attack resolves remove a Boon or fate token from the defender. </description>
+            </rule>
+            <rule id="0d2d-d7a1-1b5b-b735" name="Lead Astray" hidden="false">
+              <description>After an attack against B&apos;kta resolves you may place him into an adjacent space. Them place the attacker into space B&apos;kta occupied if able. </description>
+            </rule>
+            <rule id="7ef3-84c6-87ae-87e8" name="Skitterish" hidden="false">
+              <description>Sidestep</description>
+            </rule>
+          </rules>
           <categoryLinks>
             <categoryLink id="843a-6ad8-e37c-17bf" name="Hero" hidden="false" targetId="92b2-75fa-5ad7-dc75" primary="false"/>
           </categoryLinks>
+          <entryLinks>
+            <entryLink id="4a01-c0cf-3086-5ff4" name="Upgrades" hidden="false" collective="false" import="true" targetId="ba3b-6f79-e920-db59" type="selectionEntryGroup"/>
+          </entryLinks>
           <costs>
             <cost name="Cost" typeId="c494-d0ff-a958-c070" value="4.0"/>
             <cost name="Fate" typeId="7540-583a-760c-a57d" value="0.0"/>
