@@ -1,57 +1,23 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <catalogue id="b05a-0bc7-f400-b047" name="Forces of Darkness" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="9eae-0060-d2cb-2349" gameSystemRevision="3" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
-  <selectionEntries>
-    <selectionEntry id="eb54-39da-87cf-e6df" name="Lords" hidden="false" collective="false" import="true" type="unit">
-      <constraints>
-        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="aa58-03cc-b581-81bf" type="max"/>
-      </constraints>
+  <entryLinks>
+    <entryLink id="cbf5-0855-6391-5686" name="Troops" hidden="false" collective="false" import="true" targetId="ef5d-71b6-f264-6226" type="selectionEntry"/>
+    <entryLink id="91b0-cd2b-5b8f-3e1b" name="Heroes" hidden="false" collective="false" import="true" targetId="c8d7-bb67-79fb-da76" type="selectionEntry">
       <categoryLinks>
-        <categoryLink id="c0ff-1127-0e27-e7c2" name="Lord" hidden="false" targetId="03b7-6aa9-a03b-8071" primary="true"/>
+        <categoryLink id="d78f-e002-93e0-185d" name="Hero" hidden="false" targetId="92b2-75fa-5ad7-dc75" primary="false"/>
       </categoryLinks>
-      <entryLinks>
-        <entryLink id="89b4-b6e5-77a3-eb48" name="Lords" hidden="false" collective="false" import="true" targetId="caf5-de40-d0f8-1572" type="selectionEntry">
-          <categoryLinks>
-            <categoryLink id="c9df-904c-34b9-8e42" name="Lord" hidden="false" targetId="03b7-6aa9-a03b-8071" primary="false"/>
-          </categoryLinks>
-        </entryLink>
-      </entryLinks>
-    </selectionEntry>
-    <selectionEntry id="0a4f-a7f5-e8d1-b9ae" name="Heroes" hidden="false" collective="false" import="true" type="unit">
+    </entryLink>
+    <entryLink id="2aa3-6a60-ac8e-10b0" name="Dark Divinites" hidden="false" collective="false" import="true" targetId="5780-8d48-fd92-4529" type="selectionEntry">
       <categoryLinks>
-        <categoryLink id="7b1b-e855-f5ee-9c04" name="Hero" hidden="false" targetId="92b2-75fa-5ad7-dc75" primary="true"/>
+        <categoryLink id="7b6e-ae10-a6b5-7beb" name="Divinity" hidden="false" targetId="6c59-7bcd-44f8-3c71" primary="false"/>
       </categoryLinks>
-      <entryLinks>
-        <entryLink id="e400-1051-4ca0-cd74" name="Heroes" hidden="false" collective="false" import="true" targetId="c8d7-bb67-79fb-da76" type="selectionEntry">
-          <categoryLinks>
-            <categoryLink id="27a8-3677-7472-fb7e" name="Hero" hidden="false" targetId="92b2-75fa-5ad7-dc75" primary="false"/>
-          </categoryLinks>
-        </entryLink>
-      </entryLinks>
-    </selectionEntry>
-    <selectionEntry id="d948-4128-45cb-87ef" name="Troops" hidden="false" collective="false" import="true" type="unit">
+    </entryLink>
+    <entryLink id="a857-3aa4-25ad-9fe9" name="Lords" hidden="false" collective="false" import="true" targetId="caf5-de40-d0f8-1572" type="selectionEntry">
       <categoryLinks>
-        <categoryLink id="85aa-8a6b-0bda-aad0" name="Troop" hidden="false" targetId="9d34-3652-fcc5-0fa3" primary="true"/>
+        <categoryLink id="a049-04b4-b3e1-7563" name="Lord" hidden="false" targetId="03b7-6aa9-a03b-8071" primary="false"/>
       </categoryLinks>
-      <entryLinks>
-        <entryLink id="0dc7-d723-f075-5c88" name="Troops" hidden="false" collective="false" import="true" targetId="ef5d-71b6-f264-6226" type="selectionEntry">
-          <categoryLinks>
-            <categoryLink id="4d8c-e779-0f29-4166" name="Troop" hidden="false" targetId="9d34-3652-fcc5-0fa3" primary="false"/>
-          </categoryLinks>
-        </entryLink>
-      </entryLinks>
-    </selectionEntry>
-    <selectionEntry id="e2ca-fcb8-2942-e63c" name="Divinities" hidden="false" collective="false" import="true" type="unit">
-      <constraints>
-        <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cf24-6bb6-ef6b-08a6" type="max"/>
-      </constraints>
-      <categoryLinks>
-        <categoryLink id="3607-a12a-11d4-dd4a" name="Divinity" hidden="false" targetId="6c59-7bcd-44f8-3c71" primary="true"/>
-      </categoryLinks>
-      <entryLinks>
-        <entryLink id="b1dd-dc5f-46fa-7518" name="Dark Divinites" hidden="false" collective="false" import="true" targetId="5780-8d48-fd92-4529" type="selectionEntry"/>
-      </entryLinks>
-    </selectionEntry>
-  </selectionEntries>
+    </entryLink>
+  </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="caf5-de40-d0f8-1572" name="Lords" hidden="false" collective="false" import="true" type="unit">
       <categoryLinks>
@@ -190,6 +156,9 @@
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="33ca-ff64-6c92-1b38" name="Gouge" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c74e-bbe9-2096-c2b8" type="max"/>
+          </constraints>
           <profiles>
             <profile id="de5c-f675-1296-fa1c" name="Gouge" hidden="false" typeId="3ae3-9405-766b-6417" typeName="Hero">
               <characteristics>
@@ -199,25 +168,44 @@
                 <characteristic name="Defense" typeId="3a86-11ca-f002-eeb7">3</characteristic>
                 <characteristic name="Armour" typeId="462e-16c7-c53f-a16b">3</characteristic>
                 <characteristic name="Speed" typeId="028d-f362-815c-38f0">4</characteristic>
-                <characteristic name="Skill 1" typeId="4b76-bce7-94ec-53ff"/>
-                <characteristic name="Skill 2" typeId="403a-8e7a-a3b3-57db"/>
-                <characteristic name="Skill 3" typeId="cf14-caf6-b618-436c"/>
+                <characteristic name="Skill 1" typeId="4b76-bce7-94ec-53ff">Cruel Cuts (Reaction)</characteristic>
+                <characteristic name="Skill 2" typeId="403a-8e7a-a3b3-57db">Infernal Hook {3} (Active Ability)</characteristic>
+                <characteristic name="Skill 3" typeId="cf14-caf6-b618-436c">Lingering Agony (Constant)</characteristic>
                 <characteristic name="Traits" typeId="4ccc-8757-1b3b-3c31">Brute, Demon, Hunter</characteristic>
-                <characteristic name="Criticals" typeId="ef0e-8242-f583-664e"/>
-                <characteristic name="Token Skills" typeId="80f8-014e-3c19-66d6"/>
-                <characteristic name="Keywords" typeId="c0b7-ff64-68c6-0bcc"/>
+                <characteristic name="Criticals" typeId="ef0e-8242-f583-664e">Explode, Wound</characteristic>
+                <characteristic name="Token Skills" typeId="80f8-014e-3c19-66d6">Focus</characteristic>
+                <characteristic name="Keywords" typeId="c0b7-ff64-68c6-0bcc">Deadly 2, Pierce 1, Reach, Limited Range</characteristic>
               </characteristics>
             </profile>
           </profiles>
+          <rules>
+            <rule id="ddd2-153d-5bcf-e143" name="Cruel Cuts" hidden="false">
+              <description>After Gouge&apos;s attack resolves if the defender received at least 1 damage. Break Any the defender</description>
+            </rule>
+            <rule id="ee2e-5a54-a0f8-1100" name="Infernal Hook" hidden="false">
+              <description>Attack 4{4}. After this attack resolves if the defender received at least 1 damage, Pull 4 and Immobilise the defender. 
+
+Note: This is a limited range attack and cannot exceed the 4 range. </description>
+            </rule>
+            <rule id="b1db-c605-76be-89e6" name="Lingering Agony" hidden="false">
+              <description>Breaks cannot be removed from characters threatened by Gouge except by gaining a Boost. </description>
+            </rule>
+          </rules>
           <categoryLinks>
             <categoryLink id="59bd-8d8a-f6c4-218d" name="Hero" hidden="false" targetId="92b2-75fa-5ad7-dc75" primary="false"/>
           </categoryLinks>
+          <entryLinks>
+            <entryLink id="82b9-39b7-b0ff-7232" name="Upgrades" hidden="false" collective="false" import="true" targetId="ba3b-6f79-e920-db59" type="selectionEntryGroup"/>
+          </entryLinks>
           <costs>
             <cost name="Cost" typeId="c494-d0ff-a958-c070" value="10.0"/>
             <cost name="Fate" typeId="7540-583a-760c-a57d" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="5977-5583-1d12-9256" name="Azrat" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b4ca-9ee9-339b-4654" type="max"/>
+          </constraints>
           <profiles>
             <profile id="3b1a-ff4a-cfb4-bf10" name="Azrat" hidden="false" typeId="3ae3-9405-766b-6417" typeName="Hero">
               <characteristics>
@@ -227,25 +215,42 @@
                 <characteristic name="Defense" typeId="3a86-11ca-f002-eeb7">4</characteristic>
                 <characteristic name="Armour" typeId="462e-16c7-c53f-a16b">0</characteristic>
                 <characteristic name="Speed" typeId="028d-f362-815c-38f0">5</characteristic>
-                <characteristic name="Skill 1" typeId="4b76-bce7-94ec-53ff"/>
-                <characteristic name="Skill 2" typeId="403a-8e7a-a3b3-57db"/>
-                <characteristic name="Skill 3" typeId="cf14-caf6-b618-436c"/>
+                <characteristic name="Skill 1" typeId="4b76-bce7-94ec-53ff">Incinerating Strike {2} (Reaction)</characteristic>
+                <characteristic name="Skill 2" typeId="403a-8e7a-a3b3-57db">Nova {2} (Active Ability)</characteristic>
+                <characteristic name="Skill 3" typeId="cf14-caf6-b618-436c">Unbearable Heat (Reaction)</characteristic>
                 <characteristic name="Traits" typeId="4ccc-8757-1b3b-3c31">Brute, Demon, Arcane</characteristic>
-                <characteristic name="Criticals" typeId="ef0e-8242-f583-664e"/>
-                <characteristic name="Token Skills" typeId="80f8-014e-3c19-66d6"/>
-                <characteristic name="Keywords" typeId="c0b7-ff64-68c6-0bcc"/>
+                <characteristic name="Criticals" typeId="ef0e-8242-f583-664e">Exlpode</characteristic>
+                <characteristic name="Token Skills" typeId="80f8-014e-3c19-66d6">Focus, Channel</characteristic>
+                <characteristic name="Keywords" typeId="c0b7-ff64-68c6-0bcc">Huge, Accuracy 2, Flight</characteristic>
               </characteristics>
             </profile>
           </profiles>
+          <rules>
+            <rule id="9a9c-6474-2708-9806" name="Nova" hidden="false">
+              <description>All characters within 4 (including Azrat) take 4 Dice of Direct Damage</description>
+            </rule>
+            <rule id="1e09-62eb-312d-64c4" name="Ubearable Heat" hidden="false">
+              <description>Whenever a character you threaten melee attacks you that character takes 1 damage after the attack resolves. </description>
+            </rule>
+            <rule id="846c-0b28-87d4-0c80" name="Incinerating Stirke" hidden="false">
+              <description>When Azrat declares an attack he gains Pierce X during this attack. (X=the defending characters armor value.) After this attack resolves, if the defender received at least one damage Wound the defender. </description>
+            </rule>
+          </rules>
           <categoryLinks>
             <categoryLink id="783b-fd81-5a90-356c" name="Hero" hidden="false" targetId="92b2-75fa-5ad7-dc75" primary="false"/>
           </categoryLinks>
+          <entryLinks>
+            <entryLink id="1934-53d5-bdb8-8636" name="Upgrades" hidden="false" collective="false" import="true" targetId="ba3b-6f79-e920-db59" type="selectionEntryGroup"/>
+          </entryLinks>
           <costs>
             <cost name="Cost" typeId="c494-d0ff-a958-c070" value="10.0"/>
             <cost name="Fate" typeId="7540-583a-760c-a57d" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="5618-f56d-54ae-7765" name="Lillith" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="05ee-9124-4d20-34ca" type="max"/>
+          </constraints>
           <profiles>
             <profile id="3ce4-4259-9795-e0cf" name="Lillith" hidden="false" typeId="3ae3-9405-766b-6417" typeName="Hero">
               <characteristics>
@@ -255,25 +260,44 @@
                 <characteristic name="Defense" typeId="3a86-11ca-f002-eeb7">4</characteristic>
                 <characteristic name="Armour" typeId="462e-16c7-c53f-a16b">0</characteristic>
                 <characteristic name="Speed" typeId="028d-f362-815c-38f0">4</characteristic>
-                <characteristic name="Skill 1" typeId="4b76-bce7-94ec-53ff"/>
-                <characteristic name="Skill 2" typeId="403a-8e7a-a3b3-57db"/>
-                <characteristic name="Skill 3" typeId="cf14-caf6-b618-436c"/>
+                <characteristic name="Skill 1" typeId="4b76-bce7-94ec-53ff">Dominate {3} (Active Ability)</characteristic>
+                <characteristic name="Skill 2" typeId="403a-8e7a-a3b3-57db">Enchanting Visage (Constant)</characteristic>
+                <characteristic name="Skill 3" typeId="cf14-caf6-b618-436c">Sanguine Sorcery (Swift)</characteristic>
                 <characteristic name="Traits" typeId="4ccc-8757-1b3b-3c31">Arcane, Beast, Demon, Leader, Lillin</characteristic>
-                <characteristic name="Criticals" typeId="ef0e-8242-f583-664e"/>
-                <characteristic name="Token Skills" typeId="80f8-014e-3c19-66d6"/>
-                <characteristic name="Keywords" typeId="c0b7-ff64-68c6-0bcc"/>
+                <characteristic name="Criticals" typeId="ef0e-8242-f583-664e">Explode, Wound</characteristic>
+                <characteristic name="Token Skills" typeId="80f8-014e-3c19-66d6">Focus, Command , Channel</characteristic>
+                <characteristic name="Keywords" typeId="c0b7-ff64-68c6-0bcc">Pierce 1, Reach</characteristic>
               </characteristics>
             </profile>
           </profiles>
+          <rules>
+            <rule id="2b47-df7d-9db0-bf00" name="Dominate" hidden="false">
+              <description>Choose a character of equal or lower rank within 4 and sight. Take an action using that character as if it were part of your force. After that action resolves Daze that character. 
+
+Note: Only applies to enemy characters</description>
+            </rule>
+            <rule id="96a5-6d34-6fd5-1530" name="Enchanting Visage" hidden="false">
+              <description>Characters attacking lilith gain Disadvantage and cannot spend Focus tokens. </description>
+            </rule>
+            <rule id="01a5-2669-f627-5a1d" name="Sanguine Sorcery" hidden="false">
+              <description>Lilith takes 1 damage Channel. </description>
+            </rule>
+          </rules>
           <categoryLinks>
             <categoryLink id="d905-3343-a828-68f7" name="Hero" hidden="false" targetId="92b2-75fa-5ad7-dc75" primary="false"/>
           </categoryLinks>
+          <entryLinks>
+            <entryLink id="9e23-bdcd-772f-5814" name="Upgrades" hidden="false" collective="false" import="true" targetId="ba3b-6f79-e920-db59" type="selectionEntryGroup"/>
+          </entryLinks>
           <costs>
             <cost name="Cost" typeId="c494-d0ff-a958-c070" value="9.0"/>
             <cost name="Fate" typeId="7540-583a-760c-a57d" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="d63a-4d68-4c65-739d" name="Moucrum" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1e92-7788-bb3a-12b9" type="max"/>
+          </constraints>
           <profiles>
             <profile id="c99f-4f91-5865-95ca" name="Moucrum" hidden="false" typeId="3ae3-9405-766b-6417" typeName="Hero">
               <characteristics>
@@ -283,25 +307,46 @@
                 <characteristic name="Defense" typeId="3a86-11ca-f002-eeb7">4</characteristic>
                 <characteristic name="Armour" typeId="462e-16c7-c53f-a16b">1</characteristic>
                 <characteristic name="Speed" typeId="028d-f362-815c-38f0">4</characteristic>
-                <characteristic name="Skill 1" typeId="4b76-bce7-94ec-53ff"/>
-                <characteristic name="Skill 2" typeId="403a-8e7a-a3b3-57db"/>
-                <characteristic name="Skill 3" typeId="cf14-caf6-b618-436c"/>
+                <characteristic name="Skill 1" typeId="4b76-bce7-94ec-53ff">Grim Harvest {2} (Active Ability)	</characteristic>
+                <characteristic name="Skill 2" typeId="403a-8e7a-a3b3-57db">Lord of the Deathless (Swift)</characteristic>
+                <characteristic name="Skill 3" typeId="cf14-caf6-b618-436c">Ossifycation {1}(Reaction)</characteristic>
                 <characteristic name="Traits" typeId="4ccc-8757-1b3b-3c31">Brute, Leader, Ossilyte, Undead</characteristic>
-                <characteristic name="Criticals" typeId="ef0e-8242-f583-664e"/>
-                <characteristic name="Token Skills" typeId="80f8-014e-3c19-66d6"/>
-                <characteristic name="Keywords" typeId="c0b7-ff64-68c6-0bcc"/>
+                <characteristic name="Criticals" typeId="ef0e-8242-f583-664e">Explode, wound</characteristic>
+                <characteristic name="Token Skills" typeId="80f8-014e-3c19-66d6">Focus, Command</characteristic>
+                <characteristic name="Keywords" typeId="c0b7-ff64-68c6-0bcc">Immune, Pierce 1, Reach</characteristic>
               </characteristics>
             </profile>
           </profiles>
+          <rules>
+            <rule id="31df-22a8-26ae-87cd" name="Grim Harvest" hidden="false">
+              <description>Attack a Bloodied character. Moucrum gains Advantage during this attack. After the attack resolves, Moucrum Recovers X (X=amount of damage dealt during this attack +1)</description>
+            </rule>
+            <rule id="8ed3-a27e-6394-f9e5" name="Lord of the Deathless" hidden="false">
+              <description>Command an undead, regardless of rank</description>
+            </rule>
+            <rule id="f250-9813-2435-0f22" name="Ossifycation" hidden="false">
+              <description>After Moucrum fells an enemy, place an Ossilyte guard into a space the fallen character occupied. 
+
+Note: Take the far left Fate value of that unit as the VP if defeated. (2)
+
+Can only use if there are available Ossilyte models to represent them. </description>
+            </rule>
+          </rules>
           <categoryLinks>
             <categoryLink id="3309-3fa5-48db-c205" name="Hero" hidden="false" targetId="92b2-75fa-5ad7-dc75" primary="false"/>
           </categoryLinks>
+          <entryLinks>
+            <entryLink id="0058-1bb3-a707-0bc4" name="Upgrades" hidden="false" collective="false" import="true" targetId="ba3b-6f79-e920-db59" type="selectionEntryGroup"/>
+          </entryLinks>
           <costs>
             <cost name="Cost" typeId="c494-d0ff-a958-c070" value="9.0"/>
             <cost name="Fate" typeId="7540-583a-760c-a57d" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="bba2-3f7f-ad60-1a54" name="Vahlrose" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c8ac-c214-ab8c-d3a5" type="max"/>
+          </constraints>
           <profiles>
             <profile id="a466-102d-9acf-0b07" name="Vahlrose" hidden="false" typeId="3ae3-9405-766b-6417" typeName="Hero">
               <characteristics>
@@ -311,25 +356,44 @@
                 <characteristic name="Defense" typeId="3a86-11ca-f002-eeb7">3</characteristic>
                 <characteristic name="Armour" typeId="462e-16c7-c53f-a16b">1</characteristic>
                 <characteristic name="Speed" typeId="028d-f362-815c-38f0">4</characteristic>
-                <characteristic name="Skill 1" typeId="4b76-bce7-94ec-53ff"/>
-                <characteristic name="Skill 2" typeId="403a-8e7a-a3b3-57db"/>
-                <characteristic name="Skill 3" typeId="cf14-caf6-b618-436c"/>
+                <characteristic name="Skill 1" typeId="4b76-bce7-94ec-53ff">Death to Life {3} (Active Ability)	</characteristic>
+                <characteristic name="Skill 2" typeId="403a-8e7a-a3b3-57db">Drain Essence (Active Ability)</characteristic>
+                <characteristic name="Skill 3" typeId="cf14-caf6-b618-436c">Queen of Bone {1} (Swift)</characteristic>
                 <characteristic name="Traits" typeId="4ccc-8757-1b3b-3c31">Arcane, Demon, Leader</characteristic>
-                <characteristic name="Criticals" typeId="ef0e-8242-f583-664e"/>
-                <characteristic name="Token Skills" typeId="80f8-014e-3c19-66d6"/>
-                <characteristic name="Keywords" typeId="c0b7-ff64-68c6-0bcc"/>
+                <characteristic name="Criticals" typeId="ef0e-8242-f583-664e">Explode</characteristic>
+                <characteristic name="Token Skills" typeId="80f8-014e-3c19-66d6">Focus, Command, Channel, Evade</characteristic>
+                <characteristic name="Keywords" typeId="c0b7-ff64-68c6-0bcc">Evasive 2, Pierce 1</characteristic>
               </characteristics>
             </profile>
           </profiles>
+          <rules>
+            <rule id="650c-0582-bf15-beda" name="Death to LIfe" hidden="false">
+              <description>Place an Ossilyte guard into an adjacent space. </description>
+            </rule>
+            <rule id="cca9-1ad5-6d97-9563" name="Drain Essence" hidden="false">
+              <description>Choose an adjacent character. That character takes 3 dice of direct damage. For each damage dealt, Channel. 
+
+(This can apply to allies)</description>
+            </rule>
+            <rule id="bcee-432d-caa8-03c0" name="Queen of Bones" hidden="false">
+              <description>An adjacent Ossilyte guard may perform any action. </description>
+            </rule>
+          </rules>
           <categoryLinks>
             <categoryLink id="af72-146c-d971-2450" name="Hero" hidden="false" targetId="92b2-75fa-5ad7-dc75" primary="false"/>
           </categoryLinks>
+          <entryLinks>
+            <entryLink id="0129-aa79-92e6-8240" name="Upgrades" hidden="false" collective="false" import="true" targetId="ba3b-6f79-e920-db59" type="selectionEntryGroup"/>
+          </entryLinks>
           <costs>
             <cost name="Cost" typeId="c494-d0ff-a958-c070" value="8.0"/>
             <cost name="Fate" typeId="7540-583a-760c-a57d" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="ac62-8997-be34-a85f" name="Ektalok" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c237-24fb-ea32-f253" type="max"/>
+          </constraints>
           <profiles>
             <profile id="693d-aa40-c6da-d2ba" name="Ektalok" hidden="false" typeId="3ae3-9405-766b-6417" typeName="Hero">
               <characteristics>
@@ -339,19 +403,33 @@
                 <characteristic name="Defense" typeId="3a86-11ca-f002-eeb7">3</characteristic>
                 <characteristic name="Armour" typeId="462e-16c7-c53f-a16b">0</characteristic>
                 <characteristic name="Speed" typeId="028d-f362-815c-38f0">5</characteristic>
-                <characteristic name="Skill 1" typeId="4b76-bce7-94ec-53ff"/>
-                <characteristic name="Skill 2" typeId="403a-8e7a-a3b3-57db"/>
-                <characteristic name="Skill 3" typeId="cf14-caf6-b618-436c"/>
+                <characteristic name="Skill 1" typeId="4b76-bce7-94ec-53ff">Calm {1} (Swift)</characteristic>
+                <characteristic name="Skill 2" typeId="403a-8e7a-a3b3-57db">Incite (Reaction)</characteristic>
+                <characteristic name="Skill 3" typeId="cf14-caf6-b618-436c">Mind Trick {2} (Swift)</characteristic>
                 <characteristic name="Traits" typeId="4ccc-8757-1b3b-3c31">Arcane, Demon, Rouge</characteristic>
-                <characteristic name="Criticals" typeId="ef0e-8242-f583-664e"/>
-                <characteristic name="Token Skills" typeId="80f8-014e-3c19-66d6"/>
-                <characteristic name="Keywords" typeId="c0b7-ff64-68c6-0bcc"/>
+                <characteristic name="Criticals" typeId="ef0e-8242-f583-664e">Explode</characteristic>
+                <characteristic name="Token Skills" typeId="80f8-014e-3c19-66d6">Focus, Channel, Evade</characteristic>
+                <characteristic name="Keywords" typeId="c0b7-ff64-68c6-0bcc">Evasive 2, Flight</characteristic>
               </characteristics>
             </profile>
           </profiles>
+          <rules>
+            <rule id="ca8f-4698-f303-0f8f" name="Calm" hidden="false">
+              <description>Break Attack a character within 3 and sight</description>
+            </rule>
+            <rule id="b427-d05e-25c6-7331" name="Incite" hidden="false">
+              <description>At the end of your activation, choose an enemy character within 3 and sight. That character must activate during its controller&apos;s next activation place an objective token on that character. </description>
+            </rule>
+            <rule id="1ccc-cb6c-fec3-3567" name="Mind Trick" hidden="false">
+              <description>Choose an enemy character within 3 and sight. Sidestep that character as though you controlled them. You may remove a boon from that character. </description>
+            </rule>
+          </rules>
           <categoryLinks>
             <categoryLink id="3d28-52a8-abe7-48eb" name="Hero" hidden="false" targetId="92b2-75fa-5ad7-dc75" primary="false"/>
           </categoryLinks>
+          <entryLinks>
+            <entryLink id="8c57-0f23-0812-08e0" name="Upgrades" hidden="false" collective="false" import="true" targetId="ba3b-6f79-e920-db59" type="selectionEntryGroup"/>
+          </entryLinks>
           <costs>
             <cost name="Cost" typeId="c494-d0ff-a958-c070" value="7.0"/>
             <cost name="Fate" typeId="7540-583a-760c-a57d" value="0.0"/>
@@ -532,11 +610,17 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="ef5d-71b6-f264-6226" name="Troops" hidden="false" collective="false" import="true" type="unit">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="838e-45e3-08d8-a968" type="max"/>
+      </constraints>
       <categoryLinks>
         <categoryLink id="4046-56e0-5bf5-4de0" name="Troop" hidden="false" targetId="9d34-3652-fcc5-0fa3" primary="true"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="6e95-0558-a330-c31c" name="Messor Gheist" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d6ec-f8c2-03f9-707e" type="max"/>
+          </constraints>
           <profiles>
             <profile id="dd24-11b8-4dd5-847f" name="Messor Gheist" hidden="false" typeId="67ed-66d0-e4ae-8ccc" typeName="Troop">
               <characteristics>
@@ -546,19 +630,27 @@
                 <characteristic name="Defense" typeId="5dba-13c9-182c-c04c">3</characteristic>
                 <characteristic name="Armour" typeId="11f5-dd18-2756-6e91">0</characteristic>
                 <characteristic name="Speed" typeId="5fba-4ecc-4581-be8e">4</characteristic>
-                <characteristic name="Skill 1" typeId="89e2-1316-b1f4-737b"/>
-                <characteristic name="Skill 2" typeId="6008-87fa-4c1a-6cee"/>
+                <characteristic name="Skill 1" typeId="89e2-1316-b1f4-737b">Disorienting Blast {1} (Active Ability)</characteristic>
+                <characteristic name="Skill 2" typeId="6008-87fa-4c1a-6cee">Envoy of Death</characteristic>
                 <characteristic name="Traits" typeId="a185-ee4a-642e-37d2">Arcane, Demon, Undead</characteristic>
-                <characteristic name="Criticals" typeId="9ef8-76bb-c4cc-3a78"/>
+                <characteristic name="Criticals" typeId="9ef8-76bb-c4cc-3a78">Explode, Wound</characteristic>
                 <characteristic name="VP Track" typeId="a0b2-ad1b-7f1e-f32c">Fallen: 
 1 = 3
 2 = 6
 3 = 8</characteristic>
-                <characteristic name="Keywords" typeId="c4f7-494f-7643-7638"/>
-                <characteristic name="Token Skills" typeId="9cac-1866-e02e-1d1d"/>
+                <characteristic name="Keywords" typeId="c4f7-494f-7643-7638">Flight</characteristic>
+                <characteristic name="Token Skills" typeId="9cac-1866-e02e-1d1d">Focus, Channel</characteristic>
               </characteristics>
             </profile>
           </profiles>
+          <rules>
+            <rule id="2e08-7d6f-a424-358a" name="Envoy of Death" hidden="false">
+              <description>Bloodied enemy characters get Accuracy -1 for each Messor Gheist with 2 (Max -3)</description>
+            </rule>
+            <rule id="5e5d-f003-5b9d-1709" name="Disorientating Blast " hidden="false">
+              <description>Attack 3{4}. Instead of dealing damage, for each damage Daze or break Any the Defender. </description>
+            </rule>
+          </rules>
           <categoryLinks>
             <categoryLink id="9719-1035-7f88-f265" name="Troop" hidden="false" targetId="9d34-3652-fcc5-0fa3" primary="false"/>
           </categoryLinks>
@@ -600,12 +692,18 @@
               </costs>
             </selectionEntry>
           </selectionEntries>
+          <entryLinks>
+            <entryLink id="2c91-a67b-1afd-625a" name="Upgrades" hidden="false" collective="false" import="true" targetId="ba3b-6f79-e920-db59" type="selectionEntryGroup"/>
+          </entryLinks>
           <costs>
             <cost name="Fate" typeId="7540-583a-760c-a57d" value="0.0"/>
             <cost name="Cost" typeId="c494-d0ff-a958-c070" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="7e69-235c-02f4-6afd" name="Ossilyte Guard" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bef4-731b-fdbb-59fd" type="max"/>
+          </constraints>
           <profiles>
             <profile id="ca97-8b0b-a972-7a44" name="Ossilyte Guard" hidden="false" typeId="67ed-66d0-e4ae-8ccc" typeName="Troop">
               <characteristics>
@@ -615,10 +713,10 @@
                 <characteristic name="Defense" typeId="5dba-13c9-182c-c04c">3</characteristic>
                 <characteristic name="Armour" typeId="11f5-dd18-2756-6e91">1</characteristic>
                 <characteristic name="Speed" typeId="5fba-4ecc-4581-be8e">4</characteristic>
-                <characteristic name="Skill 1" typeId="89e2-1316-b1f4-737b"/>
-                <characteristic name="Skill 2" typeId="6008-87fa-4c1a-6cee"/>
+                <characteristic name="Skill 1" typeId="89e2-1316-b1f4-737b">Eternal Vigil (Reaction)</characteristic>
+                <characteristic name="Skill 2" typeId="6008-87fa-4c1a-6cee">Broken Body (Reaction)</characteristic>
                 <characteristic name="Traits" typeId="a185-ee4a-642e-37d2">Guardian, Knight, Ossilyte, Undead</characteristic>
-                <characteristic name="Criticals" typeId="9ef8-76bb-c4cc-3a78"/>
+                <characteristic name="Criticals" typeId="9ef8-76bb-c4cc-3a78">Explode</characteristic>
                 <characteristic name="VP Track" typeId="a0b2-ad1b-7f1e-f32c">Fallen: 
 1 = 2
 2 = 4
@@ -626,11 +724,19 @@
 4 = 7
 5 = 8
 </characteristic>
-                <characteristic name="Keywords" typeId="c4f7-494f-7643-7638"/>
-                <characteristic name="Token Skills" typeId="9cac-1866-e02e-1d1d"/>
+                <characteristic name="Keywords" typeId="c4f7-494f-7643-7638">Accuracy 1, Immune</characteristic>
+                <characteristic name="Token Skills" typeId="9cac-1866-e02e-1d1d">Focus, Guard, Shield</characteristic>
               </characteristics>
             </profile>
           </profiles>
+          <rules>
+            <rule id="104f-2700-9666-f1b7" name="Eternal Vigil" hidden="false">
+              <description>At the end of the Ossilyte Guard&apos;s activation Guard</description>
+            </rule>
+            <rule id="c5d3-2523-ee55-63e6" name="Broken Body" hidden="false">
+              <description>When Ossilyte guard is attacked by ranged weapon the attacking character gains Disadvantage. </description>
+            </rule>
+          </rules>
           <categoryLinks>
             <categoryLink id="dc02-b8e9-c280-3383" name="Troop" hidden="false" targetId="9d34-3652-fcc5-0fa3" primary="false"/>
           </categoryLinks>
@@ -696,12 +802,18 @@
               </costs>
             </selectionEntry>
           </selectionEntries>
+          <entryLinks>
+            <entryLink id="5645-20fd-a7a3-dc04" name="Upgrades" hidden="false" collective="false" import="true" targetId="ba3b-6f79-e920-db59" type="selectionEntryGroup"/>
+          </entryLinks>
           <costs>
             <cost name="Fate" typeId="7540-583a-760c-a57d" value="0.0"/>
             <cost name="Cost" typeId="c494-d0ff-a958-c070" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="0485-eeb4-f394-783e" name="Berserker of Blood" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b5ca-70eb-b969-69a0" type="max"/>
+          </constraints>
           <profiles>
             <profile id="e25d-b9f4-53ef-ab04" name="Berserker of Blood" hidden="false" typeId="67ed-66d0-e4ae-8ccc" typeName="Troop">
               <characteristics>
@@ -711,19 +823,27 @@
                 <characteristic name="Defense" typeId="5dba-13c9-182c-c04c">3</characteristic>
                 <characteristic name="Armour" typeId="11f5-dd18-2756-6e91">0</characteristic>
                 <characteristic name="Speed" typeId="5fba-4ecc-4581-be8e">5</characteristic>
-                <characteristic name="Skill 1" typeId="89e2-1316-b1f4-737b"/>
-                <characteristic name="Skill 2" typeId="6008-87fa-4c1a-6cee"/>
+                <characteristic name="Skill 1" typeId="89e2-1316-b1f4-737b">Berserk Fury (Constant)</characteristic>
+                <characteristic name="Skill 2" typeId="6008-87fa-4c1a-6cee">Blood Offering (Reaction)</characteristic>
                 <characteristic name="Traits" typeId="a185-ee4a-642e-37d2">Brute, Demon, Hunter</characteristic>
-                <characteristic name="Criticals" typeId="9ef8-76bb-c4cc-3a78"/>
+                <characteristic name="Criticals" typeId="9ef8-76bb-c4cc-3a78">Explode</characteristic>
                 <characteristic name="VP Track" typeId="a0b2-ad1b-7f1e-f32c">Fallen: 
 1= 4
 2= 7
 3=10</characteristic>
-                <characteristic name="Keywords" typeId="c4f7-494f-7643-7638"/>
-                <characteristic name="Token Skills" typeId="9cac-1866-e02e-1d1d"/>
+                <characteristic name="Keywords" typeId="c4f7-494f-7643-7638">Deadly 2</characteristic>
+                <characteristic name="Token Skills" typeId="9cac-1866-e02e-1d1d">Focus</characteristic>
               </characteristics>
             </profile>
           </profiles>
+          <rules>
+            <rule id="ec48-923c-c01e-ee4d" name="Blood Offering" hidden="false">
+              <description>When Berserker of Blood fells an enemy Focus and shift one fate to your pool. </description>
+            </rule>
+            <rule id="9346-b3c8-0a39-290f" name="Berserk Fury" hidden="false">
+              <description>Berserker of Blood gains advantage while attacking and Bloodied. </description>
+            </rule>
+          </rules>
           <categoryLinks>
             <categoryLink id="1371-3bea-94d6-6f36" name="Troop" hidden="false" targetId="9d34-3652-fcc5-0fa3" primary="false"/>
           </categoryLinks>
@@ -765,6 +885,285 @@
               </costs>
             </selectionEntry>
           </selectionEntries>
+          <entryLinks>
+            <entryLink id="5616-db84-ab00-012b" name="Upgrades" hidden="false" collective="false" import="true" targetId="ba3b-6f79-e920-db59" type="selectionEntryGroup"/>
+          </entryLinks>
+          <costs>
+            <cost name="Fate" typeId="7540-583a-760c-a57d" value="0.0"/>
+            <cost name="Cost" typeId="c494-d0ff-a958-c070" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="da4c-f770-318c-2aca" name="Berserker of Blood" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ea5c-217c-3943-c041" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="4cba-0e24-dde9-469a" name="Berserker of Blood" hidden="false" typeId="67ed-66d0-e4ae-8ccc" typeName="Troop">
+              <characteristics>
+                <characteristic name="Health" typeId="0aff-3d11-f241-82a0">6</characteristic>
+                <characteristic name="Attack" typeId="67da-6694-0f94-47c5">2</characteristic>
+                <characteristic name="Range" typeId="b4f1-ad98-8eb1-e25d">1</characteristic>
+                <characteristic name="Defense" typeId="5dba-13c9-182c-c04c">3</characteristic>
+                <characteristic name="Armour" typeId="11f5-dd18-2756-6e91">0</characteristic>
+                <characteristic name="Speed" typeId="5fba-4ecc-4581-be8e">5</characteristic>
+                <characteristic name="Skill 1" typeId="89e2-1316-b1f4-737b">Berserk Fury (Constant)</characteristic>
+                <characteristic name="Skill 2" typeId="6008-87fa-4c1a-6cee">Blood Offering (Reaction)</characteristic>
+                <characteristic name="Traits" typeId="a185-ee4a-642e-37d2">Brute, Demon, Hunter</characteristic>
+                <characteristic name="Criticals" typeId="9ef8-76bb-c4cc-3a78">Explode</characteristic>
+                <characteristic name="VP Track" typeId="a0b2-ad1b-7f1e-f32c">Fallen: 
+1= 4
+2= 7
+3=10</characteristic>
+                <characteristic name="Keywords" typeId="c4f7-494f-7643-7638">Deadly 2</characteristic>
+                <characteristic name="Token Skills" typeId="9cac-1866-e02e-1d1d">Focus</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule id="8f70-5bed-eb96-fe66" name="Blood Offering" hidden="false">
+              <description>When Berserker of Blood fells an enemy Focus and shift one fate to your pool. </description>
+            </rule>
+            <rule id="b753-f344-a38a-13d4" name="Berserk Fury" hidden="false">
+              <description>Berserker of Blood gains advantage while attacking and Bloodied. </description>
+            </rule>
+          </rules>
+          <categoryLinks>
+            <categoryLink id="a47d-dcdc-936f-3302" name="Troop" hidden="false" targetId="9d34-3652-fcc5-0fa3" primary="false"/>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry id="73a5-c2a6-81b4-4127" name="1 Berserker" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9581-64af-f4f0-0f16" type="max"/>
+              </constraints>
+              <categoryLinks>
+                <categoryLink id="885f-3c90-022f-a6e5" name="Troop" hidden="false" targetId="9d34-3652-fcc5-0fa3" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name="Cost" typeId="c494-d0ff-a958-c070" value="4.0"/>
+                <cost name="Fate" typeId="7540-583a-760c-a57d" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="befd-a86e-c22e-4eef" name="2 Berserkers" hidden="false" collective="false" import="true" type="model">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e03b-baa7-3038-baf1" type="max"/>
+              </constraints>
+              <categoryLinks>
+                <categoryLink id="e815-030e-2ad3-d7f3" name="Troop" hidden="false" targetId="9d34-3652-fcc5-0fa3" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name="Cost" typeId="c494-d0ff-a958-c070" value="7.0"/>
+                <cost name="Fate" typeId="7540-583a-760c-a57d" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="e98b-b2a8-beed-8c70" name="3 Berserkers" hidden="false" collective="false" import="true" type="model">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="04cc-9102-fdce-02d0" type="max"/>
+              </constraints>
+              <categoryLinks>
+                <categoryLink id="3beb-a32d-0d8e-2c2a" name="Troop" hidden="false" targetId="9d34-3652-fcc5-0fa3" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name="Cost" typeId="c494-d0ff-a958-c070" value="10.0"/>
+                <cost name="Fate" typeId="7540-583a-760c-a57d" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <entryLinks>
+            <entryLink id="f3f8-be01-5e9b-1b7f" name="Upgrades" hidden="false" collective="false" import="true" targetId="ba3b-6f79-e920-db59" type="selectionEntryGroup"/>
+          </entryLinks>
+          <costs>
+            <cost name="Fate" typeId="7540-583a-760c-a57d" value="0.0"/>
+            <cost name="Cost" typeId="c494-d0ff-a958-c070" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="4fd5-b826-7011-59c6" name="Messor Gheist" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fed5-924c-0bc6-07ed" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="4a18-cde2-a2f1-6947" name="Messor Gheist" hidden="false" typeId="67ed-66d0-e4ae-8ccc" typeName="Troop">
+              <characteristics>
+                <characteristic name="Health" typeId="0aff-3d11-f241-82a0">4</characteristic>
+                <characteristic name="Attack" typeId="67da-6694-0f94-47c5">2</characteristic>
+                <characteristic name="Range" typeId="b4f1-ad98-8eb1-e25d">1</characteristic>
+                <characteristic name="Defense" typeId="5dba-13c9-182c-c04c">3</characteristic>
+                <characteristic name="Armour" typeId="11f5-dd18-2756-6e91">0</characteristic>
+                <characteristic name="Speed" typeId="5fba-4ecc-4581-be8e">4</characteristic>
+                <characteristic name="Skill 1" typeId="89e2-1316-b1f4-737b">Disorienting Blast {1} (Active Ability)</characteristic>
+                <characteristic name="Skill 2" typeId="6008-87fa-4c1a-6cee">Envoy of Death</characteristic>
+                <characteristic name="Traits" typeId="a185-ee4a-642e-37d2">Arcane, Demon, Undead</characteristic>
+                <characteristic name="Criticals" typeId="9ef8-76bb-c4cc-3a78">Explode, Wound</characteristic>
+                <characteristic name="VP Track" typeId="a0b2-ad1b-7f1e-f32c">Fallen: 
+1 = 3
+2 = 6
+3 = 8</characteristic>
+                <characteristic name="Keywords" typeId="c4f7-494f-7643-7638">Flight</characteristic>
+                <characteristic name="Token Skills" typeId="9cac-1866-e02e-1d1d">Focus, Channel</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule id="fa5c-b9d8-78a5-955b" name="Envoy of Death" hidden="false">
+              <description>Bloodied enemy characters get Accuracy -1 for each Messor Gheist with 2 (Max -3)</description>
+            </rule>
+            <rule id="5b82-bab9-993c-977b" name="Disorientating Blast " hidden="false">
+              <description>Attack 3{4}. Instead of dealing damage, for each damage Daze or break Any the Defender. </description>
+            </rule>
+          </rules>
+          <categoryLinks>
+            <categoryLink id="0cb4-5532-886c-23b5" name="Troop" hidden="false" targetId="9d34-3652-fcc5-0fa3" primary="false"/>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry id="3b2a-f0b3-e439-6f3f" name="1 Gheist" hidden="false" collective="false" import="true" type="model">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4369-20f7-8d28-456c" type="max"/>
+              </constraints>
+              <categoryLinks>
+                <categoryLink id="d02c-99d2-cc2c-74c6" name="Troop" hidden="false" targetId="9d34-3652-fcc5-0fa3" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name="Cost" typeId="c494-d0ff-a958-c070" value="3.0"/>
+                <cost name="Fate" typeId="7540-583a-760c-a57d" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="594f-6635-492e-71a5" name="2 Gheist " hidden="false" collective="false" import="true" type="model">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="35d1-4ac0-d220-0749" type="max"/>
+              </constraints>
+              <categoryLinks>
+                <categoryLink id="4524-7325-1614-15bb" name="Troop" hidden="false" targetId="9d34-3652-fcc5-0fa3" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name="Cost" typeId="c494-d0ff-a958-c070" value="6.0"/>
+                <cost name="Fate" typeId="7540-583a-760c-a57d" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="e36b-491e-bab5-4cd0" name="3 Gheist" hidden="false" collective="false" import="true" type="model">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6c5c-10eb-0050-2a61" type="max"/>
+              </constraints>
+              <categoryLinks>
+                <categoryLink id="e760-2ba6-7248-06ff" name="Troop" hidden="false" targetId="9d34-3652-fcc5-0fa3" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name="Cost" typeId="c494-d0ff-a958-c070" value="8.0"/>
+                <cost name="Fate" typeId="7540-583a-760c-a57d" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <entryLinks>
+            <entryLink id="9afb-1ce3-7e54-1775" name="Upgrades" hidden="false" collective="false" import="true" targetId="ba3b-6f79-e920-db59" type="selectionEntryGroup"/>
+          </entryLinks>
+          <costs>
+            <cost name="Fate" typeId="7540-583a-760c-a57d" value="0.0"/>
+            <cost name="Cost" typeId="c494-d0ff-a958-c070" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="9fc3-8874-9aef-f000" name="Ossilyte Guard" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d32c-4bdb-1314-62fd" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="59be-4d89-8b2d-9cf8" name="Ossilyte Guard" hidden="false" typeId="67ed-66d0-e4ae-8ccc" typeName="Troop">
+              <characteristics>
+                <characteristic name="Health" typeId="0aff-3d11-f241-82a0">3</characteristic>
+                <characteristic name="Attack" typeId="67da-6694-0f94-47c5">2</characteristic>
+                <characteristic name="Range" typeId="b4f1-ad98-8eb1-e25d">1</characteristic>
+                <characteristic name="Defense" typeId="5dba-13c9-182c-c04c">3</characteristic>
+                <characteristic name="Armour" typeId="11f5-dd18-2756-6e91">1</characteristic>
+                <characteristic name="Speed" typeId="5fba-4ecc-4581-be8e">4</characteristic>
+                <characteristic name="Skill 1" typeId="89e2-1316-b1f4-737b">Eternal Vigil (Reaction)</characteristic>
+                <characteristic name="Skill 2" typeId="6008-87fa-4c1a-6cee">Broken Body (Reaction)</characteristic>
+                <characteristic name="Traits" typeId="a185-ee4a-642e-37d2">Guardian, Knight, Ossilyte, Undead</characteristic>
+                <characteristic name="Criticals" typeId="9ef8-76bb-c4cc-3a78">Explode</characteristic>
+                <characteristic name="VP Track" typeId="a0b2-ad1b-7f1e-f32c">Fallen: 
+1 = 2
+2 = 4
+3 = 6
+4 = 7
+5 = 8
+</characteristic>
+                <characteristic name="Keywords" typeId="c4f7-494f-7643-7638">Accuracy 1, Immune</characteristic>
+                <characteristic name="Token Skills" typeId="9cac-1866-e02e-1d1d">Focus, Guard, Shield</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule id="2c55-1a15-1607-3204" name="Eternal Vigil" hidden="false">
+              <description>At the end of the Ossilyte Guard&apos;s activation Guard</description>
+            </rule>
+            <rule id="1065-54b3-4fb8-97ef" name="Broken Body" hidden="false">
+              <description>When Ossilyte guard is attacked by ranged weapon the attacking character gains Disadvantage. </description>
+            </rule>
+          </rules>
+          <categoryLinks>
+            <categoryLink id="f4a2-e5f8-3f76-7b20" name="Troop" hidden="false" targetId="9d34-3652-fcc5-0fa3" primary="false"/>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry id="cfcd-6d8a-93fe-4f66" name="1 Guard" hidden="false" collective="false" import="true" type="model">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="21ff-16c6-28f0-0217" type="max"/>
+              </constraints>
+              <categoryLinks>
+                <categoryLink id="bb24-b881-73ce-df25" name="Troop" hidden="false" targetId="9d34-3652-fcc5-0fa3" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name="Cost" typeId="c494-d0ff-a958-c070" value="2.0"/>
+                <cost name="Fate" typeId="7540-583a-760c-a57d" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="ace6-2011-61c9-32ac" name="2 Guards" hidden="false" collective="false" import="true" type="model">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8583-7460-7021-7b45" type="max"/>
+              </constraints>
+              <categoryLinks>
+                <categoryLink id="3248-b8b7-002d-da93" name="Troop" hidden="false" targetId="9d34-3652-fcc5-0fa3" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name="Cost" typeId="c494-d0ff-a958-c070" value="4.0"/>
+                <cost name="Fate" typeId="7540-583a-760c-a57d" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="6d98-ece4-79e0-07df" name="3 Guards" hidden="false" collective="false" import="true" type="model">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="042f-fb39-24d2-3fd5" type="max"/>
+              </constraints>
+              <categoryLinks>
+                <categoryLink id="c989-4942-63eb-5bb5" name="Troop" hidden="false" targetId="9d34-3652-fcc5-0fa3" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name="Cost" typeId="c494-d0ff-a958-c070" value="6.0"/>
+                <cost name="Fate" typeId="7540-583a-760c-a57d" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="eaa9-1fc6-6392-6c76" name="4 Guards" hidden="false" collective="false" import="true" type="model">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bab5-5684-41d5-6b52" type="max"/>
+              </constraints>
+              <categoryLinks>
+                <categoryLink id="c4b8-719e-3b86-fba5" name="Troop" hidden="false" targetId="9d34-3652-fcc5-0fa3" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name="Cost" typeId="c494-d0ff-a958-c070" value="7.0"/>
+                <cost name="Fate" typeId="7540-583a-760c-a57d" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="332d-2f06-b4f4-0175" name="5 Guards" hidden="false" collective="false" import="true" type="model">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="af3f-fa9a-c975-4fc4" type="max"/>
+              </constraints>
+              <categoryLinks>
+                <categoryLink id="1112-cd71-edca-b8c6" name="Troop" hidden="false" targetId="9d34-3652-fcc5-0fa3" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name="Cost" typeId="c494-d0ff-a958-c070" value="8.0"/>
+                <cost name="Fate" typeId="7540-583a-760c-a57d" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <entryLinks>
+            <entryLink id="b635-2f16-33f0-a231" name="Upgrades" hidden="false" collective="false" import="true" targetId="ba3b-6f79-e920-db59" type="selectionEntryGroup"/>
+          </entryLinks>
           <costs>
             <cost name="Fate" typeId="7540-583a-760c-a57d" value="0.0"/>
             <cost name="Cost" typeId="c494-d0ff-a958-c070" value="0.0"/>
