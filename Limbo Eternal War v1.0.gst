@@ -78,23 +78,11 @@
     </profileType>
   </profileTypes>
   <categoryEntries>
-    <categoryEntry id="03b7-6aa9-a03b-8071" name="Lord" hidden="false">
-      <constraints>
-        <constraint field="selections" scope="roster" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="3a3d-e1db-8177-2ded" type="max"/>
-      </constraints>
-    </categoryEntry>
+    <categoryEntry id="03b7-6aa9-a03b-8071" name="Lord" hidden="false"/>
     <categoryEntry id="92b2-75fa-5ad7-dc75" name="Hero" hidden="false"/>
     <categoryEntry id="9d34-3652-fcc5-0fa3" name="Troop" hidden="false"/>
-    <categoryEntry id="41ed-e3d0-2adf-5513" name="Fate Cards" hidden="false">
-      <constraints>
-        <constraint field="selections" scope="parent" value="21.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="a097-3dff-6382-3a1b" type="max"/>
-      </constraints>
-    </categoryEntry>
-    <categoryEntry id="6c59-7bcd-44f8-3c71" name="Divinity" hidden="false">
-      <constraints>
-        <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="28a4-b748-9da8-4d86" type="max"/>
-      </constraints>
-    </categoryEntry>
+    <categoryEntry id="41ed-e3d0-2adf-5513" name="Fate Cards" hidden="false"/>
+    <categoryEntry id="6c59-7bcd-44f8-3c71" name="Divinity" hidden="false"/>
     <categoryEntry id="6173-1a99-a86b-6e28" name="Upgrades" hidden="false"/>
     <categoryEntry id="e900-5d11-8941-29a8" name="Keywords" hidden="false"/>
   </categoryEntries>
@@ -789,15 +777,38 @@ Note: Use a token from the box or a Fate crystal to represent the Guilt. This is
       </costs>
     </selectionEntry>
     <selectionEntry id="3e33-12c2-00c8-3c48" name="Light Divinities" hidden="false" collective="false" import="true" type="unit">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="d54a-e950-44e4-4458" type="max"/>
+      </constraints>
       <categoryLinks>
         <categoryLink id="e885-666a-a851-2bf9" name="Divinity" hidden="false" targetId="6c59-7bcd-44f8-3c71" primary="true"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="2e57-7b69-3046-3aa5" name="Ashara The Glorious Sun" hidden="false" collective="false" import="true" targetId="29ea-ac8b-2442-20bb" type="selectionEntry"/>
-        <entryLink id="7f60-0150-f63a-1386" name="Divight Fate Lord" hidden="false" collective="false" import="true" targetId="7cb3-ffd2-1bc5-934f" type="selectionEntry"/>
-        <entryLink id="e8cc-06bd-b4b9-e2c4" name="Ethel The Blind Justice" hidden="false" collective="false" import="true" targetId="6370-4dad-9199-78c0" type="selectionEntry"/>
-        <entryLink id="e379-851d-a9fd-25a3" name="Foreire The Swift Breeze" hidden="false" collective="false" import="true" targetId="ee06-d797-452d-369e" type="selectionEntry"/>
-        <entryLink id="1341-0f59-54fa-da73" name="Millard The Peacekeeper" hidden="false" collective="false" import="true" targetId="59e3-c5ce-fd33-e67f" type="selectionEntry"/>
+        <entryLink id="2e57-7b69-3046-3aa5" name="Ashara The Glorious Sun" hidden="false" collective="false" import="true" targetId="29ea-ac8b-2442-20bb" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1bf7-95cf-05b4-2bfb" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="7f60-0150-f63a-1386" name="Divight Fate Lord" hidden="false" collective="false" import="true" targetId="7cb3-ffd2-1bc5-934f" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6d75-3900-6992-1925" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="e8cc-06bd-b4b9-e2c4" name="Ethel The Blind Justice" hidden="false" collective="false" import="true" targetId="6370-4dad-9199-78c0" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cb4b-204c-125f-c9bf" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="e379-851d-a9fd-25a3" name="Foreire The Swift Breeze" hidden="false" collective="false" import="true" targetId="ee06-d797-452d-369e" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="62e6-f02d-a0c3-5417" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="1341-0f59-54fa-da73" name="Millard The Peacekeeper" hidden="false" collective="false" import="true" targetId="59e3-c5ce-fd33-e67f" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d8cf-df46-3aca-d586" type="max"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="Fate" typeId="7540-583a-760c-a57d" value="0.0"/>

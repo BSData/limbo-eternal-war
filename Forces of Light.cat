@@ -1,164 +1,176 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <catalogue id="f4b9-eebe-b016-7298" name="Forces of Light" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="9eae-0060-d2cb-2349" gameSystemRevision="3" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <categoryEntries>
+    <categoryEntry id="ba7b-a699-d0cb-e5da" name="Army" hidden="false"/>
+  </categoryEntries>
   <entryLinks>
-    <entryLink id="d4bf-7f70-99de-20eb" name="Lord" hidden="false" collective="false" import="true" targetId="ff3e-c13b-133e-1ca0" type="selectionEntry">
+    <entryLink id="14b4-0aaf-afea-72cb" name="Heroes" hidden="false" collective="false" import="true" targetId="773d-3eae-0869-b0e4" type="selectionEntry">
       <categoryLinks>
-        <categoryLink id="4cdc-f454-e344-71ff" name="Lord" hidden="false" targetId="03b7-6aa9-a03b-8071" primary="true"/>
+        <categoryLink id="a7ab-67d9-0b44-2645" name="New CategoryLink" hidden="false" targetId="92b2-75fa-5ad7-dc75" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="dc25-0d61-d1b6-3d5e" name="Divinities" hidden="false" collective="false" import="true" targetId="0543-a81f-d571-796f" type="selectionEntry"/>
-    <entryLink id="ec65-c09c-cacc-62af" name="Heroes" hidden="false" collective="false" import="true" targetId="773d-3eae-0869-b0e4" type="selectionEntry">
+    <entryLink id="a8a0-c2d3-3398-723a" name="Lord" hidden="false" collective="false" import="true" targetId="ff3e-c13b-133e-1ca0" type="selectionEntry">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="264f-834a-fe6e-285b" type="max"/>
+      </constraints>
       <categoryLinks>
-        <categoryLink id="ae66-624e-6b8a-6fae" name="Hero" hidden="false" targetId="92b2-75fa-5ad7-dc75" primary="true"/>
+        <categoryLink id="a4aa-bce3-c71c-b2d9" name="Lord" hidden="false" targetId="03b7-6aa9-a03b-8071" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="b502-d7e4-8748-8789" name="Troops" hidden="false" collective="false" import="true" targetId="d192-2d5d-7257-ca6d" type="selectionEntry">
+    <entryLink id="622e-f682-e9dc-dda0" name="Neutral Heroes" hidden="false" collective="false" import="true" targetId="5bad-46fc-530d-14dc" type="selectionEntry">
       <categoryLinks>
-        <categoryLink id="8cb3-5cfc-3ec5-ed44" name="Troop" hidden="false" targetId="9d34-3652-fcc5-0fa3" primary="true"/>
+        <categoryLink id="30a1-e020-73ad-1fde" name="Hero" hidden="false" targetId="92b2-75fa-5ad7-dc75" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="3a3b-5bdb-216e-6419" name="Neutral Heroes" hidden="false" collective="false" import="true" targetId="5bad-46fc-530d-14dc" type="selectionEntry">
+    <entryLink id="44e8-8d5e-5ef4-ad79" name="Troops" hidden="false" collective="false" import="true" targetId="d192-2d5d-7257-ca6d" type="selectionEntry">
       <categoryLinks>
-        <categoryLink id="9970-fd4f-c039-fefb" name="Hero" hidden="false" targetId="92b2-75fa-5ad7-dc75" primary="true"/>
-        <categoryLink id="8d4d-cb30-83b0-c549" name="New CategoryLink" hidden="false" targetId="92b2-75fa-5ad7-dc75" primary="false"/>
+        <categoryLink id="e051-70df-580b-69f7" name="Hero" hidden="false" targetId="92b2-75fa-5ad7-dc75" primary="false"/>
+        <categoryLink id="22fb-a524-8319-6ee4" name="Troop" hidden="false" targetId="9d34-3652-fcc5-0fa3" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="7519-e5eb-98f3-ef6e" name="Light Divinities" hidden="false" collective="false" import="true" targetId="3e33-12c2-00c8-3c48" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="8362-e019-cfd7-5827" name="Divinity" hidden="false" targetId="6c59-7bcd-44f8-3c71" primary="false"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="ff3e-c13b-133e-1ca0" name="Lord" hidden="false" collective="false" import="true" type="unit">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7b6b-c70e-c96e-a764" type="max"/>
+      </constraints>
       <categoryLinks>
         <categoryLink id="3949-3f30-af39-a49e" name="New CategoryLink" hidden="false" targetId="03b7-6aa9-a03b-8071" primary="true"/>
       </categoryLinks>
-      <selectionEntryGroups>
-        <selectionEntryGroup id="528a-68dd-5cf3-a2b8" name="Lords" hidden="false" collective="false" import="true">
-          <categoryLinks>
-            <categoryLink id="9a39-409b-b435-a8ad" name="Lord" hidden="false" targetId="03b7-6aa9-a03b-8071" primary="false"/>
-          </categoryLinks>
-          <selectionEntries>
-            <selectionEntry id="cf38-94d7-5d8f-feda" name="Raphael" hidden="false" collective="false" import="true" type="model">
-              <profiles>
-                <profile id="40d5-d9bc-cc6c-d6d0" name="Raphael" hidden="false" typeId="b0b7-02f8-2474-26f5" typeName="Lord">
-                  <characteristics>
-                    <characteristic name="Health" typeId="e6d2-e7ef-38c9-dd30">21</characteristic>
-                    <characteristic name="Attack" typeId="914f-b956-277c-033e">4</characteristic>
-                    <characteristic name="Range" typeId="0a3b-eed5-5248-6151">2</characteristic>
-                    <characteristic name="Defense" typeId="8926-1576-44d8-b258">3</characteristic>
-                    <characteristic name="Armour" typeId="0721-716e-2c6e-6ff5">2</characteristic>
-                    <characteristic name="Speed" typeId="a34d-8e5f-d950-64f2">4</characteristic>
-                    <characteristic name="Skill 1" typeId="1b0e-4759-ab75-9856">Blade Cyclone (3)
+      <selectionEntries>
+        <selectionEntry id="b3fd-6e1b-0dc4-1d15" name="Raphael" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2314-5e0d-c4ac-6f8a" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="b87c-d817-5e21-ce78" name="Raphael" hidden="false" typeId="b0b7-02f8-2474-26f5" typeName="Lord">
+              <characteristics>
+                <characteristic name="Health" typeId="e6d2-e7ef-38c9-dd30">21</characteristic>
+                <characteristic name="Attack" typeId="914f-b956-277c-033e">4</characteristic>
+                <characteristic name="Range" typeId="0a3b-eed5-5248-6151">2</characteristic>
+                <characteristic name="Defense" typeId="8926-1576-44d8-b258">3</characteristic>
+                <characteristic name="Armour" typeId="0721-716e-2c6e-6ff5">2</characteristic>
+                <characteristic name="Speed" typeId="a34d-8e5f-d950-64f2">4</characteristic>
+                <characteristic name="Skill 1" typeId="1b0e-4759-ab75-9856">Blade Cyclone (3)
 
 Active Ability</characteristic>
-                    <characteristic name="Skill 2" typeId="66d2-fc17-f518-ed0d">Brilliant Radiance
+                <characteristic name="Skill 2" typeId="66d2-fc17-f518-ed0d">Brilliant Radiance
 
 Constant </characteristic>
-                    <characteristic name="Skill 3" typeId="2e69-5be8-ce5e-d7a4">Holy Rage
+                <characteristic name="Skill 3" typeId="2e69-5be8-ce5e-d7a4">Holy Rage
 
 Constant</characteristic>
-                    <characteristic name="Traits" typeId="ff57-cc56-85da-15f8">Guardian, Holy, Human, Technomancer</characteristic>
-                    <characteristic name="Criticals" typeId="4f32-eb95-3813-58b4">Explode, Wound</characteristic>
-                    <characteristic name="Token Skills" typeId="0b95-f7de-c5f1-7a10">Focus, Guard, Channel</characteristic>
-                    <characteristic name="Keywords" typeId="d773-cf12-6468-01e2">Deadly 2, Huge, Fly, Immune, Pierce 1, Reach</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <rules>
-                <rule id="43ed-e731-9ab1-332d" name="Blade Cyclone" hidden="false">
-                  <description>Each Character Raphael Threatens takes X Dice of Damage (X= Raphael&apos;s Attack +1) Reduce each Character&apos;s Armor value by Raphael&apos;s Pierce value while resolving this ability. 
+                <characteristic name="Traits" typeId="ff57-cc56-85da-15f8">Guardian, Holy, Human, Technomancer</characteristic>
+                <characteristic name="Criticals" typeId="4f32-eb95-3813-58b4">Explode, Wound</characteristic>
+                <characteristic name="Token Skills" typeId="0b95-f7de-c5f1-7a10">Focus, Guard, Channel</characteristic>
+                <characteristic name="Keywords" typeId="d773-cf12-6468-01e2">Deadly 2, Huge, Fly, Immune, Pierce 1, Reach</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule id="c564-0d27-cb84-e2fa" name="Blade Cyclone" hidden="false">
+              <description>Each Character Raphael Threatens takes X Dice of Damage (X= Raphael&apos;s Attack +1) Reduce each Character&apos;s Armor value by Raphael&apos;s Pierce value while resolving this ability. 
 
 FAQ: For those using this ability you will not use Deadly with this as it is an Active Ability. It does not have the Attack text in front of it so it does not use Keywords other than those mentioned in the actions text. </description>
-                </rule>
-                <rule id="80dd-c376-4bcf-2b19" name="Brilliant Radiance" hidden="false">
-                  <description>Characters threatened by Raphael lose -1 Accuracy or -2 while attacking her.</description>
-                </rule>
-                <rule id="4dda-d5ef-2758-7616" name="Holy Rage" hidden="false">
-                  <description>While Bloodied, Raphael gets +1 Attack, +1 Speed and Advantage while Attacking
+            </rule>
+            <rule id="ea53-d183-8d67-50e2" name="Brilliant Radiance" hidden="false">
+              <description>Characters threatened by Raphael lose -1 Accuracy or -2 while attacking her.</description>
+            </rule>
+            <rule id="3c63-0927-43cf-f904" name="Holy Rage" hidden="false">
+              <description>While Bloodied, Raphael gets +1 Attack, +1 Speed and Advantage while Attacking
 
 FAQ: This ability can combine with Blade Cyclone (BC). If this is activated before BC you will use the +1 of this ability as well as +1 of BC</description>
-                </rule>
-              </rules>
+            </rule>
+          </rules>
+          <categoryLinks>
+            <categoryLink id="47f4-b597-f6f8-608e" name="Lord" hidden="false" targetId="03b7-6aa9-a03b-8071" primary="false"/>
+          </categoryLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="beb9-f404-39d1-24c1" name="Upgrades" hidden="false" collective="false" import="true">
               <categoryLinks>
-                <categoryLink id="cc00-69cb-479a-be5e" name="Lord" hidden="false" targetId="03b7-6aa9-a03b-8071" primary="false"/>
+                <categoryLink id="c3ee-1331-5194-6b52" name="Upgrades" hidden="false" targetId="6173-1a99-a86b-6e28" primary="false"/>
               </categoryLinks>
-              <selectionEntryGroups>
-                <selectionEntryGroup id="0871-ec59-1a5a-ac32" name="Upgrades" hidden="false" collective="false" import="true">
-                  <categoryLinks>
-                    <categoryLink id="48e4-6782-3b7d-95f2" name="Upgrades" hidden="false" targetId="6173-1a99-a86b-6e28" primary="false"/>
-                  </categoryLinks>
-                  <entryLinks>
-                    <entryLink id="d72b-a325-eba6-3069" name="Upgrades" hidden="false" collective="false" import="true" targetId="ba3b-6f79-e920-db59" type="selectionEntryGroup"/>
-                  </entryLinks>
-                </selectionEntryGroup>
-                <selectionEntryGroup id="9326-a54a-da9e-c979" name="Keywords" hidden="false" collective="false" import="true">
-                  <entryLinks>
-                    <entryLink id="c002-c8ad-be34-a6bd" name="Keywords" hidden="false" collective="false" import="true" targetId="b904-7b2a-a21a-643e" type="selectionEntryGroup"/>
-                  </entryLinks>
-                </selectionEntryGroup>
-              </selectionEntryGroups>
-              <costs>
-                <cost name="Cost" typeId="c494-d0ff-a958-c070" value="14.0"/>
-                <cost name="Fate" typeId="7540-583a-760c-a57d" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="0ba9-3479-79d6-ed7f" name="Veronique" hidden="false" collective="false" import="true" type="model">
-              <profiles>
-                <profile id="025a-7c26-e14e-5109" name="Veronique" hidden="false" typeId="b0b7-02f8-2474-26f5" typeName="Lord">
-                  <characteristics>
-                    <characteristic name="Health" typeId="e6d2-e7ef-38c9-dd30">16</characteristic>
-                    <characteristic name="Attack" typeId="914f-b956-277c-033e">6</characteristic>
-                    <characteristic name="Range" typeId="0a3b-eed5-5248-6151">2</characteristic>
-                    <characteristic name="Defense" typeId="8926-1576-44d8-b258">4</characteristic>
-                    <characteristic name="Armour" typeId="0721-716e-2c6e-6ff5">3</characteristic>
-                    <characteristic name="Speed" typeId="a34d-8e5f-d950-64f2">4</characteristic>
-                    <characteristic name="Skill 1" typeId="1b0e-4759-ab75-9856">Hyperkinetic Perforation [Active Ability]</characteristic>
-                    <characteristic name="Skill 2" typeId="66d2-fc17-f518-ed0d">Telekinetic Shield (2) 
+              <entryLinks>
+                <entryLink id="4205-1b27-840f-d36a" name="Upgrades" hidden="false" collective="false" import="true" targetId="ba3b-6f79-e920-db59" type="selectionEntryGroup"/>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="821c-3eff-c7f3-e9a3" name="Keywords" hidden="false" collective="false" import="true">
+              <entryLinks>
+                <entryLink id="6d80-8b9b-6fab-c08e" name="Keywords" hidden="false" collective="false" import="true" targetId="b904-7b2a-a21a-643e" type="selectionEntryGroup"/>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <costs>
+            <cost name="Cost" typeId="c494-d0ff-a958-c070" value="14.0"/>
+            <cost name="Fate" typeId="7540-583a-760c-a57d" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="7daf-5952-a396-5282" name="Veronique" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e11e-9374-7340-1a22" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="7d0d-fedc-5628-7282" name="Veronique" hidden="false" typeId="b0b7-02f8-2474-26f5" typeName="Lord">
+              <characteristics>
+                <characteristic name="Health" typeId="e6d2-e7ef-38c9-dd30">16</characteristic>
+                <characteristic name="Attack" typeId="914f-b956-277c-033e">6</characteristic>
+                <characteristic name="Range" typeId="0a3b-eed5-5248-6151">2</characteristic>
+                <characteristic name="Defense" typeId="8926-1576-44d8-b258">4</characteristic>
+                <characteristic name="Armour" typeId="0721-716e-2c6e-6ff5">3</characteristic>
+                <characteristic name="Speed" typeId="a34d-8e5f-d950-64f2">4</characteristic>
+                <characteristic name="Skill 1" typeId="1b0e-4759-ab75-9856">Hyperkinetic Perforation [Active Ability]</characteristic>
+                <characteristic name="Skill 2" typeId="66d2-fc17-f518-ed0d">Telekinetic Shield (2) 
 [Reaction]</characteristic>
-                    <characteristic name="Skill 3" typeId="2e69-5be8-ce5e-d7a4">Unlimited Power [Swift]</characteristic>
-                    <characteristic name="Traits" typeId="ff57-cc56-85da-15f8">Guardian, Human, Leader, Technomancer</characteristic>
-                    <characteristic name="Criticals" typeId="4f32-eb95-3813-58b4">Explode or Daze</characteristic>
-                    <characteristic name="Token Skills" typeId="0b95-f7de-c5f1-7a10">Focus, Command, Shieldm Channel, Guard</characteristic>
-                    <characteristic name="Keywords" typeId="d773-cf12-6468-01e2">Huge, Immune, Pierce 2, Reach</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <rules>
-                <rule id="1daa-c3bc-3e60-0239" name="Hyperkinetic Perforation" hidden="false">
-                  <description>Attack. Veronique gains Advantage for this attack. ignore all tokens, keywords, abilities on enemy characters for this attack. Your opponent cannot play Fate. 
+                <characteristic name="Skill 3" typeId="2e69-5be8-ce5e-d7a4">Unlimited Power [Swift]</characteristic>
+                <characteristic name="Traits" typeId="ff57-cc56-85da-15f8">Guardian, Human, Leader, Technomancer</characteristic>
+                <characteristic name="Criticals" typeId="4f32-eb95-3813-58b4">Explode or Daze</characteristic>
+                <characteristic name="Token Skills" typeId="0b95-f7de-c5f1-7a10">Focus, Command, Shieldm Channel, Guard</characteristic>
+                <characteristic name="Keywords" typeId="d773-cf12-6468-01e2">Huge, Immune, Pierce 2, Reach</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule id="5472-6f49-4a0c-a724" name="Hyperkinetic Perforation" hidden="false">
+              <description>Attack. Veronique gains Advantage for this attack. ignore all tokens, keywords, abilities on enemy characters for this attack. Your opponent cannot play Fate. 
 
 FAQ: Since this Ability has the Attack in front you will use all your keywords as if this were a regular attack. This attack is the only way to bypass the Immune Keyword on many opponents. If a status is applied to a character with immune due to this attack it will resolve once then </description>
-                </rule>
-                <rule id="51c8-69ee-f46d-a71a" name="Telekinetic Shield" hidden="false">
-                  <description>When a friendly character within 3 and sight is attacked, the attacker gains Disadvantage. After the attack resolves, Daze the attacker</description>
-                </rule>
-                <rule id="562e-5ec4-f7cd-24ad" name="Unlimited Power" hidden="false">
-                  <description>Channel
+            </rule>
+            <rule id="cc5a-05be-412a-8dab" name="Telekinetic Shield" hidden="false">
+              <description>When a friendly character within 3 and sight is attacked, the attacker gains Disadvantage. After the attack resolves, Daze the attacker</description>
+            </rule>
+            <rule id="a54b-abef-3298-6b20" name="Unlimited Power" hidden="false">
+              <description>Channel
 
 
 Note: This is a great way to get one free fate each time you activate this character. Remember Swifts can be used once per round and only when the character has been activated. </description>
-                </rule>
-              </rules>
-              <categoryLinks>
-                <categoryLink id="99c8-9ce5-31e3-3fa4" name="Lord" hidden="false" targetId="03b7-6aa9-a03b-8071" primary="false"/>
-              </categoryLinks>
-              <selectionEntryGroups>
-                <selectionEntryGroup id="8626-3a68-0ba7-626c" name="Keywords" hidden="false" collective="false" import="true">
-                  <entryLinks>
-                    <entryLink id="44a4-39dc-68f3-59cc" name="Keywords" hidden="false" collective="false" import="true" targetId="b904-7b2a-a21a-643e" type="selectionEntryGroup"/>
-                  </entryLinks>
-                </selectionEntryGroup>
-                <selectionEntryGroup id="26ed-f972-44b7-0c83" name="Upgrades" hidden="false" collective="false" import="true">
-                  <entryLinks>
-                    <entryLink id="6721-6b09-b787-3401" name="Upgrades" hidden="false" collective="false" import="true" targetId="ba3b-6f79-e920-db59" type="selectionEntryGroup"/>
-                  </entryLinks>
-                </selectionEntryGroup>
-              </selectionEntryGroups>
-              <costs>
-                <cost name="Cost" typeId="c494-d0ff-a958-c070" value="12.0"/>
-                <cost name="Fate" typeId="7540-583a-760c-a57d" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
+            </rule>
+          </rules>
+          <categoryLinks>
+            <categoryLink id="f2b7-8918-a63a-86ce" name="Lord" hidden="false" targetId="03b7-6aa9-a03b-8071" primary="false"/>
+          </categoryLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="9d87-fcb4-7cc5-3ace" name="Keywords" hidden="false" collective="false" import="true">
+              <entryLinks>
+                <entryLink id="ee20-1235-92ec-fec8" name="Keywords" hidden="false" collective="false" import="true" targetId="b904-7b2a-a21a-643e" type="selectionEntryGroup"/>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="389d-2de2-1aa0-ad5e" name="Upgrades" hidden="false" collective="false" import="true">
+              <entryLinks>
+                <entryLink id="c937-9a8a-e11a-5834" name="Upgrades" hidden="false" collective="false" import="true" targetId="ba3b-6f79-e920-db59" type="selectionEntryGroup"/>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <costs>
+            <cost name="Cost" typeId="c494-d0ff-a958-c070" value="12.0"/>
+            <cost name="Fate" typeId="7540-583a-760c-a57d" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
       <costs>
         <cost name="Fate" typeId="7540-583a-760c-a57d" value="0.0"/>
         <cost name="Cost" typeId="c494-d0ff-a958-c070" value="0.0"/>
@@ -169,8 +181,16 @@ Note: This is a great way to get one free fate each time you activate this chara
         <categoryLink id="eb8c-1a02-cf0e-8ee6" name="Divinity" hidden="false" targetId="6c59-7bcd-44f8-3c71" primary="true"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="01f8-d47d-9173-e445" name="Dark Divinites" hidden="false" collective="false" import="true" targetId="5780-8d48-fd92-4529" type="selectionEntry"/>
-        <entryLink id="5aae-1c85-f82b-0476" name="Light Divinities" hidden="false" collective="false" import="true" targetId="3e33-12c2-00c8-3c48" type="selectionEntry"/>
+        <entryLink id="01f8-d47d-9173-e445" name="Dark Divinites" hidden="false" collective="false" import="true" targetId="5780-8d48-fd92-4529" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="6d4b-fbc7-ad9a-5a98" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="5aae-1c85-f82b-0476" name="Light Divinities" hidden="false" collective="false" import="true" targetId="3e33-12c2-00c8-3c48" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="e9fe-d49f-30a5-e03c" type="max"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="Fate" typeId="7540-583a-760c-a57d" value="0.0"/>
@@ -669,7 +689,7 @@ Note: This can not be applied to herself </description>
           <selectionEntryGroups>
             <selectionEntryGroup id="164b-f97a-2f39-8900" name="Shield Guards" hidden="false" collective="false" import="true">
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="c90f-2163-bc82-dfd6" type="max"/>
+                <constraint field="selections" scope="parent" value="-1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c90f-2163-bc82-dfd6" type="max"/>
               </constraints>
               <rules>
                 <rule id="c16b-60f4-0b2f-2489" name="Protect the King" hidden="false">
@@ -684,6 +704,9 @@ Note: This can not be applied to herself </description>
               </categoryLinks>
               <selectionEntries>
                 <selectionEntry id="11f7-4153-43fc-6419" name="1 Guard" hidden="false" collective="false" import="true" type="model">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7f64-60dd-5147-3737" type="max"/>
+                  </constraints>
                   <profiles>
                     <profile id="f3ce-f26e-fd95-8509" name="Shield Guard" hidden="false" typeId="67ed-66d0-e4ae-8ccc" typeName="Troop">
                       <characteristics>
@@ -721,6 +744,9 @@ Note: This can not be applied to herself </description>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="651a-d41f-b160-3882" name="3 Guards" hidden="false" collective="false" import="true" type="model">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d777-faf7-63f7-5a99" type="max"/>
+                  </constraints>
                   <profiles>
                     <profile id="533e-c1cb-e989-6d4a" name="Shield Guard" hidden="false" typeId="67ed-66d0-e4ae-8ccc" typeName="Troop">
                       <characteristics>
@@ -760,6 +786,9 @@ Note: This can not be applied to herself </description>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="034a-74f6-d068-d8ef" name="2 Guards" hidden="false" collective="false" import="true" type="model">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a4bb-9c6a-5720-e047" type="max"/>
+                  </constraints>
                   <profiles>
                     <profile id="9d07-b149-5b9d-4310" name="Shield Guard" hidden="false" typeId="67ed-66d0-e4ae-8ccc" typeName="Troop">
                       <characteristics>
@@ -808,7 +837,7 @@ Note: This can not be applied to herself </description>
             </selectionEntryGroup>
             <selectionEntryGroup id="54a8-ec46-8724-7c36" name="The Rose&apos;s Thorns" hidden="false" collective="false" import="true">
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="834e-85b2-9472-16a0" type="max"/>
+                <constraint field="selections" scope="parent" value="-1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="834e-85b2-9472-16a0" type="max"/>
               </constraints>
               <rules>
                 <rule id="5a05-f935-6611-1778" name="Avenger" hidden="false">
@@ -825,6 +854,9 @@ Note: This is a better version of a basic Rose Knights Avenger. You do not need 
               </categoryLinks>
               <selectionEntries>
                 <selectionEntry id="6cac-9e12-51be-62ee" name="1 Thorn" hidden="false" collective="false" import="true" type="model">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2c03-1a49-9ac5-d658" type="max"/>
+                  </constraints>
                   <profiles>
                     <profile id="39f1-517d-00e6-611a" name="The Rose&apos;s Thorn" hidden="false" typeId="67ed-66d0-e4ae-8ccc" typeName="Troop">
                       <characteristics>
@@ -864,6 +896,9 @@ Note: This is a better version of a basic Rose Knights Avenger. You do not need 
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="949e-12a2-dcd3-3895" name="3 Thorns" hidden="false" collective="false" import="true" type="model">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3648-4a75-eabc-6659" type="max"/>
+                  </constraints>
                   <profiles>
                     <profile id="9ac4-e906-4543-7ed7" name="The Rose&apos;s Thorn" hidden="false" typeId="67ed-66d0-e4ae-8ccc" typeName="Troop">
                       <characteristics>
@@ -905,6 +940,9 @@ Note: This is a better version of a basic Rose Knights Avenger. You do not need 
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="40d9-63f6-bf28-d7a2" name="2 Thorns" hidden="false" collective="false" import="true" type="model">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2dd8-2318-bf4e-32af" type="max"/>
+                  </constraints>
                   <profiles>
                     <profile id="24df-541a-d1fa-e744" name="The Rose&apos;s Thorn" hidden="false" typeId="67ed-66d0-e4ae-8ccc" typeName="Troop">
                       <characteristics>
@@ -955,7 +993,7 @@ Note: This is a better version of a basic Rose Knights Avenger. You do not need 
             </selectionEntryGroup>
             <selectionEntryGroup id="c28a-b3a6-d1da-8bfb" name="Tiger Knight Archers" hidden="false" collective="false" import="true">
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="f4d7-b505-4239-03f7" type="max"/>
+                <constraint field="selections" scope="parent" value="-1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f4d7-b505-4239-03f7" type="max"/>
               </constraints>
               <rules>
                 <rule id="9c10-613d-8767-6148" name="Blood Scent" hidden="false">
@@ -970,6 +1008,9 @@ Note: This is a better version of a basic Rose Knights Avenger. You do not need 
               </categoryLinks>
               <selectionEntries>
                 <selectionEntry id="075a-3d51-239e-6e04" name="1 Archer" hidden="false" collective="false" import="true" type="model">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ead8-9a0a-113f-215b" type="max"/>
+                  </constraints>
                   <profiles>
                     <profile id="3c43-2d0c-4a84-3800" name="Tiger Knight Archer" hidden="false" typeId="67ed-66d0-e4ae-8ccc" typeName="Troop">
                       <characteristics>
@@ -1007,6 +1048,9 @@ Note: This is a better version of a basic Rose Knights Avenger. You do not need 
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="78ec-40ba-4549-fa6e" name="3 Archers" hidden="false" collective="false" import="true" type="model">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="02d0-5968-12a1-0116" type="max"/>
+                  </constraints>
                   <profiles>
                     <profile id="a1a1-f7d6-fa32-0d53" name="Tiger Knight Archer" hidden="false" typeId="67ed-66d0-e4ae-8ccc" typeName="Troop">
                       <characteristics>
@@ -1046,6 +1090,9 @@ Note: This is a better version of a basic Rose Knights Avenger. You do not need 
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="a030-81c8-6315-b55c" name="2 Archers" hidden="false" collective="false" import="true" type="model">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="43a4-6067-5063-db34" type="max"/>
+                  </constraints>
                   <profiles>
                     <profile id="a736-0be1-96b0-abe1" name="Tiger Knight Archer" hidden="false" typeId="67ed-66d0-e4ae-8ccc" typeName="Troop">
                       <characteristics>
@@ -1095,7 +1142,7 @@ Note: This is a better version of a basic Rose Knights Avenger. You do not need 
             </selectionEntryGroup>
             <selectionEntryGroup id="3fc4-76f1-e7db-d25f" name="Tiger Knight Halberdiers" hidden="false" collective="false" import="true">
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="1474-af27-d26a-5ae0" type="max"/>
+                <constraint field="selections" scope="parent" value="-1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1474-af27-d26a-5ae0" type="max"/>
               </constraints>
               <rules>
                 <rule id="f808-a9fb-111d-b724" name="Opportunist" hidden="false">
@@ -1114,6 +1161,9 @@ Note: This is a great combo move to use with Opportunist as it will give you Adv
               </categoryLinks>
               <selectionEntries>
                 <selectionEntry id="0fe3-87ef-4963-bcac" name="1 Halberdier" hidden="false" collective="false" import="true" type="model">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8d4f-1510-8ec7-427c" type="max"/>
+                  </constraints>
                   <profiles>
                     <profile id="bbcb-c27b-8168-33f7" name="Tiger Knight Halberdier" hidden="false" typeId="67ed-66d0-e4ae-8ccc" typeName="Troop">
                       <characteristics>
@@ -1155,6 +1205,9 @@ Note: This is a great combo move to use with Opportunist as it will give you Adv
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="e627-1538-3425-a45c" name="3 Halberdier" hidden="false" collective="false" import="true" type="model">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="23c8-0060-e883-8557" type="max"/>
+                  </constraints>
                   <profiles>
                     <profile id="32dd-f50f-a3fc-22ce" name="Tiger Knight Halberdier" hidden="false" typeId="67ed-66d0-e4ae-8ccc" typeName="Troop">
                       <characteristics>
@@ -1198,6 +1251,9 @@ Note: This is a great combo move to use with Opportunist as it will give you Adv
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="dc60-7317-6d13-dce8" name="2 Halberdier" hidden="false" collective="false" import="true" type="model">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cd11-d2d0-aa9a-ec49" type="max"/>
+                  </constraints>
                   <profiles>
                     <profile id="77ad-575d-8e8a-f6ed" name="Tiger Knight Halberdier" hidden="false" typeId="67ed-66d0-e4ae-8ccc" typeName="Troop">
                       <characteristics>
@@ -1251,13 +1307,16 @@ Note: This is a great combo move to use with Opportunist as it will give you Adv
             </selectionEntryGroup>
             <selectionEntryGroup id="a1bf-596c-24e2-41c6" name="Rose Knights" hidden="false" collective="false" import="true">
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="751b-acfa-59d1-a898" type="max"/>
+                <constraint field="selections" scope="parent" value="-1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="751b-acfa-59d1-a898" type="max"/>
               </constraints>
               <categoryLinks>
                 <categoryLink id="c4e5-91d7-0bd7-43c1" name="Troop" hidden="false" targetId="9d34-3652-fcc5-0fa3" primary="false"/>
               </categoryLinks>
               <selectionEntries>
                 <selectionEntry id="786f-2afd-46a4-eca4" name="1 Knight" hidden="false" collective="false" import="true" type="model">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="89cb-b2c4-8d9f-0fc9" type="max"/>
+                  </constraints>
                   <profiles>
                     <profile id="6820-4fa1-a6a5-863f" name="Rose Knight" hidden="false" typeId="67ed-66d0-e4ae-8ccc" typeName="Troop">
                       <characteristics>
@@ -1295,6 +1354,9 @@ Note: This is a great combo move to use with Opportunist as it will give you Adv
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="9f09-a795-3107-a149" name="3 Knights" hidden="false" collective="false" import="true" type="model">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0a2c-1d17-cb6f-e3f0" type="max"/>
+                  </constraints>
                   <profiles>
                     <profile id="90ba-910f-c879-93f1" name="Rose Knight" hidden="false" typeId="67ed-66d0-e4ae-8ccc" typeName="Troop">
                       <characteristics>
@@ -1334,6 +1396,9 @@ Note: This is a great combo move to use with Opportunist as it will give you Adv
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="6576-9d3f-a8c9-1e7f" name="2 Knights" hidden="false" collective="false" import="true" type="model">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4c5d-207d-fe3e-a270" type="max"/>
+                  </constraints>
                   <profiles>
                     <profile id="92cd-6212-3075-6555" name="Rose Knight" hidden="false" typeId="67ed-66d0-e4ae-8ccc" typeName="Troop">
                       <characteristics>
@@ -1383,13 +1448,16 @@ Note: This is a great combo move to use with Opportunist as it will give you Adv
             </selectionEntryGroup>
             <selectionEntryGroup id="1525-2fd7-6944-ba87" name="Rose Knights" hidden="false" collective="false" import="true">
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="73b9-4172-29e9-8c87" type="max"/>
+                <constraint field="selections" scope="parent" value="-1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="73b9-4172-29e9-8c87" type="max"/>
               </constraints>
               <categoryLinks>
                 <categoryLink id="0cb7-67bf-9bcf-3af5" name="Troop" hidden="false" targetId="9d34-3652-fcc5-0fa3" primary="false"/>
               </categoryLinks>
               <selectionEntries>
                 <selectionEntry id="3552-d8f9-607b-47ed" name="1 Knight" hidden="false" collective="false" import="true" type="model">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b369-e85a-6f7d-a3a8" type="max"/>
+                  </constraints>
                   <profiles>
                     <profile id="826a-859c-1550-81ed" name="Rose Knight" hidden="false" typeId="67ed-66d0-e4ae-8ccc" typeName="Troop">
                       <characteristics>
@@ -1427,6 +1495,9 @@ Note: This is a great combo move to use with Opportunist as it will give you Adv
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="ef56-0192-fa0c-7568" name="3 Knights" hidden="false" collective="false" import="true" type="model">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8fc2-bf19-79d1-d4c9" type="max"/>
+                  </constraints>
                   <profiles>
                     <profile id="6639-064d-794c-5126" name="Rose Knight" hidden="false" typeId="67ed-66d0-e4ae-8ccc" typeName="Troop">
                       <characteristics>
@@ -1466,6 +1537,9 @@ Note: This is a great combo move to use with Opportunist as it will give you Adv
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="6af6-cb0f-9f80-b03e" name="2 Knights" hidden="false" collective="false" import="true" type="model">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="29cd-7825-2b57-4d8b" type="max"/>
+                  </constraints>
                   <profiles>
                     <profile id="52db-76e6-c98c-0d53" name="Rose Knight" hidden="false" typeId="67ed-66d0-e4ae-8ccc" typeName="Troop">
                       <characteristics>
@@ -1515,7 +1589,7 @@ Note: This is a great combo move to use with Opportunist as it will give you Adv
             </selectionEntryGroup>
             <selectionEntryGroup id="a6ab-f6b9-43be-6a55" name="Tiger Knight Archers" hidden="false" collective="false" import="true">
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="4303-636a-f31e-c118" type="max"/>
+                <constraint field="selections" scope="parent" value="-1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4303-636a-f31e-c118" type="max"/>
               </constraints>
               <rules>
                 <rule id="0706-bd10-75ac-e7cd" name="Blood Scent" hidden="false">
@@ -1530,6 +1604,9 @@ Note: This is a great combo move to use with Opportunist as it will give you Adv
               </categoryLinks>
               <selectionEntries>
                 <selectionEntry id="f97a-222b-1374-f036" name="1 Archer" hidden="false" collective="false" import="true" type="model">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="397c-e1f7-3bc3-6848" type="max"/>
+                  </constraints>
                   <profiles>
                     <profile id="fd5a-8f83-6288-b088" name="Tiger Knight Archer" hidden="false" typeId="67ed-66d0-e4ae-8ccc" typeName="Troop">
                       <characteristics>
@@ -1567,6 +1644,9 @@ Note: This is a great combo move to use with Opportunist as it will give you Adv
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="7e50-b2dc-c6a9-41a2" name="3 Archers" hidden="false" collective="false" import="true" type="model">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f7c5-5e08-3db4-c4ce" type="max"/>
+                  </constraints>
                   <profiles>
                     <profile id="345a-b60a-bf97-15cc" name="Tiger Knight Archer" hidden="false" typeId="67ed-66d0-e4ae-8ccc" typeName="Troop">
                       <characteristics>
@@ -1606,6 +1686,9 @@ Note: This is a great combo move to use with Opportunist as it will give you Adv
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="7b85-9ec5-e0a2-f08f" name="2 Archers" hidden="false" collective="false" import="true" type="model">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1cac-59bf-cdae-dbc1" type="max"/>
+                  </constraints>
                   <profiles>
                     <profile id="ac57-e00b-4328-4d35" name="Tiger Knight Archer" hidden="false" typeId="67ed-66d0-e4ae-8ccc" typeName="Troop">
                       <characteristics>
@@ -1655,7 +1738,7 @@ Note: This is a great combo move to use with Opportunist as it will give you Adv
             </selectionEntryGroup>
             <selectionEntryGroup id="33f2-4aa7-b1b1-a587" name="Tiger Knight Halberdiers" hidden="false" collective="false" import="true">
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="6323-089a-3825-5f61" type="max"/>
+                <constraint field="selections" scope="parent" value="-1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6323-089a-3825-5f61" type="max"/>
               </constraints>
               <rules>
                 <rule id="8f81-43f3-bf4d-ba9a" name="Opportunist" hidden="false">
@@ -1674,6 +1757,9 @@ Note: This is a great combo move to use with Opportunist as it will give you Adv
               </categoryLinks>
               <selectionEntries>
                 <selectionEntry id="90bf-7c79-aa2f-447c" name="1 Halberdier" hidden="false" collective="false" import="true" type="model">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cfa0-cfea-8f00-a5c8" type="max"/>
+                  </constraints>
                   <profiles>
                     <profile id="e79c-6631-dda6-3748" name="Tiger Knight Halberdier" hidden="false" typeId="67ed-66d0-e4ae-8ccc" typeName="Troop">
                       <characteristics>
@@ -1715,6 +1801,9 @@ Note: This is a great combo move to use with Opportunist as it will give you Adv
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="f708-2cd8-d7d8-4f7e" name="3 Halberdier" hidden="false" collective="false" import="true" type="model">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fa0a-9bde-a064-43cb" type="max"/>
+                  </constraints>
                   <profiles>
                     <profile id="deb1-2979-f79d-26df" name="Tiger Knight Halberdier" hidden="false" typeId="67ed-66d0-e4ae-8ccc" typeName="Troop">
                       <characteristics>
@@ -1758,6 +1847,9 @@ Note: This is a great combo move to use with Opportunist as it will give you Adv
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="6d3a-1ecc-5c8d-015e" name="2 Halberdier" hidden="false" collective="false" import="true" type="model">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ed73-fb68-1699-3d21" type="max"/>
+                  </constraints>
                   <profiles>
                     <profile id="9dcd-79c6-96f8-9f28" name="Tiger Knight Halberdier" hidden="false" typeId="67ed-66d0-e4ae-8ccc" typeName="Troop">
                       <characteristics>
